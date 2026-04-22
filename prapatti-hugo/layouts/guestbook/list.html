@@ -1,0 +1,102 @@
+{{ define "main" }}
+<div class="container page-content">
+  <h1 class="page-title">Guestbook</h1>
+
+  <div class="gb-form-wrap">
+    <h2 class="section-title" style="margin-bottom:1rem">Sign the Guestbook</h2>
+    <form id="gb-form">
+      <input type="text" name="honeypot" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="gb-field">
+        <label>Your Name *</label>
+        <input type="text" name="author" required>
+      </div>
+      <div class="gb-field">
+        <label>Email <span class="gb-hint">(not displayed)</span></label>
+        <input type="email" name="email">
+      </div>
+      <div class="gb-field">
+        <label>Location</label>
+        <input type="text" name="location" placeholder="City, Country">
+      </div>
+      <div class="gb-field">
+        <label>Message *</label>
+        <textarea name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-gold">Submit</button>
+      <p id="gb-status" style="margin-top:0.75rem;font-size:0.9rem"></p>
+    </form>
+  </div>
+
+  <div id="gb-entries" style="margin-top:3rem">
+    <h2 class="section-title" style="margin-bottom:1.5rem">Entries</h2>
+    <div id="gb-list"><p style="color:#7a6a50">Loading entries…</p></div>
+    <div id="gb-pagination" style="margin-top:1.5rem;display:flex;gap:0.5rem"></div>
+  </div>
+</div>
+
+<style>
+.gb-form-wrap { background:#fff; border:1px solid #e8e0cc; border-radius:8px; padding:1.5rem 2rem; max-width:600px; }
+.gb-field { margin-bottom:1rem; }
+.gb-field label { display:block; font-size:0.88rem; font-weight:600; margin-bottom:0.3rem; color:#3a2e1e; }
+.gb-field input, .gb-field textarea { width:100%; border:1px solid #c8bfa0; border-radius:4px; padding:0.45rem 0.7rem; font-family:'DM Sans',sans-serif; font-size:0.9rem; background:#FDFAF4; }
+.gb-field input:focus, .gb-field textarea:focus { outline:none; border-color:#8B6914; }
+.gb-hint { font-weight:400; color:#7a6a50; }
+.gb-entry { background:#fff; border:1px solid #e8e0cc; border-radius:8px; padding:1.25rem 1.5rem; margin-bottom:1rem; }
+.gb-entry-meta { font-size:0.8rem; color:#7a6a50; margin-bottom:0.5rem; }
+.gb-entry-msg { font-family:'Crimson Pro',serif; font-size:1.05rem; line-height:1.7; color:#1C1410; white-space:pre-wrap; }
+.gb-reply { background:#f5edda; border-left:3px solid #8B6914; padding:0.75rem 1rem; margin-top:0.75rem; border-radius:0 4px 4px 0; font-size:0.9rem; }
+.gb-reply-label { font-size:0.78rem; font-weight:600; color:#8B6914; margin-bottom:0.25rem; }
+</style>
+
+<script>
+const API = "https://prapatti-guestbook.sumedharaghu.workers.dev";
+let currentPage = 1;
+
+async function loadEntries(page) {
+  currentPage = page;
+  const res = await fetch(`${API}/entries?page=${page}`);
+  const data = await res.json();
+  const list = document.getElementById('gb-list');
+  const pag = document.getElementById('gb-pagination');
+
+  if (!data.entries.length) { list.innerHTML = '<p style="color:#7a6a50">No entries yet.</p>'; return; }
+
+  list.innerHTML = data.entries.map(e => `
+    <div class="gb-entry">
+      <div class="gb-entry-meta">
+        <strong>${escHtml(e.author)}</strong>
+        ${e.location ? ' · ' + escHtml(e.location) : ''}
+        · ${e.timestamp}
+      </div>
+      <div class="gb-entry-msg">${escHtml(e.message)}</div>
+      ${e.reply ? `<div class="gb-reply"><div class="gb-reply-label">Reply from Ayyampet Rajagopalan</div>${escHtml(e.reply)}</div>` : ''}
+    </div>
+  `).join('');
+
+  const pages = Math.ceil(data.total / data.limit);
+  pag.innerHTML = Array.from({length: pages}, (_, i) => i + 1).map(p =>
+    `<button onclick="loadEntries(${p})" class="btn ${p === page ? 'btn-gold' : 'btn-outline'}" style="padding:0.3rem 0.7rem;font-size:0.82rem">${p}</button>`
+  ).join('');
+}
+
+function escHtml(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+document.getElementById('gb-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const status = document.getElementById('gb-status');
+  const fd = new FormData(this);
+  const body = { author: fd.get('author'), email: fd.get('email'), location: fd.get('location'), message: fd.get('message'), honeypot: fd.get('honeypot') };
+  status.textContent = 'Submitting…';
+  try {
+    const res = await fetch(`${API}/submit`, { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(body) });
+    const data = await res.json();
+    if (data.ok) { this.reset(); status.style.color = '#2a6a2a'; status.textContent = 'Thank you! Your entry will appear after review.'; }
+    else { status.style.color = '#8B1914'; status.textContent = data.error || 'Error submitting.'; }
+  } catch { status.style.color = '#8B1914'; status.textContent = 'Network error. Please try again.'; }
+});
+
+loadEntries(1);
+</script>
+{{ end }}

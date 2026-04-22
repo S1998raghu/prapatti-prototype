@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="container page-content">
+  <h1 class="page-title">Stotras by Author</h1>
+  <div class="categories-grid">
+    {{ range site.Data.authors_index }}
+    <a href="/authors/{{ .slug }}/" class="category-card">
+      <h3>{{ .name }}</h3>
+      <span class="count">{{ .count }} stotra{{ if gt .count 1 }}s{{ end }}</span>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

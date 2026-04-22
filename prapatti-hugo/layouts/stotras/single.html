@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="container page-content">
+  <h1 class="page-title">Stotras by Category</h1>
+  <div class="categories-grid">
+    {{ range site.Data.categories_index }}
+    <a href="/categories/{{ .slug }}/" class="category-card">
+      <h3>{{ .title }}</h3>
+      <span class="count">{{ .count }} stotras</span>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

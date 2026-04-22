@@ -1,0 +1,568 @@
+/* Prapatti Online — Design System
+   Palette: Cream #FDFAF4 | Ink #1C1410 | Gold #8B6914
+   Fonts: Crimson Pro (serif) + DM Sans (sans)
+*/
+
+/* ── Reset & Base ─────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  background: #FDFAF4;
+  color: #1C1410;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a { color: #8B6914; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { max-width: 100%; height: auto; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ── Topbar ───────────────────────────────────────────── */
+.topbar {
+  background: #1C1410;
+  color: #FDFAF4;
+  text-align: center;
+  padding: 0.4rem 1rem;
+  font-family: 'Crimson Pro', serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
+/* ── Nav ──────────────────────────────────────────────── */
+.navbar, .nav-bar {
+  background: #FDFAF4;
+  border-bottom: 1px solid #e8e0cc;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0.6rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.nav-emblem {
+  width: 28px;
+  height: 28px;
+  color: #8B6914;
+  flex-shrink: 0;
+}
+
+.nav-emblem svg {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.nav-subtitle {
+  font-size: 0.7rem;
+  color: #7a6a50;
+}
+
+.nav-title {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1C1410;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.nav-link {
+  color: #1C1410;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background 0.15s;
+}
+
+.nav-link:hover, .nav-link.active {
+  background: #f0e8d0;
+  color: #8B6914;
+  text-decoration: none;
+}
+
+.nav-search {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-search input {
+  border: 1px solid #c8bfa0;
+  border-radius: 4px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.85rem;
+  background: #fff;
+  width: 200px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.nav-search input:focus {
+  outline: none;
+  border-color: #8B6914;
+}
+
+/* ── Hero ─────────────────────────────────────────────── */
+.hero {
+  background: linear-gradient(135deg, #f5edda 0%, #FDFAF4 100%);
+  border-bottom: 1px solid #e8e0cc;
+  padding: 3rem 0 2.5rem;
+  text-align: center;
+}
+
+.hero-shloka {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.5rem;
+  color: #8B6914;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.hero-title {
+  font-family: 'Crimson Pro', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1C1410;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  color: #5a4a35;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.script-selector {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.script-btn {
+  background: none;
+  border: 1px solid #c8bfa0;
+  border-radius: 20px;
+  padding: 0.25rem 0.8rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: #5a4a35;
+  transition: all 0.15s;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.script-btn:hover, .script-btn.active {
+  background: #8B6914;
+  border-color: #8B6914;
+  color: #fff;
+}
+
+/* ── Event Banner ─────────────────────────────────────── */
+.event-banner {
+  background: #8B1914;
+  color: #fff;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+}
+
+.event-banner a { color: #ffd580; }
+.event-banner a:hover { color: #fff; }
+
+/* ── Welcome Strip ────────────────────────────────────── */
+.welcome-strip {
+  padding: 2rem 0;
+  border-bottom: 1px solid #e8e0cc;
+}
+
+.welcome-strip p {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.1rem;
+  color: #3a2e1e;
+  line-height: 1.8;
+}
+
+/* ── Section Headings ─────────────────────────────────── */
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.section-title {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1C1410;
+}
+
+.section-link {
+  font-size: 0.85rem;
+  color: #8B6914;
+}
+
+/* ── Major Works Grid ─────────────────────────────────── */
+.works-section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #e8e0cc;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.work-card {
+  background: #fff;
+  border: 1px solid #e8e0cc;
+  border-radius: 8px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  color: #1C1410;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  display: block;
+}
+
+.work-card:hover {
+  box-shadow: 0 4px 16px rgba(139,105,20,0.12);
+  border-color: #8B6914;
+  text-decoration: none;
+}
+
+.work-icon {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.8rem;
+  color: #8B6914;
+  margin-bottom: 0.5rem;
+}
+
+.work-name {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.work-author {
+  font-size: 0.78rem;
+  color: #7a6a50;
+  margin-bottom: 0.5rem;
+}
+
+.work-scripts {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  flex-wrap: wrap;
+}
+
+.script-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #e8e0cc;
+  display: inline-block;
+}
+
+.script-dot.has { background: #8B6914; }
+
+/* ── Updates Table ────────────────────────────────────── */
+.updates-section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #e8e0cc;
+}
+
+.table-responsive { overflow-x: auto; }
+
+.updates-table, .stotra-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.updates-table th, .stotra-table th {
+  background: #f0e8d0;
+  color: #1C1410;
+  font-weight: 600;
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  border-bottom: 2px solid #c8bfa0;
+  white-space: nowrap;
+}
+
+.updates-table td, .stotra-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #ede5d0;
+  vertical-align: middle;
+}
+
+.updates-table tr:hover td, .stotra-table tr:hover td {
+  background: #faf5e8;
+}
+
+.update-date { color: #7a6a50; white-space: nowrap; font-size: 0.82rem; }
+.update-desc { color: #1C1410; }
+
+.script-cell { text-align: center; padding: 0.4rem 0.3rem; }
+
+.script-link {
+  color: #8B6914;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 3px;
+  transition: background 0.15s;
+}
+
+.script-link:hover {
+  background: #f0e8d0;
+  text-decoration: none;
+}
+
+.script-th {
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.3rem;
+}
+
+/* ── Page Content ─────────────────────────────────────── */
+.page-content {
+  padding: 2.5rem 0 4rem;
+}
+
+.page-title {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1C1410;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e8e0cc;
+}
+
+/* ── Guestbook Strip ──────────────────────────────────── */
+.guestbook-strip {
+  background: #f5edda;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #e8e0cc;
+  text-align: center;
+}
+
+.guestbook-strip blockquote {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #3a2e1e;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Donate Strip ─────────────────────────────────────── */
+.donate-strip {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #e8e0cc;
+  text-align: center;
+}
+
+.donate-strip h2 {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.donate-strip p {
+  color: #5a4a35;
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+.donate-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.55rem 1.4rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: all 0.15s;
+  border: none;
+}
+
+.btn-gold {
+  background: #8B6914;
+  color: #fff;
+}
+
+.btn-gold:hover {
+  background: #7a5c10;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-outline {
+  background: none;
+  border: 1px solid #8B6914;
+  color: #8B6914;
+}
+
+.btn-outline:hover {
+  background: #8B6914;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ── Footer ───────────────────────────────────────────── */
+.footer {
+  background: #1C1410;
+  color: #c8bfa0;
+  padding: 2rem 0;
+  font-size: 0.85rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #c8bfa0;
+  font-size: 0.85rem;
+}
+
+.footer-links a:hover { color: #fff; }
+
+.footer-copy { color: #8a7a60; font-size: 0.8rem; }
+
+/* ── Category / Stotras Pages ─────────────────────────── */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.category-card {
+  background: #fff;
+  border: 1px solid #e8e0cc;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  display: block;
+  color: #1C1410;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.category-card:hover {
+  box-shadow: 0 3px 12px rgba(139,105,20,0.1);
+  border-color: #8B6914;
+  text-decoration: none;
+}
+
+.category-card h3 {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.category-card .count {
+  font-size: 0.78rem;
+  color: #7a6a50;
+}
+
+/* ── Mobile Nav Toggle ────────────────────────────────── */
+.nav-mobile-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto;
+}
+
+.nav-mobile-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #1C1410;
+  border-radius: 2px;
+}
+
+/* ── Search Results ───────────────────────────────────── */
+.search-results { margin-top: 0.5rem; }
+
+.search-highlight { background: #fde68a; border-radius: 2px; padding: 0 2px; }
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 900px) {
+  .works-grid { grid-template-columns: repeat(2, 1fr); }
+  .categories-grid { grid-template-columns: repeat(2, 1fr); }
+  .nav-search input { width: 150px; }
+}
+
+@media (max-width: 680px) {
+  .works-grid { grid-template-columns: repeat(2, 1fr); }
+  .categories-grid { grid-template-columns: 1fr; }
+  .hero-title { font-size: 1.6rem; }
+  .hero-shloka { font-size: 1.2rem; }
+  .navbar .container { gap: 0.75rem; }
+  .nav-links { gap: 0; }
+  .nav-link { padding: 0.3rem 0.4rem; font-size: 0.82rem; }
+  .nav-search { display: none; }
+  .footer-inner { flex-direction: column; text-align: center; }
+  .section-head { flex-direction: column; gap: 0.25rem; }
+  .updates-table, .stotra-table { font-size: 0.8rem; }
+}

@@ -1,0 +1,62 @@
+{{ define "main" }}
+<div class="container page-content">
+  <h1 class="page-title">Resources</h1>
+
+  <div class="section-head" style="margin-top:2rem">
+    <h2 class="section-title">Articles &amp; E-Books</h2>
+  </div>
+  <table class="stotra-table">
+    <thead>
+      <tr><th>Title</th><th>Author</th><th style="width:60px">Download</th></tr>
+    </thead>
+    <tbody>
+      {{ range site.Data.articles }}
+      <tr>
+        <td>{{ .title }}</td>
+        <td>{{ .author }}</td>
+        <td class="script-cell">
+          <a href="{{ .url }}" target="_blank" class="script-link" title="{{ .type | upper }}">
+            {{ if eq .type "pdf" }}
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <path d="M4 2h6l4 4v8H4V2z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+              <path d="M10 2v4h4" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+            {{ else }}
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <path d="M2 2h9l3 3v9H2V2z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+              <path d="M11 2v4h3" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M5 8h6M5 11h4" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+            {{ end }}
+          </a>
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+
+  <div class="section-head" style="margin-top:3rem">
+    <h2 class="section-title">Announcements</h2>
+  </div>
+  <table class="stotra-table">
+    <thead>
+      <tr><th>Title</th><th style="width:60px">Download</th></tr>
+    </thead>
+    <tbody>
+      {{ range site.Data.announcements }}
+      <tr>
+        <td>{{ .title }}</td>
+        <td class="script-cell">
+          <a href="{{ .url }}" target="_blank" class="script-link" title="PDF">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <path d="M4 2h6l4 4v8H4V2z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+              <path d="M10 2v4h4" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+          </a>
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+{{ end }}

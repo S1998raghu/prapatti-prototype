@@ -1,0 +1,10 @@
+[
+  {"name": "4000 Divya Prabandham", "author": "Āzhvārs", "url": "/categories/divyaprabandham", "scripts": ["roman","kannada","bengali","malayalam","devanagari","telugu","tamil","grantha"]},
+  {"name": "Bhagavad Gītā", "author": "Lord Krishna · 18 chapters", "url": "/categories/bhagavad-giita", "scripts": ["roman","kannada","bengali","malayalam","devanagari","telugu","tamil","grantha"]},
+  {"name": "Desika Stotramaala", "author": "Vedānta Deśika", "url": "/categories/vedantadesikasstotramaala", "scripts": ["roman","kannada","bengali","malayalam","devanagari","telugu","tamil","grantha"]},
+  {"name": "Pādukā Sahasram", "author": "Vedānta Deśika · 1000 verses", "url": "/categories/paadukaasahasram", "scripts": ["roman","kannada","bengali","malayalam","devanagari","telugu","tamil","grantha"]},
+  {"name": "Vālmīki Rāmāyanam", "author": "Vālmīki · 6 kāndas", "url": "/categories/valmikiramayanam", "scripts": ["roman","kannada","malayalam","devanagari","telugu","tamil"]},
+  {"name": "Vishnu Sahasranāmam", "author": "Vyāsa · Mahābhārata", "url": "/categories/sahasranaamastotrams", "scripts": ["roman","kannada","bengali","malayalam","devanagari","telugu","tamil","grantha"]},
+  {"name": "Nārāyanīyam", "author": "Melputtūr Nārāyana Bhattatiri", "url": "/categories/naaraayaniiyam", "scripts": ["roman","kannada","bengali","malayalam","devanagari","telugu","tamil","grantha"]},
+  {"name": "Sriimad Bhāgavatam", "author": "Veda Vyāsa", "url": "/categories/bhaagavatam", "scripts": ["roman","kannada","bengali","malayalam","devanagari","telugu","tamil","grantha"]}
+]

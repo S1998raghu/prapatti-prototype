@@ -1,0 +1,146 @@
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Charama Shloka · Bhagavad Gita 18.66</div>
+    <div class="hero-shloka">सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज</div>
+    <div class="hero-shloka-roman">sarva-dharmān parityajya mām ekaṁ śharaṇaṁ vraja</div>
+    <div class="script-selector">
+      <span class="script-label">Read in:</span>
+      {{ range slice "Roman" "தமிழ்" "తెలుగు" "ಕನ್ನಡ" "മലയാളം" "বাংলা" "देवनागरी" "Grantha" }}
+      <button class="script-pill" data-script="{{ . }}">{{ . }}</button>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Special Event Banner -->
+{{ with site.Data.special_event }}
+  {{ if .active }}
+  <div class="event-banner">
+    <div class="event-banner-inner">
+      <span class="event-icon">☸</span>
+      <div class="event-text">
+        <strong>{{ .title }}</strong>
+      </div>
+      <a href="{{ .url }}" class="event-btn">Go to Collection →</a>
+    </div>
+  </div>
+  {{ end }}
+{{ end }}
+
+<!-- Welcome -->
+<section class="welcome-strip">
+  <div class="container">
+    <p>Prapatti Online is a humble initiative to present stotra malas adorned with pearls of bhakti, brought to the surface of the ocean of Sri Vaishnavism, by our āzhvārs and āchāryas.</p>
+  </div>
+</section>
+
+<!-- Major Works -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Major Works</h2>
+      <a href="/stotras/by-category/" class="section-link">View all categories →</a>
+    </div>
+    <div class="works-grid">
+      {{ range site.Data.major_works }}
+      {{ $work := . }}
+      <a href="{{ .url }}" class="work-card">
+        <div class="work-icon">॥</div>
+        <div class="work-name">{{ .name }}</div>
+        <div class="work-author">{{ .author }}</div>
+        <div class="work-scripts">
+          {{ $allScripts := slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
+          {{ range $allScripts }}
+          <span class="script-dot {{ if in $work.scripts . }}has{{ end }}" title="{{ . }}"></span>
+          {{ end }}
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Latest Updates -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Latest Updates</h2>
+    </div>
+    <div class="updates-table-wrap">
+      <table class="updates-table" id="updates-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Ro</th>
+            <th>Kn</th>
+            <th>Bn</th>
+            <th>Ml</th>
+            <th>De</th>
+            <th>Te</th>
+            <th>Ta</th>
+            <th>Gr</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range site.Data.updates }}
+          {{ $update := . }}
+          <tr>
+            <td class="update-date" nowrap>{{ .date }}</td>
+            <td class="update-desc">{{ .description }}</td>
+            {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
+              {{ $script := . }}
+              {{ $link := index $update.links $script }}
+              <td class="script-cell">
+                {{ if $link }}
+                <a href="{{ $link }}" target="_blank" class="script-link" title="{{ $script }}">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 2h6l4 4v8H4V2z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+                    <path d="M10 2v4h4" stroke="currentColor" stroke-width="1.2"/>
+                  </svg>
+                </a>
+                {{ end }}
+              </td>
+            {{ end }}
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Guestbook Preview -->
+<section class="guestbook-strip">
+  <div class="container">
+    <div class="guestbook-inner">
+      <div class="guestbook-quote">
+        <p>"This website is a treasure. One can imagine how much effort has gone into it, especially considering the almost nil errors. Periya Kainkaryam."</p>
+        <span class="guestbook-attr">— Srinivasa Raghava Dasan, Chennai</span>
+      </div>
+      <a href="/guestbook/" class="guestbook-btn">Write to us →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Donate Strip -->
+<section class="donate-strip">
+  <div class="container">
+    <div class="donate-inner">
+      <div class="donate-text">
+        <h3>Support this Seva</h3>
+        <p>This archive is free, always. Your contribution helps preserve it.</p>
+      </div>
+      <div class="donate-btns">
+        <a href="/donate/#upi" class="donate-btn donate-upi">UPI · India</a>
+        <a href="/donate/#international" class="donate-btn donate-intl">International · Stripe</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

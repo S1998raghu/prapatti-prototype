@@ -1,0 +1,13 @@
+baseURL = "https://beta.prapatti.com/"
+languageCode = "en-us"
+title = "Prapatti Online"
+
+[params]
+  description = "Prapatti Online - Srivaishnava Sampradhayam Stotras"
+  keywords = "Prapatti, Stotras, Slokas, Srivaishnava, Ramanuja, Desika"
+  email = "contact@prapatti.com"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

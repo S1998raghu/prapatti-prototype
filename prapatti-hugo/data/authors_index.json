@@ -1,0 +1,607 @@
+[
+  {
+    "name": "Aalwars",
+    "slug": "aalwars",
+    "count": 4
+  },
+  {
+    "name": "Aandaal",
+    "slug": "aandaal",
+    "count": 2
+  },
+  {
+    "name": "Agastya (Ashtottarashata Naamaavali)",
+    "slug": "agastya-ashtottarashata-naamaavali",
+    "count": 1
+  },
+  {
+    "name": "Ahobila Matam",
+    "slug": "ahobila-matam",
+    "count": 1
+  },
+  {
+    "name": "Amaasatram Seshaadryaacharya",
+    "slug": "amaasatram-seshaadryaacharya",
+    "count": 1
+  },
+  {
+    "name": "Andal",
+    "slug": "andal",
+    "count": 16
+  },
+  {
+    "name": "Ashtottarashata \nNaamaavali",
+    "slug": "ashtottarashata-naamaavali",
+    "count": 1
+  },
+  {
+    "name": "Ashtottarashata Naama Stotram",
+    "slug": "ashtottarashata-naama-stotram",
+    "count": 3
+  },
+  {
+    "name": "Ashtottarashata Naamaavali",
+    "slug": "ashtottarashata-naamaavali",
+    "count": 30
+  },
+  {
+    "name": "Ashtottarashata Naamaavali (Aandhrapuurna)",
+    "slug": "ashtottarashata-naamaavali-aandhrapuurna",
+    "count": 1
+  },
+  {
+    "name": "Ashtottarashata Naamaavali (Lakshmii Tantram)",
+    "slug": "ashtottarashata-naamaavali-lakshmii-tantram",
+    "count": 1
+  },
+  {
+    "name": "Ashtottarashata Naamaavalii",
+    "slug": "ashtottarashata-naamaavalii",
+    "count": 1
+  },
+  {
+    "name": "Ashtottarashatanaama  stotram",
+    "slug": "ashtottarashatanaama-stotram",
+    "count": 1
+  },
+  {
+    "name": "Ashtottarashatanaama stotram",
+    "slug": "ashtottarashatanaama-stotram",
+    "count": 14
+  },
+  {
+    "name": "Ashtottarashatanaama stotram (Aandhrapuurna)",
+    "slug": "ashtottarashatanaama-stotram-aandhrapuurna",
+    "count": 1
+  },
+  {
+    "name": "Ashtottarashatanaama stotram (Venkatesha Maahaatmyam)",
+    "slug": "ashtottarashatanaama-stotram-venkatesha-maahaatmyam",
+    "count": 1
+  },
+  {
+    "name": "Attipattu Sriimad Azagiya Shingar (Ahobila Matam)",
+    "slug": "attipattu-sriimad-azagiya-shingar-ahobila-matam",
+    "count": 1
+  },
+  {
+    "name": "Bhiishma\n(Sahasranaamam)",
+    "slug": "bhiishma-sahasranaamam",
+    "count": 1
+  },
+  {
+    "name": "Bhuudattazvaar",
+    "slug": "bhuudattazvaar",
+    "count": 1
+  },
+  {
+    "name": "Gopalarya Mahadesikan",
+    "slug": "gopalarya-mahadesikan",
+    "count": 3
+  },
+  {
+    "name": "H.H. Srii Sriinivaasa Raamaanuja Mahaadesikan \n                      (Mysore Andavan)",
+    "slug": "h-h-srii-sriinivaasa-raamaanuja-mahaadesikan-mysore-andavan",
+    "count": 1
+  },
+  {
+    "name": "H.H. Srii Sriinivaasa Raamaanuja Mahaadesikan  (Mysore Andavan)",
+    "slug": "h-h-srii-sriinivaasa-raamaanuja-mahaadesikan-mysore-andavan",
+    "count": 15
+  },
+  {
+    "name": "Kulashekharaazvaar",
+    "slug": "kulashekharaazvaar",
+    "count": 12
+  },
+  {
+    "name": "Kumaara \n                          Varadaachaarya\n                          (Desika Prabandham)",
+    "slug": "kumaara-varadaachaarya-desika-prabandham",
+    "count": 1
+  },
+  {
+    "name": "Kumaara \n                          Varadaachaarya\n                          (Desika Stotramaalaa)",
+    "slug": "kumaara-varadaachaarya-desika-stotramaalaa",
+    "count": 1
+  },
+  {
+    "name": "Kumaara Varadaachaarya\n(Desika Prabandham)",
+    "slug": "kumaara-varadaachaarya-desika-prabandham",
+    "count": 1
+  },
+  {
+    "name": "Kumaara Varadaachaarya\n(Desika Stotramaalaa)",
+    "slug": "kumaara-varadaachaarya-desika-stotramaalaa",
+    "count": 2
+  },
+  {
+    "name": "Kuuresha",
+    "slug": "kuuresha",
+    "count": 6
+  },
+  {
+    "name": "Lord Krishna",
+    "slug": "lord-krishna",
+    "count": 45
+  },
+  {
+    "name": "Madhurakaviyaazvaar",
+    "slug": "madhurakaviyaazvaar",
+    "count": 3
+  },
+  {
+    "name": "Nammaazvaar",
+    "slug": "nammaazvaar",
+    "count": 125
+  },
+  {
+    "name": "Nammaazvaar(Tiruvaaymozi - 9.1)",
+    "slug": "nammaazvaar-tiruvaaymozi-9-1",
+    "count": 1
+  },
+  {
+    "name": "Nammaazvaar(Tiruvaaymozi - 9.10)",
+    "slug": "nammaazvaar-tiruvaaymozi-9-10",
+    "count": 1
+  },
+  {
+    "name": "Nammaazvaar(Tiruvaaymozi - 9.2)",
+    "slug": "nammaazvaar-tiruvaaymozi-9-2",
+    "count": 1
+  },
+  {
+    "name": "Nammaazvaar(Tiruvaaymozi - 9.3)",
+    "slug": "nammaazvaar-tiruvaaymozi-9-3",
+    "count": 1
+  },
+  {
+    "name": "Nammaazvaar(Tiruvaaymozi - 9.4)",
+    "slug": "nammaazvaar-tiruvaaymozi-9-4",
+    "count": 1
+  },
+  {
+    "name": "Nammaazvaar(Tiruvaaymozi - 9.5)",
+    "slug": "nammaazvaar-tiruvaaymozi-9-5",
+    "count": 1
+  },
+  {
+    "name": "Nammaazvaar(Tiruvaaymozi - 9.6)",
+    "slug": "nammaazvaar-tiruvaaymozi-9-6",
+    "count": 1
+  },
+  {
+    "name": "Nammaazvaar(Tiruvaaymozi - 9.7)",
+    "slug": "nammaazvaar-tiruvaaymozi-9-7",
+    "count": 1
+  },
+  {
+    "name": "Nammaazvaar(Tiruvaaymozi - 9.8)",
+    "slug": "nammaazvaar-tiruvaaymozi-9-8",
+    "count": 1
+  },
+  {
+    "name": "Nammaazvaar(Tiruvaaymozi - 9.9)",
+    "slug": "nammaazvaar-tiruvaaymozi-9-9",
+    "count": 1
+  },
+  {
+    "name": "Nammaazvaar(Tiruvaaymozi)",
+    "slug": "nammaazvaar-tiruvaaymozi",
+    "count": 1
+  },
+  {
+    "name": "Narayana Bhattatiri",
+    "slug": "narayana-bhattatiri",
+    "count": 101
+  },
+  {
+    "name": "Padma Purana",
+    "slug": "padma-purana",
+    "count": 7
+  },
+  {
+    "name": "Periyaazvaar",
+    "slug": "periyaazvaar",
+    "count": 2
+  },
+  {
+    "name": "Periyazhvar",
+    "slug": "periyazhvar",
+    "count": 49
+  },
+  {
+    "name": "Periyazhvar (Periyaazvaar Tirumozi- 1.1)",
+    "slug": "periyazhvar-periyaazvaar-tirumozi-1-1",
+    "count": 1
+  },
+  {
+    "name": "Peyazvaar",
+    "slug": "peyazvaar",
+    "count": 1
+  },
+  {
+    "name": "Poygaiyazvaar",
+    "slug": "poygaiyazvaar",
+    "count": 1
+  },
+  {
+    "name": "Sahasra\n                           Naamaavali",
+    "slug": "sahasra-naamaavali",
+    "count": 2
+  },
+  {
+    "name": "Sahasra Naamaavali",
+    "slug": "sahasra-naamaavali",
+    "count": 4
+  },
+  {
+    "name": "Sahasranaamam",
+    "slug": "sahasranaamam",
+    "count": 9
+  },
+  {
+    "name": "Sahasranaamam\n(Paraashara Bhattar)",
+    "slug": "sahasranaamam-paraashara-bhattar",
+    "count": 1
+  },
+  {
+    "name": "Sahasranaamam \n\n(Skanda Puraana)",
+    "slug": "sahasranaamam-skanda-puraana",
+    "count": 1
+  },
+  {
+    "name": "Sahasranaamam  (Bhiishma)",
+    "slug": "sahasranaamam-bhiishma",
+    "count": 1
+  },
+  {
+    "name": "Sahasranaamam  (Garuda Puranam)",
+    "slug": "sahasranaamam-garuda-puranam",
+    "count": 1
+  },
+  {
+    "name": "Sahasranaamam  (Naarada)",
+    "slug": "sahasranaamam-naarada",
+    "count": 1
+  },
+  {
+    "name": "Sahasranaamam(Lord Sri Rama)",
+    "slug": "sahasranaamam-lord-sri-rama",
+    "count": 1
+  },
+  {
+    "name": "Shiva (Ashtottarashatanaama stotram)",
+    "slug": "shiva-ashtottarashatanaama-stotram",
+    "count": 1
+  },
+  {
+    "name": "Sri Kannapura Nayaki sametha Sri Sowriraja Perumal",
+    "slug": "sri-kannapura-nayaki-sametha-sri-sowriraja-perumal",
+    "count": 1
+  },
+  {
+    "name": "Sri Komalavalli Thayar sametha Sri Sarngapani Perumal",
+    "slug": "sri-komalavalli-thayar-sametha-sri-sarngapani-perumal",
+    "count": 1
+  },
+  {
+    "name": "Sri Nrisimha Raghavachar",
+    "slug": "sri-nrisimha-raghavachar",
+    "count": 3
+  },
+  {
+    "name": "Srii Rangaraamaanuja Mahaadesikan (Sriimushnam Andavan)",
+    "slug": "srii-rangaraamaanuja-mahaadesikan-sriimushnam-andavan",
+    "count": 2
+  },
+  {
+    "name": "Sriinivaasa Raamaanuja Mahaadeshikan (Myosre Andavan)",
+    "slug": "sriinivaasa-raamaanuja-mahaadeshikan-myosre-andavan",
+    "count": 2
+  },
+  {
+    "name": "Sriinivaasa Raamaanuja Mahaadesikan (Myosre Andavan)",
+    "slug": "sriinivaasa-raamaanuja-mahaadesikan-myosre-andavan",
+    "count": 6
+  },
+  {
+    "name": "Sriivanshatakopa Sriimannaaraayana Yatiindra Mahaadeshikan\n(Ahobila Matam)",
+    "slug": "sriivanshatakopa-sriimannaaraayana-yatiindra-mahaadeshikan-ahobila-matam",
+    "count": 1
+  },
+  {
+    "name": "Sriivanshatakopa Sriiparaankusha Yatiindra Mahaadeshikan\n(Ahobila Matam)",
+    "slug": "sriivanshatakopa-sriiparaankusha-yatiindra-mahaadeshikan-ahobila-matam",
+    "count": 2
+  },
+  {
+    "name": "Sriivanshatakopa Sriisriinivaasanigamaanta Yatiindra Mahaadeshikan\n(Ahobila Matam)",
+    "slug": "sriivanshatakopa-sriisriinivaasanigamaanta-yatiindra-mahaadeshikan-ahobila-matam",
+    "count": 1
+  },
+  {
+    "name": "Sriivanshatakopa Vedaantadeshika Yatiindra Mahaadeshikan\n(Ahobila Matam)",
+    "slug": "sriivanshatakopa-vedaantadeshika-yatiindra-mahaadeshikan-ahobila-matam",
+    "count": 1
+  },
+  {
+    "name": "Swami Raamaanuja",
+    "slug": "swami-raamaanuja",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar",
+    "slug": "tirumangaiyaazvaar",
+    "count": 142
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 8.10 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-8-10",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 8.2 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-8-2",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 8.3)",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-8-3",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 8.4)",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-8-4",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 8.5 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-8-5",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 8.6 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-8-6",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 8.7 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-8-7",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 8.8 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-8-8",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 8.9 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-8-9",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 9.1 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-9-1",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 9.10 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-9-10",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 9.2 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-9-2",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 9.3 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-9-3",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 9.4 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-9-4",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 9.5 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-9-5",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 9.6 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-9-6",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 9.7 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-9-7",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 9.8 )",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-9-8",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi - 9.9)",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi-9-9",
+    "count": 1
+  },
+  {
+    "name": "Tirumangaiyaazvaar(Periya Tirumozi)",
+    "slug": "tirumangaiyaazvaar-periya-tirumozi",
+    "count": 1
+  },
+  {
+    "name": "Tirumayishaiyaazvaar",
+    "slug": "tirumayishaiyaazvaar",
+    "count": 2
+  },
+  {
+    "name": "Tiruppaanaazvaar",
+    "slug": "tiruppaanaazvaar",
+    "count": 2
+  },
+  {
+    "name": "Tiruvaali Narasimhan",
+    "slug": "tiruvaali-narasimhan",
+    "count": 1
+  },
+  {
+    "name": "Tiruvarangattamudanaar",
+    "slug": "tiruvarangattamudanaar",
+    "count": 1
+  },
+  {
+    "name": "Tondaradippodiyaazvaar",
+    "slug": "tondaradippodiyaazvaar",
+    "count": 3
+  },
+  {
+    "name": "Unknown",
+    "slug": "unknown",
+    "count": 12
+  },
+  {
+    "name": "Vaalmiiki",
+    "slug": "vaalmiiki",
+    "count": 541
+  },
+  {
+    "name": "Varadachar Swami",
+    "slug": "varadachar-swami",
+    "count": 1
+  },
+  {
+    "name": "Varadavedantacharya",
+    "slug": "varadavedantacharya",
+    "count": 1
+  },
+  {
+    "name": "Various",
+    "slug": "various",
+    "count": 1
+  },
+  {
+    "name": "Various Aalwaars",
+    "slug": "various-aalwaars",
+    "count": 8
+  },
+  {
+    "name": "Various Aalwars",
+    "slug": "various-aalwars",
+    "count": 97
+  },
+  {
+    "name": "Various Aalwars\n    Sri Kanka valli Thayar sametha Sri Vaidhya Veeraraghava Perumal",
+    "slug": "various-aalwars-sri-kanka-valli-thayar-sametha-sri-vaidhya-veeraraghava-perumal",
+    "count": 1
+  },
+  {
+    "name": "Vedaanta \n                            Desikan\n                            (Desika Prabandham)",
+    "slug": "vedaanta-desikan-desika-prabandham",
+    "count": 1
+  },
+  {
+    "name": "Vedaanta \n                          Desikan",
+    "slug": "vedaanta-desikan",
+    "count": 1
+  },
+  {
+    "name": "Vedaanta \n                          Desikan\n                          (Desika Prabandham)",
+    "slug": "vedaanta-desikan-desika-prabandham",
+    "count": 18
+  },
+  {
+    "name": "Vedaanta \n                          Desikan\n                          (Desika Stotramaalaa)",
+    "slug": "vedaanta-desikan-desika-stotramaalaa",
+    "count": 29
+  },
+  {
+    "name": "Vedaanta \n                          Desikan \n                          (Desika Prabandham)",
+    "slug": "vedaanta-desikan-desika-prabandham",
+    "count": 1
+  },
+  {
+    "name": "Vedaanta   Desikan\n  (Desika Prabandham)",
+    "slug": "vedaanta-desikan-desika-prabandham",
+    "count": 1
+  },
+  {
+    "name": "Vedaanta Desikan\n(Desika Prabandham)",
+    "slug": "vedaanta-desikan-desika-prabandham",
+    "count": 5
+  },
+  {
+    "name": "Vedaanta Desikan\n(Desika Stotramaalaa)",
+    "slug": "vedaanta-desikan-desika-stotramaalaa",
+    "count": 12
+  },
+  {
+    "name": "Vedaanta Desikan \n(Desika Prabandham)",
+    "slug": "vedaanta-desikan-desika-prabandham",
+    "count": 1
+  },
+  {
+    "name": "Vedaanta Desikan (Desika Prabandham)",
+    "slug": "vedaanta-desikan-desika-prabandham",
+    "count": 1
+  },
+  {
+    "name": "Vedaanta Desikan (Desika Stotramaalaa)",
+    "slug": "vedaanta-desikan-desika-stotramaalaa",
+    "count": 1
+  },
+  {
+    "name": "Vedanta Desika",
+    "slug": "vedanta-desika",
+    "count": 1
+  },
+  {
+    "name": "Vedanta Desikan",
+    "slug": "vedanta-desikan",
+    "count": 61
+  },
+  {
+    "name": "Vedas",
+    "slug": "vedas",
+    "count": 72
+  },
+  {
+    "name": "Venkatadhvari",
+    "slug": "venkatadhvari",
+    "count": 27
+  },
+  {
+    "name": "Vibhiishana",
+    "slug": "vibhiishana",
+    "count": 1
+  },
+  {
+    "name": "Yajur Veda Taittiriiya Aaranyakam",
+    "slug": "yajur-veda-taittiriiya-aaranyakam",
+    "count": 1
+  }
+]

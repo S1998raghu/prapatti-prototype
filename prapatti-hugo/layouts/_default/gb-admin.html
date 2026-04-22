@@ -1,0 +1,106 @@
+{{ define "main" }}
+<div class="container page-content">
+  <h1 class="page-title">Guestbook Admin</h1>
+
+  <div id="login-wrap" style="max-width:360px">
+    <div class="gb-field"><label>Password</label><input type="password" id="admin-pw"></div>
+    <button class="btn btn-gold" onclick="loadAdmin()">Login</button>
+    <p id="login-err" style="color:#8B1914;font-size:0.88rem;margin-top:0.5rem"></p>
+  </div>
+
+  <div id="admin-wrap" style="display:none">
+    <div style="display:flex;gap:1rem;margin-bottom:1.5rem;flex-wrap:wrap">
+      <button class="btn btn-outline" onclick="filterEntries('pending')">Pending</button>
+      <button class="btn btn-outline" onclick="filterEntries('approved')">Approved</button>
+      <button class="btn btn-outline" onclick="filterEntries('all')">All</button>
+    </div>
+    <div id="admin-list"></div>
+  </div>
+</div>
+
+<style>
+.admin-entry { background:#fff; border:1px solid #e8e0cc; border-radius:8px; padding:1.25rem 1.5rem; margin-bottom:1rem; }
+.admin-entry-meta { font-size:0.8rem; color:#7a6a50; margin-bottom:0.5rem; }
+.admin-entry-msg { font-family:'Crimson Pro',serif; font-size:1rem; line-height:1.7; margin-bottom:0.75rem; white-space:pre-wrap; }
+.admin-actions { display:flex; gap:0.5rem; flex-wrap:wrap; align-items:flex-start; }
+.admin-reply-box { width:100%; border:1px solid #c8bfa0; border-radius:4px; padding:0.4rem 0.6rem; font-family:'DM Sans',sans-serif; font-size:0.88rem; margin-bottom:0.4rem; }
+.badge { font-size:0.72rem; padding:0.2rem 0.5rem; border-radius:10px; font-weight:600; }
+.badge-pending { background:#fde68a; color:#7a5c10; }
+.badge-approved { background:#d1fae5; color:#065f46; }
+</style>
+
+<script>
+const API = "https://prapatti-guestbook.sumedharaghu.workers.dev";
+let password = '';
+let allEntries = [];
+let currentFilter = 'pending';
+
+async function loadAdmin() {
+  password = document.getElementById('admin-pw').value;
+  const res = await fetch(`${API}/admin/entries`, { headers: { Authorization: `Bearer ${password}` } });
+  if (res.status === 401) { document.getElementById('login-err').textContent = 'Wrong password.'; return; }
+  allEntries = await res.json();
+  document.getElementById('login-wrap').style.display = 'none';
+  document.getElementById('admin-wrap').style.display = '';
+  filterEntries('pending');
+}
+
+function filterEntries(filter) {
+  currentFilter = filter;
+  const filtered = filter === 'all' ? allEntries
+    : filter === 'pending' ? allEntries.filter(e => !e.approved)
+    : allEntries.filter(e => e.approved);
+  renderEntries(filtered);
+}
+
+function renderEntries(entries) {
+  const list = document.getElementById('admin-list');
+  if (!entries.length) { list.innerHTML = '<p style="color:#7a6a50">No entries.</p>'; return; }
+  list.innerHTML = entries.map(e => `
+    <div class="admin-entry" id="entry-${e.id}">
+      <div class="admin-entry-meta">
+        <span class="badge ${e.approved ? 'badge-approved' : 'badge-pending'}">${e.approved ? 'Approved' : 'Pending'}</span>
+        &nbsp;<strong>${escHtml(e.author)}</strong>
+        ${e.location ? ' · ' + escHtml(e.location) : ''}
+        ${e.email ? ' · ' + escHtml(e.email) : ''}
+        · ${e.timestamp}
+      </div>
+      <div class="admin-entry-msg">${escHtml(e.message)}</div>
+      ${e.reply ? `<div style="background:#f5edda;border-left:3px solid #8B6914;padding:0.5rem 0.75rem;border-radius:0 4px 4px 0;font-size:0.88rem;margin-bottom:0.75rem"><strong>Your reply:</strong> ${escHtml(e.reply)}</div>` : ''}
+      <div class="admin-actions">
+        ${!e.approved ? `<button class="btn btn-gold" style="font-size:0.82rem;padding:0.3rem 0.8rem" onclick="approve(${e.id})">Approve</button>` : ''}
+        <button class="btn btn-outline" style="font-size:0.82rem;padding:0.3rem 0.8rem;color:#8B1914;border-color:#8B1914" onclick="deleteEntry(${e.id})">Delete</button>
+      </div>
+      <div style="margin-top:0.75rem">
+        <textarea class="admin-reply-box" id="reply-${e.id}" rows="2" placeholder="Write a reply…">${escHtml(e.reply || '')}</textarea>
+        <button class="btn btn-outline" style="font-size:0.82rem;padding:0.3rem 0.8rem" onclick="saveReply(${e.id})">Save Reply</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function escHtml(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+async function approve(id) {
+  await fetch(`${API}/admin/approve`, { method:'POST', headers:{ Authorization:`Bearer ${password}`, 'Content-Type':'application/json' }, body: JSON.stringify({id}) });
+  allEntries = allEntries.map(e => e.id === id ? {...e, approved:1} : e);
+  filterEntries(currentFilter);
+}
+
+async function saveReply(id) {
+  const reply = document.getElementById(`reply-${id}`).value.trim();
+  await fetch(`${API}/admin/reply`, { method:'POST', headers:{ Authorization:`Bearer ${password}`, 'Content-Type':'application/json' }, body: JSON.stringify({id, reply}) });
+  allEntries = allEntries.map(e => e.id === id ? {...e, reply} : e);
+  filterEntries(currentFilter);
+}
+
+async function deleteEntry(id) {
+  if (!confirm('Delete this entry?')) return;
+  await fetch(`${API}/admin/delete`, { method:'POST', headers:{ Authorization:`Bearer ${password}`, 'Content-Type':'application/json' }, body: JSON.stringify({id}) });
+  allEntries = allEntries.filter(e => e.id !== id);
+  filterEntries(currentFilter);
+}
+</script>
+{{ end }}

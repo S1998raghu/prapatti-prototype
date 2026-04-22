@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Vedanta Ramanuja Mahadesikan Stotram",
+    "category": "andavanashramam",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/vrmahaadesikanstotram.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/vrmahaadesikanstotram.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/vrmahaadesikanstotram.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/vrmahaadesikanstotram.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/vrmahaadesikanstotram.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/vrmahaadesikanstotram.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/vrmahaadesikanstotram.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/vrmahaadesikanstotram.pdf"
+    }
+  },
+  {
+    "name": "Vedanta Ramanuja Mahadesikan Mangalam",
+    "category": "andavanashramam",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/vrmahaadesikanmangalam.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/vrmahaadesikanmangalam.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/vrmahaadesikanmangalam.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/vrmahaadesikanmangalam.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/vrmahaadesikanmangalam.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/vrmahaadesiknamangalam.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/vrmahaadesikanmangalam.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/vrmahaadesikanmangalam.pdf"
+    }
+  },
+  {
+    "name": "Vedanta Ramanuja Mahadesikan Vazitirunaamam",
+    "category": "andavanashramam",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/vrvaazittirunaamam.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/vrvaazittirunaamam.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/vrvaazittirunaamam.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/vrvaazittirunaamam.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/vrvaazittirunaamam.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/vrvaazittirunaamam.pdf"
+    }
+  }
+]

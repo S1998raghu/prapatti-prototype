@@ -1,0 +1,10 @@
+name = "prapatti-pdf-proxy"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[[r2_buckets]]
+binding = "PRAPATTI_FILES"
+bucket_name = "prapatti-files"
+
+[env.production]
+routes = [{ pattern = "files.prapatti.com/*", zone_name = "prapatti.com" }]
