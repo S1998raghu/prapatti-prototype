@@ -1,4 +1,4 @@
-const ADMIN_PASSWORD = "o0C8KeM6UV0d";
+const ADMIN_PASSWORD = env.ADMIN_PASSWORD;
 const ALLOWED_ORIGINS = ["https://beta.prapatti.com", "https://prapatti.com", "http://localhost:1313"];
 
 function corsOrigin(request) {
