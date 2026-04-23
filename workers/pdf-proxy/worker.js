@@ -3,7 +3,8 @@ export default {
     const url = new URL(request.url);
     const key = url.pathname.slice(1); // strip leading /
 
-    if (!key || !key.startsWith("slokas/")) {
+    const ALLOWED_PREFIXES = ["slokas/", "articles/", "announcements/"];
+    if (!key || !ALLOWED_PREFIXES.some(p => key.startsWith(p))) {
       return new Response("Not found", { status: 404 });
     }
 
