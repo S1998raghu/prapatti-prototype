@@ -27,11 +27,6 @@
     </form>
   </div>
 
-  <div id="gb-entries" style="margin-top:3rem">
-    <h2 class="section-title" style="margin-bottom:1.5rem">Entries</h2>
-    <div id="gb-list"><p style="color:#7a6a50">Loading entries…</p></div>
-    <div id="gb-pagination" style="margin-top:1.5rem;display:flex;gap:0.5rem"></div>
-  </div>
 </div>
 
 <style>
@@ -50,34 +45,6 @@
 
 <script>
 const API = "https://prapatti-guestbook.sumedharaghu.workers.dev";
-let currentPage = 1;
-
-async function loadEntries(page) {
-  currentPage = page;
-  const res = await fetch(`${API}/entries?page=${page}`);
-  const data = await res.json();
-  const list = document.getElementById('gb-list');
-  const pag = document.getElementById('gb-pagination');
-
-  if (!data.entries.length) { list.innerHTML = '<p style="color:#7a6a50">No entries yet.</p>'; return; }
-
-  list.innerHTML = data.entries.map(e => `
-    <div class="gb-entry">
-      <div class="gb-entry-meta">
-        <strong>${escHtml(e.author)}</strong>
-        ${e.location ? ' · ' + escHtml(e.location) : ''}
-        · ${e.timestamp}
-      </div>
-      <div class="gb-entry-msg">${escHtml(e.message)}</div>
-      ${e.reply ? `<div class="gb-reply"><div class="gb-reply-label">Reply from Ayyampet Rajagopalan</div>${escHtml(e.reply)}</div>` : ''}
-    </div>
-  `).join('');
-
-  const pages = Math.ceil(data.total / data.limit);
-  pag.innerHTML = Array.from({length: pages}, (_, i) => i + 1).map(p =>
-    `<button onclick="loadEntries(${p})" class="btn ${p === page ? 'btn-gold' : 'btn-outline'}" style="padding:0.3rem 0.7rem;font-size:0.82rem">${p}</button>`
-  ).join('');
-}
 
 function escHtml(s) {
   return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
@@ -97,6 +64,5 @@ document.getElementById('gb-form').addEventListener('submit', async function(e) 
   } catch { status.style.color = '#8B1914'; status.textContent = 'Network error. Please try again.'; }
 });
 
-loadEntries(1);
 </script>
 {{ end }}

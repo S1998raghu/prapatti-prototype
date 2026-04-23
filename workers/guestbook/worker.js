@@ -1,4 +1,4 @@
-const ALLOWED_ORIGINS = ["https://beta.prapatti.com", "https://prapatti.com", "http://localhost:1313"];
+const ALLOWED_ORIGINS = ["https://beta.prapatti.com", "https://prapatti.com", "http://localhost:1313", "https://prapatti-prototype.pages.dev"];
 
 function corsOrigin(request) {
   const origin = request.headers.get("Origin") || "";
