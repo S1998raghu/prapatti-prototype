@@ -1,20 +1,6 @@
 {{ define "main" }}
 
 <!-- Hero -->
-<section class="hero">
-  <div class="hero-pattern"></div>
-  <div class="hero-content">
-    <div class="hero-tag">Charama Shloka · Bhagavad Gita 18.66</div>
-    <div class="hero-shloka">सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज</div>
-    <div class="hero-shloka-roman">sarva-dharmān parityajya mām ekaṁ śharaṇaṁ vraja</div>
-    <div class="script-selector">
-      <span class="script-label">Read in:</span>
-      {{ range slice "Roman" "தமிழ்" "తెలుగు" "ಕನ್ನಡ" "മലയാളം" "বাংলা" "देवनागरी" "Grantha" }}
-      <button class="script-pill" data-script="{{ . }}">{{ . }}</button>
-      {{ end }}
-    </div>
-  </div>
-</section>
 
 <!-- Special Event Banner -->
 {{ with site.Data.special_event }}
@@ -76,19 +62,18 @@
           <tr>
             <th>Date</th>
             <th>Description</th>
-            <th>Ro</th>
-            <th>Kn</th>
-            <th>Bn</th>
-            <th>Ml</th>
-            <th>De</th>
-            <th>Te</th>
-            <th>Ta</th>
-            <th>Gr</th>
+          {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
+          <th class="script-th" title="{{ . }}">{{ . | title }}</th>
+          {{ end }}
           </tr>
         </thead>
         <tbody>
+          {{ $currentYear := now.Format "2006" }}
           {{ range site.Data.updates }}
           {{ $update := . }}
+          {{ $parts := split .date " " }}
+          {{ $year := index $parts (sub (len $parts) 1) }}
+          {{ if eq $year $currentYear }}
           <tr>
             <td class="update-date" nowrap>{{ .date }}</td>
             <td class="update-desc">{{ .description }}</td>
@@ -108,39 +93,16 @@
             {{ end }}
           </tr>
           {{ end }}
+          {{ end }}
         </tbody>
       </table>
     </div>
   </div>
 </section>
-
-<!-- Guestbook Preview -->
-<section class="guestbook-strip">
-  <div class="container">
-    <div class="guestbook-inner">
-      <div class="guestbook-quote">
-        <p>"This website is a treasure. One can imagine how much effort has gone into it, especially considering the almost nil errors. Periya Kainkaryam."</p>
-        <span class="guestbook-attr">— Srinivasa Raghava Dasan, Chennai</span>
-      </div>
-      <a href="/guestbook/" class="guestbook-btn">Write to us →</a>
+<div class="footer-brand">
+      <span >Prapatti Online</span>
+      <span>Serving devotees since 1999 · 26 years of seva</span>
     </div>
-  </div>
-</section>
 
-<!-- Donate Strip -->
-<section class="donate-strip">
-  <div class="container">
-    <div class="donate-inner">
-      <div class="donate-text">
-        <h3>Support this Seva</h3>
-        <p>This archive is free, always. Your contribution helps preserve it.</p>
-      </div>
-      <div class="donate-btns">
-        <a href="/donate/#upi" class="donate-btn donate-upi">UPI · India</a>
-        <a href="/donate/#international" class="donate-btn donate-intl">International · Stripe</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 {{ end }}

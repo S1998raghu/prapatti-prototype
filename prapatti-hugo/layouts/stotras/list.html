@@ -16,7 +16,7 @@
           <th>Author</th>
           <th>Category</th>
           {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
-          <th class="script-th" title="{{ . }}">{{ substr . 0 2 | upper }}</th>
+          <th class="script-th" title="{{ . }}">{{ . | title }}</th>
           {{ end }}
         </tr>
       </thead>
@@ -69,5 +69,17 @@ function filter() {
 nameInput.addEventListener('input', filter);
 authorInput.addEventListener('input', filter);
 count.textContent = `${rows.length} stotras`;
+
+// Handle ?q= from global search
+const urlQ = new URLSearchParams(window.location.search).get('q');
+if (urlQ) {
+  nameInput.value = urlQ;
+  filter();
+  const firstVisible = Array.from(rows).find(r => r.style.display !== 'none');
+  if (firstVisible) {
+    firstVisible.classList.add('search-highlight-row');
+    firstVisible.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}
 </script>
 {{ end }}

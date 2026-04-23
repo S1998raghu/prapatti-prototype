@@ -9,18 +9,6 @@
     <span class="topbar-script">ஶ்ரீமதே ராமானுஜாய நம꞉</span>
   </div>
   <div class="nav-bar">
-    <div class="nav-brand">
-      <div class="nav-emblem">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 3C8 3 5 6 5 10c0 2 1 4 2 5l5 6 5-6c1-1 2-3 2-5 0-4-3-7-7-7z" fill="currentColor" opacity="0.8"/>
-          <circle cx="12" cy="10" r="2.5" fill="white" opacity="0.9"/>
-        </svg>
-      </div>
-      <div class="nav-brand-text">
-        <a href="/" class="nav-title">Prapatti Online</a>
-        <span class="nav-subtitle">Srivaishnava Sampradhayam</span>
-      </div>
-    </div>
     <nav class="nav-links">
       <a href="/" class="nav-link{{ if .IsHome }} active{{ end }}">Home</a>
       <a href="/stotras/" class="nav-link{{ if eq .Section "stotras" }} active{{ end }}">Stotras</a>
@@ -28,6 +16,12 @@
       <a href="/resources/" class="nav-link{{ if eq .Section "resources" }} active{{ end }}">Resources</a>
       <a href="/guestbook/" class="nav-link{{ if eq .Section "guestbook" }} active{{ end }}">Guestbook</a>
     </nav>
+    <div class="nav-brand">
+      <div class="nav-brand-text">
+        <a href="/" class="nav-title">Prapatti Online</a>
+        <span class="nav-subtitle">Srivaishnava Sampradhayam</span>
+      </div>
+    </div>
     <div class="nav-search">
       <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
         <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"/>
@@ -36,8 +30,12 @@
       <input type="text" id="search-input" placeholder="Search stotras…" autocomplete="off">
       <div id="search-results"></div>
     </div>
-    <button class="nav-mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+  </div>
+  <div class="site-banner">
+    <img src="/images/ramanujar.png" alt="Sri Ramanujacharya" class="banner-side">
+    <div class="banner-center">
+      <img src="/images/Thiruvadis.png" alt="Thiruvadis" class="banner-thiruvadis">
+    </div>
+    <img src="/images/SwamiDesikar.png" alt="Swami Desikan" class="banner-side">
   </div>
 </header>

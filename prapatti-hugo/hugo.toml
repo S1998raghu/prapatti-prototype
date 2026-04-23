@@ -7,6 +7,9 @@ title = "Prapatti Online"
   keywords = "Prapatti, Stotras, Slokas, Srivaishnava, Ramanuja, Desika"
   email = "contact@prapatti.com"
 
+[outputs]
+  home = ["HTML", "JSON"]
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
