@@ -1,4 +1,3 @@
-const ADMIN_PASSWORD = env.ADMIN_PASSWORD;
 const ALLOWED_ORIGINS = ["https://beta.prapatti.com", "https://prapatti.com", "http://localhost:1313"];
 
 function corsOrigin(request) {
@@ -18,13 +17,13 @@ function json(data, status = 200, request = null) {
   });
 }
 
-function unauthorized() {
+function unauthorized(request) {
   return json({ error: "Unauthorized" }, 401, request);
 }
 
-function isAdmin(request) {
+function isAdmin(request, env) {
   const auth = request.headers.get("Authorization") || "";
-  return auth === `Bearer ${ADMIN_PASSWORD}`;
+  return auth === `Bearer ${env.ADMIN_PASSWORD}`;
 }
 
 export default {
@@ -79,7 +78,7 @@ export default {
     // Admin routes — require password
     // GET /admin/entries — all pending + approved
     if (request.method === "GET" && path === "/admin/entries") {
-      if (!isAdmin(request)) return unauthorized();
+      if (!isAdmin(request, env)) return unauthorized(request);
       const { results } = await env.DB.prepare(
         "SELECT * FROM entries ORDER BY approved ASC, id DESC"
       ).all();
@@ -88,7 +87,7 @@ export default {
 
     // POST /admin/approve — approve an entry
     if (request.method === "POST" && path === "/admin/approve") {
-      if (!isAdmin(request)) return unauthorized();
+      if (!isAdmin(request, env)) return unauthorized(request);
       const { id } = await request.json();
       await env.DB.prepare("UPDATE entries SET approved=1 WHERE id=?").bind(id).run();
       return json({ ok: true });
@@ -96,7 +95,7 @@ export default {
 
     // POST /admin/reply — add a reply
     if (request.method === "POST" && path === "/admin/reply") {
-      if (!isAdmin(request)) return unauthorized();
+      if (!isAdmin(request, env)) return unauthorized(request);
       const { id, reply } = await request.json();
       await env.DB.prepare("UPDATE entries SET reply=? WHERE id=?").bind(reply, id).run();
       return json({ ok: true });
@@ -104,7 +103,7 @@ export default {
 
     // POST /admin/delete — delete an entry
     if (request.method === "POST" && path === "/admin/delete") {
-      if (!isAdmin(request)) return unauthorized();
+      if (!isAdmin(request, env)) return unauthorized(request);
       const { id } = await request.json();
       await env.DB.prepare("DELETE FROM entries WHERE id=?").bind(id).run();
       return json({ ok: true });
