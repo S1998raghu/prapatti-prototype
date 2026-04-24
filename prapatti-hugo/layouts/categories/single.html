@@ -11,7 +11,7 @@
           <th>Name</th>
           <th>Author</th>
           {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
-          <th class="script-th" title="{{ . }}">{{ substr . 0 2 | upper }}</th>
+          <th class="script-th" title="{{ . }}">{{ . | title }}</th>
           {{ end }}
         </tr>
       </thead>

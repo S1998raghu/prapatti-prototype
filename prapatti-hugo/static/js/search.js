@@ -32,6 +32,33 @@ function toggleUpdate(btn) {
     index = await res.json();
   }
 
+  function norm(s) {
+    return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
+  }
+
+  function trigrams(s) {
+    const out = new Set();
+    for (let i = 0; i < s.length - 1; i++) out.add(s.slice(i, i + 3));
+    return out;
+  }
+
+  function fuzzyMatch(token, hay) {
+    if (hay.includes(token)) return true;          // exact substring
+    if (token.length < 4) return hay.includes(token); // short tokens: exact only
+    // trigram overlap: ≥55% of token's trigrams must appear in hay
+    const tg = trigrams(token);
+    if (!tg.size) return false;
+    let hits = 0;
+    tg.forEach(g => { if (hay.includes(g)) hits++; });
+    return hits / tg.size >= 0.55;
+  }
+
+  function matches(item, q) {
+    const hay = norm(item.title) + norm(item.subtitle) + norm(item.tags);
+    const tokens = q.trim().split(/\s+/).map(norm).filter(Boolean);
+    return tokens.every(t => fuzzyMatch(t, hay));
+  }
+
   function escHtml(s) {
     return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
@@ -52,11 +79,7 @@ function toggleUpdate(btn) {
 
     await loadIndex();
 
-    currentMatches = index.filter(item =>
-      item.title.toLowerCase().includes(q) ||
-      (item.subtitle && item.subtitle.toLowerCase().includes(q)) ||
-      (item.tags && item.tags.toLowerCase().includes(q))
-    ).slice(0, 12);
+    currentMatches = index.filter(item => matches(item, q)).slice(0, 12);
 
     if (!currentMatches.length) {
       resultsBox.innerHTML = '<div class="search-noresult">No results</div>';
