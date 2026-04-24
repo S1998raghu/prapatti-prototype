@@ -71,11 +71,19 @@ for row in rows:
         skipped.append(name)
         continue
 
-    # Determine category from existing stotras_index if possible, else "general"
+    # Extract tags from last <td> (index 10 or 11)
+    tags = ""
+    for td in tds[10:]:
+        t = re.sub(r"<[^>]+>", "", td).strip()
+        if t and len(t) > 3:
+            tags = t
+            break
+
     entry = {
         "name": name,
         "author": author,
         "category": "general",
+        "tags": tags,
         "links": links,
     }
     stotras.append(entry)

@@ -1,3 +1,23 @@
+const FONT_CLASSES = ['', 'font-lg', 'font-xl'];
+function setFont(level) {
+  FONT_CLASSES.forEach(c => c && document.documentElement.classList.remove(c));
+  if (FONT_CLASSES[level]) document.documentElement.classList.add(FONT_CLASSES[level]);
+  document.querySelectorAll('.font-btn').forEach((b, i) => b.classList.toggle('active', i === level));
+  localStorage.setItem('fontSize', level);
+}
+(function() {
+  const saved = localStorage.getItem('fontSize');
+  if (saved) setFont(+saved);
+  else document.getElementById('fb0') && document.getElementById('fb0').classList.add('active');
+})();
+
+function toggleUpdate(btn) {
+  const panel = btn.nextElementSibling;
+  const isOpen = btn.classList.contains('open');
+  btn.classList.toggle('open', !isOpen);
+  panel.classList.toggle('open', !isOpen);
+}
+
 (function () {
   const input = document.getElementById('search-input');
   const resultsBox = document.getElementById('search-results');
@@ -34,7 +54,8 @@
 
     currentMatches = index.filter(item =>
       item.title.toLowerCase().includes(q) ||
-      (item.subtitle && item.subtitle.toLowerCase().includes(q))
+      (item.subtitle && item.subtitle.toLowerCase().includes(q)) ||
+      (item.tags && item.tags.toLowerCase().includes(q))
     ).slice(0, 12);
 
     if (!currentMatches.length) {

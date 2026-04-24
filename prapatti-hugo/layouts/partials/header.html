@@ -12,7 +12,6 @@
     <nav class="nav-links">
       <a href="/" class="nav-link{{ if .IsHome }} active{{ end }}">Home</a>
       <a href="/stotras/" class="nav-link{{ if eq .Section "stotras" }} active{{ end }}">Stotras</a>
-      <a href="/stotras/by-category/" class="nav-link">By Category</a>
       <a href="/resources/" class="nav-link{{ if eq .Section "resources" }} active{{ end }}">Resources</a>
       <a href="/guestbook/" class="nav-link{{ if eq .Section "guestbook" }} active{{ end }}">Guestbook</a>
     </nav>
@@ -22,6 +21,12 @@
         <span class="nav-subtitle">Srivaishnava Sampradhayam</span>
       </div>
     </div>
+    <div class="nav-right">
+    <div class="font-toggle">
+      <button onclick="setFont(0)" class="font-btn" id="fb0">A</button>
+      <button onclick="setFont(1)" class="font-btn" id="fb1">A+</button>
+      <button onclick="setFont(2)" class="font-btn" id="fb2">A++</button>
+    </div>
     <div class="nav-search">
       <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
         <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"/>
@@ -29,6 +34,7 @@
       </svg>
       <input type="text" id="search-input" placeholder="Search stotras…" autocomplete="off">
       <div id="search-results"></div>
+    </div>
     </div>
   </div>
   <div class="site-banner">

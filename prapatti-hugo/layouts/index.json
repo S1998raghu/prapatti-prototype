@@ -1,7 +1,7 @@
 {{- $items := slice -}}
 
 {{- range site.Data.stotras_index -}}
-  {{- $items = $items | append (dict "type" "stotra" "title" .name "subtitle" .author "url" (printf "/stotras/#%s" (.name | urlize))) -}}
+  {{- $items = $items | append (dict "type" "stotra" "title" .name "subtitle" .author "tags" .tags "url" (printf "/stotras/?q=%s" (.name | urlize))) -}}
 {{- end -}}
 
 {{- range site.Data.categories_index -}}

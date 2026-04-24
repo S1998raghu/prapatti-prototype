@@ -56,46 +56,31 @@
     <div class="section-head">
       <h2 class="section-title">Latest Updates</h2>
     </div>
-    <div class="updates-table-wrap">
-      <table class="updates-table" id="updates-table">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Description</th>
+    <div class="updates-accordion">
+      {{ $currentYear := now.Format "2006" }}
+      {{ range site.Data.updates }}
+      {{ $update := . }}
+      {{ $parts := split .date " " }}
+      {{ $year := index $parts (sub (len $parts) 1) }}
+      {{ if eq $year $currentYear }}
+      <div class="update-item">
+        <button class="update-header" onclick="toggleUpdate(this)">
+          <span class="update-date-badge">{{ .date }}</span>
+          <span class="update-desc-text">{{ .description }}</span>
+          <span class="update-chevron">▾</span>
+        </button>
+        <div class="update-links-panel">
           {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
-          <th class="script-th" title="{{ . }}">{{ . | title }}</th>
-          {{ end }}
-          </tr>
-        </thead>
-        <tbody>
-          {{ $currentYear := now.Format "2006" }}
-          {{ range site.Data.updates }}
-          {{ $update := . }}
-          {{ $parts := split .date " " }}
-          {{ $year := index $parts (sub (len $parts) 1) }}
-          {{ if eq $year $currentYear }}
-          <tr>
-            <td class="update-date" nowrap>{{ .date }}</td>
-            <td class="update-desc">{{ .description }}</td>
-            {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
-              {{ $script := . }}
-              {{ $link := index $update.links $script }}
-              <td class="script-cell">
-                {{ if $link }}
-                <a href="{{ $link }}" target="_blank" class="script-link" title="{{ $script }}">
-                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                    <path d="M4 2h6l4 4v8H4V2z" stroke="currentColor" stroke-width="1.2" fill="none"/>
-                    <path d="M10 2v4h4" stroke="currentColor" stroke-width="1.2"/>
-                  </svg>
-                </a>
-                {{ end }}
-              </td>
-            {{ end }}
-          </tr>
+          {{ $script := . }}
+          {{ $link := index $update.links $script }}
+          {{ if $link }}
+          <a href="{{ $link }}" target="_blank" class="update-script-btn">{{ . | title }}</a>
           {{ end }}
           {{ end }}
-        </tbody>
-      </table>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
     </div>
   </div>
 </section>

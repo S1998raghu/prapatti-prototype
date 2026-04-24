@@ -2,6 +2,10 @@
 <div class="container page-content">
   <h1 class="page-title">All Stotras</h1>
 
+  <p style="font-size:0.85rem;color:#7a6a50;margin-bottom:1rem;font-family:'Crimson Pro',serif;font-size:1rem">
+    Search by name, author, deity, or alternate spelling — e.g. "andal", "desika", "narasimha", "thooppul".
+  </p>
+
   <div style="display:flex;gap:0.75rem;margin-bottom:1.25rem;flex-wrap:wrap">
     <input type="text" id="search-name" placeholder="Search by name…" style="border:1px solid #c8bfa0;border-radius:4px;padding:0.4rem 0.75rem;font-size:0.88rem;font-family:'DM Sans',sans-serif;width:220px">
     <input type="text" id="search-author" placeholder="Search by author…" style="border:1px solid #c8bfa0;border-radius:4px;padding:0.4rem 0.75rem;font-size:0.88rem;font-family:'DM Sans',sans-serif;width:220px">
@@ -23,7 +27,7 @@
       <tbody id="stotra-tbody">
         {{ range site.Data.stotras_index }}
         {{ $s := . }}
-        <tr data-name="{{ .name | lower }}" data-author="{{ .author | lower }}">
+        <tr data-name="{{ .name | lower }}" data-author="{{ .author | lower }}" data-tags="{{ .tags | lower }}">
           <td>{{ .name }}</td>
           <td>{{ .author }}</td>
           <td><a href="/categories/{{ .category }}/" style="color:#8B6914;font-size:0.82rem">{{ .category | humanize }}</a></td>
@@ -58,7 +62,7 @@ function filter() {
   const author = authorInput.value.trim().toLowerCase();
   let visible = 0;
   rows.forEach(row => {
-    const match = (!name || row.dataset.name.includes(name)) &&
+    const match = (!name || row.dataset.name.includes(name) || (row.dataset.tags && row.dataset.tags.includes(name))) &&
                   (!author || row.dataset.author.includes(author));
     row.style.display = match ? '' : 'none';
     if (match) visible++;
