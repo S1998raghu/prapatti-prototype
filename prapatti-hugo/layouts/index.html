@@ -1,93 +1,99 @@
 {{ define "main" }}
 
-<!-- Hero -->
-
 <!-- Special Event Banner -->
 {{ with site.Data.special_event }}
   {{ if .active }}
-  <div class="event-banner">
-    <div class="event-banner-inner">
-      <span class="event-icon">☸</span>
-      <div class="event-text">
-        <strong>{{ .title }}</strong>
-      </div>
-      <a href="{{ .url }}" class="event-btn">Go to Collection →</a>
+  <div class="white-wrapper container mb-4">
+    <div class="alert alert-danger" role="alert">
+      <h4 class="alert-heading">{{ .title }}</h4>
+      <hr>
+      <a href="{{ .url }}" class="btn btn-warning">Go to Collection</a>
     </div>
   </div>
   {{ end }}
 {{ end }}
 
 <!-- Welcome -->
-<section class="welcome-strip">
-  <div class="container">
+<div class="white-wrapper container mb-4">
+  <div class="wel-txt">
+    <h3>Welcome to Prapatti Online!</h3>
     <p>Prapatti Online is a humble initiative to present stotra malas adorned with pearls of bhakti, brought to the surface of the ocean of Sri Vaishnavism, by our āzhvārs and āchāryas.</p>
   </div>
-</section>
 
-<!-- Major Works -->
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <h2 class="section-title">Major Works</h2>
-      <a href="/stotras/by-category/" class="section-link">View all categories →</a>
-    </div>
-    <div class="works-grid">
-      {{ range site.Data.major_works }}
-      {{ $work := . }}
-      <a href="{{ .url }}" class="work-card">
-        <div class="work-icon">॥</div>
-        <div class="work-name">{{ .name }}</div>
-        <div class="work-author">{{ .author }}</div>
-        <div class="work-scripts">
-          {{ $allScripts := slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
-          {{ range $allScripts }}
-          <span class="script-dot {{ if in $work.scripts . }}has{{ end }}" title="{{ . }}"></span>
-          {{ end }}
-        </div>
-      </a>
-      {{ end }}
-    </div>
+  <!-- Major Works -->
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1.5rem;margin-bottom:0.75rem">
+    <h3 style="color:#ff6e0d;font-size:1.1rem;margin:0">Major Works</h3>
+    <a href="/stotras/by-category/" style="font-size:0.9rem;font-weight:600;color:#ff6e0d">All Major Works →</a>
   </div>
-</section>
+  <div class="works-grid">
+    {{ range site.Data.major_works }}
+    {{ $work := . }}
+    <a href="{{ .url }}" class="work-card">
+      <div class="work-name">{{ .name }}</div>
+      <div class="work-author">{{ .author }}</div>
+    </a>
+    {{ end }}
+  </div>
+</div>
 
 <!-- Latest Updates -->
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-head">
-      <h2 class="section-title">Latest Updates</h2>
-    </div>
-    <div class="updates-accordion">
-      {{ $currentYear := now.Format "2006" }}
-      {{ range site.Data.updates }}
-      {{ $update := . }}
-      {{ $parts := split .date " " }}
-      {{ $year := index $parts (sub (len $parts) 1) }}
-      {{ if eq $year $currentYear }}
-      <div class="update-item">
-        <button class="update-header" onclick="toggleUpdate(this)">
-          <span class="update-date-badge">{{ .date }}</span>
-          <span class="update-desc-text">{{ .description }}</span>
-          <span class="update-chevron">▾</span>
-        </button>
-        <div class="update-links-panel">
-          {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
-          {{ $script := . }}
-          {{ $link := index $update.links $script }}
-          {{ if $link }}
-          <a href="{{ $link }}" target="_blank" class="update-script-btn">{{ . | title }}</a>
-          {{ end }}
-          {{ end }}
-        </div>
-      </div>
-      {{ end }}
-      {{ end }}
-    </div>
-  </div>
-</section>
-<div class="footer-brand">
-      <span >Prapatti Online</span>
-      <span>Serving devotees since 1999 · 26 years of seva</span>
-    </div>
+<div class="white-wrapper container mb-4">
+  <h3 style="color:#ff6e0d;font-size:1.1rem;margin-bottom:1rem">Latest Updates:</h3>
 
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped text-center" style="width:100%;font-size:0.82rem" id="indexpagetable">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Latest News &amp; Updates</th>
+          <th>Audio</th>
+          <th>Roman</th>
+          <th>Kannada</th>
+          <th>Bengali</th>
+          <th>Malayalam</th>
+          <th>Devanagari</th>
+          <th>Telugu</th>
+          <th>Tamil</th>
+          <th>Grantha</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ $cutoffYear := now.AddDate 0 -6 0 | dateFormat "2006" | int }}
+        {{ $cutoffMonth := now.AddDate 0 -6 0 | dateFormat "01" | int }}
+        {{ $months := dict "Jan" 1 "Feb" 2 "Mar" 3 "Apr" 4 "May" 5 "Jun" 6 "Jul" 7 "Aug" 8 "Sep" 9 "Oct" 10 "Nov" 11 "Dec" 12 }}
+        {{ range site.Data.updates }}
+        {{ $update := . }}
+        {{ $parts := split .date " " }}
+        {{ $entryMonth := index $months (index $parts 0) }}
+        {{ $entryYear := index $parts (sub (len $parts) 1) | int }}
+        {{ $show := false }}
+        {{ if gt $entryYear $cutoffYear }}{{ $show = true }}
+        {{ else if and (eq $entryYear $cutoffYear) (ge $entryMonth $cutoffMonth) }}{{ $show = true }}
+        {{ end }}
+        {{ if $show }}
+        <tr>
+          <td nowrap>{{ .date }}</td>
+          <td style="text-align:left">{{ .description }}</td>
+          <td>{{ with .links.audio }}<a href="{{ . }}" target="_blank">▶</a>{{ end }}
+          {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
+          {{ $icons := dict "roman" "pdf-icon.png" "kannada" "pdf_kannada.png" "bengali" "pdf_bengali.png" "malayalam" "pdf_malayalam.png" "devanagari" "pdf_sanskrit.png" "telugu" "pdf_telugu.png" "tamil" "pdf_tamil.png" "grantha" "pdf_grantha.png" }}
+          {{ $link := index $update.links . }}
+          <td>{{ if $link }}<a href="{{ $link }}" target="_blank"><img src="/images/{{ index $icons . }}" alt="{{ . }}"></a>{{ end }}</td>
+          {{ end }}
+        </tr>
+        {{ end }}
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Archive links by year -->
+  <div style="margin-top:1rem;font-size:0.88rem">
+    <strong>Archives: </strong>
+    {{ range slice "2025" "2024" "2023" }}
+    <a href="/updates/{{ . }}/" style="margin-right:1rem">{{ . }} Updates</a>
+    {{ end }}
+  </div>
+</div>
 
 {{ end }}

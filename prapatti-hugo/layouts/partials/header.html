@@ -1,48 +1,79 @@
 <header>
-  <div class="topbar">
-    <span class="topbar-script">श्रीमते रामानुजाय नमः</span>
-    <span class="topbar-sep">·</span>
-    <span class="topbar-script">śrīmate rāmānujāya namaḥ</span>
-    <span class="topbar-sep">·</span>
-    <span class="topbar-script">శ్రీమతే రామానుజాయ నమః</span>
-    <span class="topbar-sep">·</span>
-    <span class="topbar-script">ஶ்ரீமதே ராமானுஜாய நம꞉</span>
+  <div class="site-header brown-bg">
+    <div class="desktop-banner">
+      <div class="header-cols">
+        <div class="header-side">
+          <video autoplay loop muted playsinline class="side-video">
+            <source src="/images/leftshape.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="header-center header-txt">
+          <img src="/images/Thiruvadis_bg.png" class="thiruvadis-img">
+          <div class="header-mantra" id="mantra-carousel">
+            <div class="mantra-slide active">श्रीमते रामानुजाय नमः<br>श्रीमते निगमान्तमहादेशिकाय नमः</div>
+            <div class="mantra-slide">śrīmate rāmānujāya namaḥ<br>śrīmate nigamāntamahādeśikāya namaḥ</div>
+            <div class="mantra-slide">శ్రీమతే రామానుజాయ నమః<br>శ్రీమతే నిగమాంతమహాదేశికాయ నమః</div>
+            <div class="mantra-slide">ஶ்ரீமதே ராமானுஜாய நம꞉<br>ஶ்ரீமதே நிக³மாந்தமஹாதே³ஶிகாய நம꞉</div>
+            <div class="mantra-slide">ಶ್ರೀಮತೇ ರಾಮಾನುಜಾಯ ನಮಃ<br>ಶ್ರೀಮತೇ ನಿಗಮಾಂತಮಹಾದೇಶಿಕಾಯ ನಮಃ</div>
+            <div class="mantra-slide">ശ്രീമതേ രാമാനുജായ നമഃ<br>ശ്രീമതേ നിഗമാന്തമഹാദേശികായ നമഃ</div>
+          </div>
+          <div class="main-site">www.prapatti.com</div>
+          <div class="header-mantra" id="gita-carousel">
+            <div class="mantra-slide active">सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज |<br>अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुच: ||</div>
+            <div class="mantra-slide">sarva-dharmān parityajya mām ekaṁ śharaṇaṁ vraja<br>ahaṁ tvā sarva-pāpebhyo mokṣhayiṣhyāmi mā śhuchaḥ</div>
+            <div class="mantra-slide">సర్వధర్మాన్పరిత్యజ్య మామేకం శరణం వ్రజ |<br>అహం త్వా సర్వపాపేభ్యో మోక్షయిష్యామి మా శుచ: ||</div>
+            <div class="mantra-slide">ஸர்வத⁴ர்மான்பரித்யஜ்ய மாமேகம்ʼ ஶரணம்ʼ வ்ரஜ |<br>அஹம்ʼ த்வா ஸர்வபாபேப்⁴யோ மோக்ஷயிஷ்யாமி மா ஶுச: ||</div>
+            <div class="mantra-slide">ಸರ್ವಧರ್ಮಾನ್ಪರಿತ್ಯಜ್ಯ ಮಾಮೇಕಂ ಶರಣಂ ವ್ರಜ |<br>ಅಹಂ ತ್ವಾ ಸರ್ವಪಾಪೇಭ್ಯೋ ಮೋಕ್ಷಯಿಷ್ಯಾಮಿ ಮಾ ಶುಚ: ||</div>
+            <div class="mantra-slide">സർവധർമാൻപരിത്യജ്യ മാമേകം ശരണം വ്രജ |<br>അഹം ത്വാ സർവപാപേഭ്യോ മോക്ഷയിഷ്യാമി മാ ശുച: ||</div>
+          </div>
+        </div>
+        <div class="header-side">
+          <video autoplay loop muted playsinline class="side-video">
+            <source src="/images/rightshape.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="nav-bar">
+
+  <div class="nav-bar menu-bg">
     <nav class="nav-links">
       <a href="/" class="nav-link{{ if .IsHome }} active{{ end }}">Home</a>
       <a href="/stotras/" class="nav-link{{ if eq .Section "stotras" }} active{{ end }}">Stotras</a>
       <a href="/resources/" class="nav-link{{ if eq .Section "resources" }} active{{ end }}">Resources</a>
       <a href="/forum/" class="nav-link{{ if eq .Section "forum" }} active{{ end }}">Forum</a>
     </nav>
-    <div class="nav-brand">
-      <img src="/images/Thiruvadis.png" alt="Thiruvadis" class="nav-thiruvadis">
-      <div class="nav-brand-text">
-        <a href="/" class="nav-title">Prapatti Online</a>
-        <span class="nav-subtitle">Srivaishnava Sampradhayam</span>
+    <div class="nav-right">
+      <div class="font-toggle">
+        <button onclick="setFont(0)" class="font-btn" id="fb0">A</button>
+        <button onclick="setFont(1)" class="font-btn" id="fb1">A+</button>
+        <button onclick="setFont(2)" class="font-btn" id="fb2">A++</button>
+      </div>
+      <div class="nav-search">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+          <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <input type="text" id="search-input" placeholder="Search stotras…" autocomplete="off">
+        <div id="search-results"></div>
       </div>
     </div>
-    <div class="nav-right">
-    <div class="font-toggle">
-      <button onclick="setFont(0)" class="font-btn" id="fb0">A</button>
-      <button onclick="setFont(1)" class="font-btn" id="fb1">A+</button>
-      <button onclick="setFont(2)" class="font-btn" id="fb2">A++</button>
-    </div>
-    <div class="nav-search">
-      <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-        <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"/>
-        <path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-      </svg>
-      <input type="text" id="search-input" placeholder="Search stotras…" autocomplete="off">
-      <div id="search-results"></div>
-    </div>
-    </div>
-  </div>
-  <div class="site-banner">
-<img src="/images/ramanujar.png" alt="Sri Ramanujacharya" class="banner-side">
-    <div class="banner-center">
-      <img src="/images/Thiruvadis.png" alt="Thiruvadis" class="banner-thiruvadis">
-    </div>
-    <img src="/images/SwamiDesikar.png" alt="Swami Desikan" class="banner-side">
   </div>
 </header>
+
+<script>
+(function() {
+  function startCarousel(id, interval) {
+    const slides = document.querySelectorAll('#' + id + ' .mantra-slide');
+    if (!slides.length) return;
+    let i = 0;
+    setInterval(function() {
+      slides[i].classList.remove('active');
+      i = (i + 1) % slides.length;
+      slides[i].classList.add('active');
+    }, interval);
+  }
+  startCarousel('mantra-carousel', 3000);
+  startCarousel('gita-carousel', 4000);
+})();
+</script>

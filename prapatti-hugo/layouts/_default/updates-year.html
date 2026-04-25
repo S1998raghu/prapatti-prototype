@@ -1,0 +1,49 @@
+{{ define "main" }}
+<div class="white-wrapper container mb-4">
+  <h3 style="color:#ff6e0d;font-size:1.1rem;margin-bottom:1rem">{{ .Title }}</h3>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped text-center" style="width:100%;font-size:0.82rem">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Latest News &amp; Updates</th>
+          <th>Audio</th>
+          <th><img src="/images/pdf-icon.png" title="Roman" alt="Roman"></th>
+          <th><img src="/images/pdf_kannada.png" title="Kannada" alt="Kannada"></th>
+          <th><img src="/images/pdf_bengali.png" title="Bengali" alt="Bengali"></th>
+          <th><img src="/images/pdf_malayalam.png" title="Malayalam" alt="Malayalam"></th>
+          <th><img src="/images/pdf_sanskrit.png" title="Devanagari" alt="Devanagari"></th>
+          <th><img src="/images/pdf_telugu.png" title="Telugu" alt="Telugu"></th>
+          <th><img src="/images/pdf_tamil.png" title="Tamil" alt="Tamil"></th>
+          <th><img src="/images/pdf_grantha.png" title="Grantha" alt="Grantha"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ $year := .Params.year }}
+        {{ range site.Data.updates }}
+        {{ $update := . }}
+        {{ $parts := split .date " " }}
+        {{ $entryYear := index $parts (sub (len $parts) 1) }}
+        {{ if eq $entryYear $year }}
+        <tr>
+          <td nowrap>{{ .date }}</td>
+          <td style="text-align:left">{{ .description }}</td>
+          <td>{{ with .links.audio }}<a href="{{ . }}" target="_blank">▶</a>{{ end }}</td>
+          {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
+          {{ $icons := dict "roman" "pdf-icon.png" "kannada" "pdf_kannada.png" "bengali" "pdf_bengali.png" "malayalam" "pdf_malayalam.png" "devanagari" "pdf_sanskrit.png" "telugu" "pdf_telugu.png" "tamil" "pdf_tamil.png" "grantha" "pdf_grantha.png" }}
+          {{ $link := index $update.links . }}
+          <td>{{ if $link }}<a href="{{ $link }}" target="_blank"><img src="/images/{{ index $icons . }}" alt="{{ . }}"></a>{{ end }}</td>
+          {{ end }}
+        </tr>
+        {{ end }}
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+
+  <div style="margin-top:1rem;font-size:0.88rem">
+    <a href="/">← Back to Home</a>
+  </div>
+</div>
+{{ end }}
