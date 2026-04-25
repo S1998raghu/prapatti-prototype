@@ -34,45 +34,116 @@ img { max-width: 100%; height: auto; }
 /* ── Site Banner ──────────────────────────────────────── */
 .site-banner {
   background: #f5edda;
-  border-bottom: 1px solid #e8e0cc;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  gap: 2rem;
-  padding: 1rem 1.25rem;
+  width: 100%;
+  position: relative;
+  overflow: visible;
 }
 
 .banner-side {
-  height: 120px;
-  width: auto;
-  object-fit: contain;
+  flex: 1;
+  max-width: 220px;
+  height: 160px;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .banner-center {
+  flex: 2;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  background: #f5edda;
 }
 
 .banner-thiruvadis {
-  height: 80px;
-  width: auto;
+  height: 160px;
+  width: 100%;
   object-fit: contain;
 }
 
-.banner-namah {
-  font-family: 'Crimson Pro', serif;
-  font-size: 1.2rem;
-  color: #8B6914;
-  letter-spacing: 0.03em;
+/* Garland */
+.banner-garland-top {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  right: 0;
+  height: 18px;
+  pointer-events: none;
+  z-index: 10;
+}
+.banner-garland-top::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: repeating-linear-gradient(
+    90deg,
+    #8B6914 0px, #8B6914 8px,
+    #c8a84b 8px, #c8a84b 16px
+  );
+}
+.banner-garland-top::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 18px;
+  background:
+    radial-gradient(circle at 12px 12px, #c8a84b 5px, transparent 5px),
+    radial-gradient(circle at 36px 8px, #e85d2a 5px, transparent 5px),
+    radial-gradient(circle at 60px 12px, #c8a84b 5px, transparent 5px),
+    radial-gradient(circle at 84px 8px, #e85d2a 5px, transparent 5px),
+    radial-gradient(circle at 108px 12px, #c8a84b 5px, transparent 5px),
+    radial-gradient(circle at 132px 8px, #e85d2a 5px, transparent 5px);
+  background-size: 144px 18px;
+  background-repeat: repeat-x;
+}
+
+.site-banner::after {
+  content: '';
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  right: 0;
+  height: 18px;
+  background:
+    radial-gradient(circle at 12px 6px, #c8a84b 5px, transparent 5px),
+    radial-gradient(circle at 36px 10px, #e85d2a 5px, transparent 5px),
+    radial-gradient(circle at 60px 6px, #c8a84b 5px, transparent 5px),
+    radial-gradient(circle at 84px 10px, #e85d2a 5px, transparent 5px),
+    radial-gradient(circle at 108px 6px, #c8a84b 5px, transparent 5px),
+    radial-gradient(circle at 132px 10px, #e85d2a 5px, transparent 5px);
+  background-size: 144px 18px;
+  background-repeat: repeat-x;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.site-banner::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: repeating-linear-gradient(
+    90deg,
+    #8B6914 0px, #8B6914 8px,
+    #c8a84b 8px, #c8a84b 16px
+  );
+  z-index: 11;
+  pointer-events: none;
 }
 
 @media (max-width: 680px) {
-  .banner-side { height: 70px; }
-  .banner-thiruvadis { height: 50px; }
-  .banner-namah { font-size: 0.95rem; }
-  .site-banner { gap: 1rem; padding: 0.75rem 1rem; }
+  .banner-side { height: 90px; max-width: 110px; }
+  .banner-thiruvadis { height: 90px; }
 }
 
 /* ── Topbar ───────────────────────────────────────────── */
@@ -89,7 +160,7 @@ img { max-width: 100%; height: auto; }
 /* ── Nav ──────────────────────────────────────────────── */
 .navbar, .nav-bar {
   background: #FDFAF4;
-  border-bottom: 1px solid #e8e0cc;
+  border-bottom: none;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -101,6 +172,42 @@ img { max-width: 100%; height: auto; }
   max-width: 100%;
 }
 
+.nav-bar::after {
+  content: '';
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  right: 0;
+  height: 18px;
+  background:
+    radial-gradient(circle at 12px 6px, #c8a84b 5px, transparent 5px),
+    radial-gradient(circle at 36px 10px, #e85d2a 5px, transparent 5px),
+    radial-gradient(circle at 60px 6px, #c8a84b 5px, transparent 5px),
+    radial-gradient(circle at 84px 10px, #e85d2a 5px, transparent 5px),
+    radial-gradient(circle at 108px 6px, #c8a84b 5px, transparent 5px),
+    radial-gradient(circle at 132px 10px, #e85d2a 5px, transparent 5px);
+  background-size: 144px 18px;
+  background-repeat: repeat-x;
+  pointer-events: none;
+  z-index: 99;
+}
+
+.nav-bar::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: repeating-linear-gradient(
+    90deg,
+    #8B6914 0px, #8B6914 8px,
+    #c8a84b 8px, #c8a84b 16px
+  );
+  pointer-events: none;
+  z-index: 99;
+}
+
 .nav-emblem { display: none; }
 
 .nav-brand {
@@ -110,6 +217,12 @@ img { max-width: 100%; height: auto; }
   align-items: center;
   text-align: center;
   gap: 0.1rem;
+}
+
+.nav-thiruvadis {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-brand-text {
@@ -125,7 +238,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .nav-title {
-  font-family: 'Samarkan', 'Crimson Pro', serif;
+  font-family: 'Crimson Pro', serif;
   font-size: 1.8rem;
   font-weight: 700;
   color: #1C1410;
@@ -808,10 +921,8 @@ img { max-width: 100%; height: auto; }
   .nav-title { font-size: 1.3rem; }
 
   /* Banner */
-  .banner-side { height: 60px; }
-  .banner-thiruvadis { height: 45px; }
-  .banner-namah { font-size: 0.85rem; }
-  .site-banner { gap: 0.75rem; padding: 0.6rem 0.75rem; }
+  .banner-side { height: 90px; max-width: 100px; }
+  .banner-thiruvadis { height: 90px; }
 
   /* Grids */
   .works-grid { grid-template-columns: repeat(2, 1fr); }

@@ -3,7 +3,7 @@ const SHELL = [
   '/',
   '/stotras/',
   '/resources/',
-  '/guestbook/',
+  '/forum/',
   '/css/main.css',
   '/js/search.js',
   '/index.json',
@@ -33,7 +33,7 @@ self.addEventListener('fetch', e => {
   e.respondWith(
     caches.match(e.request).then(cached => {
       const network = fetch(e.request).then(res => {
-        if (res.ok) caches.open(CACHE).then(c => c.put(e.request, res.clone()));
+        if (res.ok) { const copy = res.clone(); caches.open(CACHE).then(c => c.put(e.request, copy)); }
         return res;
       });
       return cached || network;

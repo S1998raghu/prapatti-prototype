@@ -1,3 +1,0 @@
----
-title: "Stotras by Author"
----

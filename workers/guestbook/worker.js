@@ -2,7 +2,8 @@ const ALLOWED_ORIGINS = ["https://beta.prapatti.com", "https://prapatti.com", "h
 
 function corsOrigin(request) {
   const origin = request.headers.get("Origin") || "";
-  return ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+  if (ALLOWED_ORIGINS.includes(origin) || /^http:\/\/localhost(:\d+)?$/.test(origin)) return origin;
+  return ALLOWED_ORIGINS[0];
 }
 
 function json(data, status = 200, request = null) {
@@ -90,7 +91,7 @@ export default {
       if (!isAdmin(request, env)) return unauthorized(request);
       const { id } = await request.json();
       await env.DB.prepare("UPDATE entries SET approved=1 WHERE id=?").bind(id).run();
-      return json({ ok: true });
+      return json({ ok: true }, 200, request);
     }
 
     // POST /admin/reply — add a reply
@@ -98,7 +99,7 @@ export default {
       if (!isAdmin(request, env)) return unauthorized(request);
       const { id, reply } = await request.json();
       await env.DB.prepare("UPDATE entries SET reply=? WHERE id=?").bind(reply, id).run();
-      return json({ ok: true });
+      return json({ ok: true }, 200, request);
     }
 
     // POST /admin/delete — delete an entry
@@ -106,7 +107,7 @@ export default {
       if (!isAdmin(request, env)) return unauthorized(request);
       const { id } = await request.json();
       await env.DB.prepare("DELETE FROM entries WHERE id=?").bind(id).run();
-      return json({ ok: true });
+      return json({ ok: true }, 200, request);
     }
 
     return json({ error: "Not found" }, 404, request);
