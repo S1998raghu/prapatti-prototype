@@ -20,8 +20,15 @@
     <p>Prapatti Online is a humble initiative to present stotra malas adorned with pearls of bhakti, brought to the surface of the ocean of Sri Vaishnavism, by our āzhvārs and āchāryas.</p>
   </div>
 
+  <!-- Search -->
+  <div style="margin-top:1.25rem;margin-bottom:1.25rem">
+    <input type="text" id="home-search-input" placeholder="Search stotras…" autocomplete="off"
+      style="width:100%;max-width:420px;border:1px solid #c8a060;border-radius:4px;padding:0.45rem 0.85rem;font-size:0.95rem;display:block">
+    <div id="home-search-results" style="margin-top:0.5rem;font-size:0.88rem"></div>
+  </div>
+
   <!-- Major Works -->
-  <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1.5rem;margin-bottom:0.75rem">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-top:0;margin-bottom:0.75rem">
     <h3 style="color:#ff6e0d;font-size:1.1rem;margin:0">Major Works</h3>
     <a href="/stotras/by-category/" style="font-size:0.9rem;font-weight:600;color:#ff6e0d">All Major Works →</a>
   </div>
@@ -57,43 +64,97 @@
           <th>Grantha</th>
         </tr>
       </thead>
+      {{ $currentYear := now.Format "2006" }}
+      {{ $icons := dict "roman" "pdf-icon.png" "kannada" "pdf_kannada.png" "bengali" "pdf_bengali.png" "malayalam" "pdf_malayalam.png" "devanagari" "pdf_sanskrit.png" "telugu" "pdf_telugu.png" "tamil" "pdf_tamil.png" "grantha" "pdf_grantha.png" }}
       <tbody>
-        {{ $cutoffYear := now.AddDate 0 -6 0 | dateFormat "2006" | int }}
-        {{ $cutoffMonth := now.AddDate 0 -6 0 | dateFormat "01" | int }}
-        {{ $months := dict "Jan" 1 "Feb" 2 "Mar" 3 "Apr" 4 "May" 5 "Jun" 6 "Jul" 7 "Aug" 8 "Sep" 9 "Oct" 10 "Nov" 11 "Dec" 12 }}
         {{ range site.Data.updates }}
         {{ $update := . }}
         {{ $parts := split .date " " }}
-        {{ $entryMonth := index $months (index $parts 0) }}
-        {{ $entryYear := index $parts (sub (len $parts) 1) | int }}
-        {{ $show := false }}
-        {{ if gt $entryYear $cutoffYear }}{{ $show = true }}
-        {{ else if and (eq $entryYear $cutoffYear) (ge $entryMonth $cutoffMonth) }}{{ $show = true }}
-        {{ end }}
-        {{ if $show }}
-        <tr>
+        {{ $entryYear := index $parts (sub (len $parts) 1) }}
+        <tr data-year="{{ $entryYear }}"{{ if ne $entryYear $currentYear }} style="display:none"{{ end }}>
           <td nowrap>{{ .date }}</td>
           <td style="text-align:left">{{ .description }}</td>
-          <td>{{ with .links.audio }}<a href="{{ . }}" target="_blank">▶</a>{{ end }}
+          <td>{{ with .links.audio }}<a href="{{ . }}" target="_blank"><img src="/images/listen.png" alt="audio"></a>{{ end }}</td>
           {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
-          {{ $icons := dict "roman" "pdf-icon.png" "kannada" "pdf_kannada.png" "bengali" "pdf_bengali.png" "malayalam" "pdf_malayalam.png" "devanagari" "pdf_sanskrit.png" "telugu" "pdf_telugu.png" "tamil" "pdf_tamil.png" "grantha" "pdf_grantha.png" }}
           {{ $link := index $update.links . }}
           <td>{{ if $link }}<a href="{{ $link }}" target="_blank"><img src="/images/{{ index $icons . }}" alt="{{ . }}"></a>{{ end }}</td>
           {{ end }}
         </tr>
         {{ end }}
-        {{ end }}
       </tbody>
     </table>
   </div>
 
-  <!-- Archive links by year -->
+  <!-- Year toggle buttons -->
   <div style="margin-top:1rem;font-size:0.88rem">
     <strong>Archives: </strong>
-    {{ range slice "2025" "2024" "2023" }}
-    <a href="/updates/{{ . }}/" style="margin-right:1rem">{{ . }} Updates</a>
+    {{ $years := slice }}
+    {{ range site.Data.updates }}
+      {{ $parts := split .date " " }}
+      {{ $y := index $parts (sub (len $parts) 1) }}
+      {{ $years = $years | append $y }}
+    {{ end }}
+    {{ $currentYear := now.Format "2006" }}
+    {{ range ($years | uniq | sort) }}
+    <button onclick="toggleYear('{{ . }}')" id="btn-{{ . }}"
+      style="margin-right:0.5rem;padding:0.2rem 0.6rem;font-size:0.82rem;cursor:pointer;border:1px solid #c8a060;border-radius:4px;color:#8B6914;background:{{ if eq . $currentYear }}#f5e6c8{{ else }}#fff{{ end }}">
+      {{ . }}
+    </button>
     {{ end }}
   </div>
 </div>
+
+<script>
+var activeYear = '{{ now.Format "2006" }}';
+function toggleYear(y) {
+  // hide all rows
+  document.querySelectorAll('#indexpagetable tr[data-year]').forEach(r => r.style.display = 'none');
+  // reset all buttons
+  document.querySelectorAll('[id^="btn-"]').forEach(b => b.style.background = '#fff');
+  // show selected year
+  document.querySelectorAll('#indexpagetable tr[data-year="' + y + '"]').forEach(r => r.style.display = '');
+  document.getElementById('btn-' + y).style.background = '#f5e6c8';
+  activeYear = y;
+}
+</script>
+
+<script id="stotras-data" type="application/json">{{ site.Data.stotras_index | jsonify }}</script>
+<script>
+(function() {
+  const input = document.getElementById('home-search-input');
+  const results = document.getElementById('home-search-results');
+  if (!input) return;
+
+  const stotras = JSON.parse(document.getElementById('stotras-data').textContent);
+
+  function norm(s) {
+    return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
+  }
+  function fuzzy(token, hay) {
+    if (hay.includes(token)) return true;
+    if (token.length < 4) return hay.includes(token);
+    let hits = 0;
+    for (let i = 0; i < token.length - 2; i++) {
+      if (hay.includes(token.slice(i, i+3))) hits++;
+    }
+    return hits / (token.length - 2) >= 0.55;
+  }
+
+  input.addEventListener('input', function() {
+    const q = input.value.trim();
+    if (!q) { results.innerHTML = ''; return; }
+    const tokens = q.split(/\s+/).map(norm).filter(Boolean);
+    const matches = stotras.filter(s => {
+      const hay = norm(s.name) + norm(s.tags||'');
+      return tokens.every(t => fuzzy(t, hay));
+    }).slice(0, 8);
+
+    if (!matches.length) { results.innerHTML = '<span style="color:#888">No results</span>'; return; }
+    results.innerHTML = matches.map(s =>
+      `<div style="padding:0.2rem 0"><a href="/stotras/?q=${encodeURIComponent(s.name)}" style="color:#ff6e0d">${s.name}</a>${s.author ? ' <span style="color:#888;font-size:0.82rem">— '+s.author+'</span>' : ''}</div>`
+    ).join('');
+  });
+})();
+</script>
 
 {{ end }}

@@ -1,48 +1,42 @@
 {{ define "main" }}
-<div class="container page-content">
-  <h1 class="page-title">All Stotras</h1>
+<div class="white-wrapper container mb-4">
+  <h3 style="color:#ff6e0d;font-size:1.1rem;margin-bottom:0.75rem">All Stotras</h3>
 
-  <p style="font-size:0.85rem;color:#7a6a50;margin-bottom:1rem;font-family:'Crimson Pro',serif;font-size:1rem">
-    Search by name, author, deity, or alternate spelling — e.g. "andal", "desika", "narasimha", "thooppul".
-  </p>
+  <div style="display:flex;gap:0.75rem;margin-bottom:1rem;flex-wrap:wrap;align-items:center">
+    <placeholder style="font-size:0.82rem;color:#666">Search by name / author eg: Andal</placeholder>
+    <input type="text" id="search-name" placeholder="Search" style="border:1px solid #c8a060;border-radius:4px;padding:0.4rem 0.75rem;font-size:0.88rem;width:220px">
 
-  <div style="display:flex;gap:0.75rem;margin-bottom:1.25rem;flex-wrap:wrap">
-    <input type="text" id="search-name" placeholder="Search by name…" style="border:1px solid #c8bfa0;border-radius:4px;padding:0.4rem 0.75rem;font-size:0.88rem;font-family:'DM Sans',sans-serif;width:220px">
-    <input type="text" id="search-author" placeholder="Search by author…" style="border:1px solid #c8bfa0;border-radius:4px;padding:0.4rem 0.75rem;font-size:0.88rem;font-family:'DM Sans',sans-serif;width:220px">
-    <span id="result-count" style="align-self:center;font-size:0.82rem;color:#7a6a50"></span>
+    <span id="result-count" style="font-size:0.82rem;color:#666"></span>
   </div>
 
   <div class="table-responsive">
-    <table class="stotra-table" id="stotra-table">
+    <table class="table table-bordered table-striped text-center" style="width:100%;font-size:0.82rem" id="stotra-table">
       <thead>
         <tr>
           <th>Name</th>
           <th>Author</th>
-          <th>Category</th>
-          {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
-          <th class="script-th" title="{{ . }}">{{ . | title }}</th>
-          {{ end }}
+          <th>Audio</th>
+          <th>Roman</th>
+          <th>Kannada</th>
+          <th>Bengali</th>
+          <th>Malayalam</th>
+          <th>Devanagari</th>
+          <th>Telugu</th>
+          <th>Tamil</th>
+          <th>Grantha</th>
         </tr>
       </thead>
       <tbody id="stotra-tbody">
+        {{ $icons := dict "roman" "pdf-icon.png" "kannada" "pdf_kannada.png" "bengali" "pdf_bengali.png" "malayalam" "pdf_malayalam.png" "devanagari" "pdf_sanskrit.png" "telugu" "pdf_telugu.png" "tamil" "pdf_tamil.png" "grantha" "pdf_grantha.png" }}
         {{ range site.Data.stotras_index }}
         {{ $s := . }}
         <tr data-name="{{ .name | lower }}" data-author="{{ .author | lower }}" data-tags="{{ .tags | lower }}">
-          <td>{{ .name }}</td>
+          <td style="text-align:left">{{ .name }}</td>
           <td>{{ .author }}</td>
-          <td><a href="/categories/{{ .category }}/" style="color:#8B6914;font-size:0.82rem">{{ .category | humanize }}</a></td>
+          <td>{{ with $s.links.audio }}<a href="{{ . }}" target="_blank"><img src="/images/listen.png" alt="audio"></a>{{ end }}</td>
           {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
           {{ $link := index $s.links . }}
-          <td class="script-cell">
-            {{ if $link }}
-            <a href="{{ $link }}" target="_blank" class="script-link" title="{{ . }}">
-              <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                <path d="M4 2h6l4 4v8H4V2z" stroke="currentColor" stroke-width="1.2" fill="none"/>
-                <path d="M10 2v4h4" stroke="currentColor" stroke-width="1.2"/>
-              </svg>
-            </a>
-            {{ end }}
-          </td>
+          <td>{{ if $link }}<a href="{{ $link }}" target="_blank"><img src="/images/{{ index $icons . }}" alt="{{ . }}"></a>{{ end }}</td>
           {{ end }}
         </tr>
         {{ end }}
@@ -52,58 +46,47 @@
 </div>
 
 <script>
-const nameInput = document.getElementById('search-name');
-const authorInput = document.getElementById('search-author');
-const rows = document.querySelectorAll('#stotra-tbody tr');
-const count = document.getElementById('result-count');
+(function () {
+  const nameInput = document.getElementById('search-name');
+  const rows = Array.from(document.querySelectorAll('#stotra-tbody tr'));
+  const count = document.getElementById('result-count');
 
-function norm(s) {
-  return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
-}
-function trigrams(s) {
-  const out = new Set();
-  for (let i = 0; i < s.length - 1; i++) out.add(s.slice(i, i+3));
-  return out;
-}
-function fuzzyMatch(token, hay) {
-  if (hay.includes(token)) return true;
-  if (token.length < 4) return hay.includes(token);
-  const tg = trigrams(token);
-  if (!tg.size) return false;
-  let hits = 0;
-  tg.forEach(g => { if (hay.includes(g)) hits++; });
-  return hits / tg.size >= 0.55;
-}
-function filter() {
-  const name = nameInput.value.trim();
-  const author = nameInput.value.trim(); // intentional: author box also uses name field? keep separate
-  const authorQ = authorInput.value.trim();
-  const nameTokens = name.split(/\s+/).map(norm).filter(Boolean);
-  let visible = 0;
-  rows.forEach(row => {
-    const hay = norm(row.dataset.name) + norm(row.dataset.tags);
-    const nameMatch = !name || nameTokens.every(t => fuzzyMatch(t, hay));
-    const authorMatch = !authorQ || fuzzyMatch(norm(authorQ), norm(row.dataset.author));
-    row.style.display = (nameMatch && authorMatch) ? '' : 'none';
-    if (nameMatch && authorMatch) visible++;
-  });
-  count.textContent = `${visible} of ${rows.length} stotras`;
-}
-
-nameInput.addEventListener('input', filter);
-authorInput.addEventListener('input', filter);
-count.textContent = `${rows.length} stotras`;
-
-// Handle ?q= from global search
-const urlQ = new URLSearchParams(window.location.search).get('q');
-if (urlQ) {
-  nameInput.value = urlQ;
-  filter();
-  const firstVisible = Array.from(rows).find(r => r.style.display !== 'none');
-  if (firstVisible) {
-    firstVisible.classList.add('search-highlight-row');
-    firstVisible.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  function norm(s) {
+    return String(s || '')
+      .toLowerCase()
+      .normalize('NFD').replace(/[̀-ͯ]/g, '')   // strip diacritics
+      .replace(/aa/g, 'a').replace(/ii/g, 'i').replace(/uu/g, 'u'); // long vowels
   }
-}
+
+  // Pre-normalise once so filtering is fast
+  const haystack = rows.map(r =>
+    norm(r.dataset.name) + ' ' + norm(r.dataset.tags) + ' ' + norm(r.dataset.author)
+  );
+
+  function filter() {
+    const q = norm(nameInput.value.trim());
+    let visible = 0;
+    rows.forEach((r, i) => {
+      const show = !q || haystack[i].includes(q);
+      r.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    count.textContent = `${visible} of ${rows.length} stotras`;
+  }
+
+  nameInput.addEventListener('input', filter);
+  count.textContent = `${rows.length} stotras`;
+
+  const urlQ = new URLSearchParams(window.location.search).get('q');
+  if (urlQ) {
+    nameInput.value = urlQ;
+    filter();
+    const first = rows.find(r => r.style.display !== 'none');
+    if (first) {
+      first.classList.add('search-highlight-row');
+      first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+})();
 </script>
 {{ end }}

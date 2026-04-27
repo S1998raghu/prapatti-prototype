@@ -14,9 +14,13 @@ export default {
       return new Response("Not found", { status: 404 });
     }
 
+    const contentType = key.endsWith('.mp3') ? 'audio/mpeg'
+      : key.endsWith('.wav') ? 'audio/wav'
+      : 'application/pdf';
+
     return new Response(object.body, {
       headers: {
-        "Content-Type": "application/pdf",
+        "Content-Type": contentType,
         "Cache-Control": "public, max-age=31536000, immutable",
       },
     });

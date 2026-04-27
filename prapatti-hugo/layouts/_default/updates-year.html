@@ -9,14 +9,14 @@
           <th>Date</th>
           <th>Latest News &amp; Updates</th>
           <th>Audio</th>
-          <th><img src="/images/pdf-icon.png" title="Roman" alt="Roman"></th>
-          <th><img src="/images/pdf_kannada.png" title="Kannada" alt="Kannada"></th>
-          <th><img src="/images/pdf_bengali.png" title="Bengali" alt="Bengali"></th>
-          <th><img src="/images/pdf_malayalam.png" title="Malayalam" alt="Malayalam"></th>
-          <th><img src="/images/pdf_sanskrit.png" title="Devanagari" alt="Devanagari"></th>
-          <th><img src="/images/pdf_telugu.png" title="Telugu" alt="Telugu"></th>
-          <th><img src="/images/pdf_tamil.png" title="Tamil" alt="Tamil"></th>
-          <th><img src="/images/pdf_grantha.png" title="Grantha" alt="Grantha"></th>
+          <th>Roman</th>
+          <th>Kannada</th>
+          <th>Bengali</th>
+          <th>Malayalam</th>
+          <th>Devanagari</th>
+          <th>Telugu</th>
+          <th>Tamil</th>
+          <th>Grantha</th>
         </tr>
       </thead>
       <tbody>
@@ -29,7 +29,7 @@
         <tr>
           <td nowrap>{{ .date }}</td>
           <td style="text-align:left">{{ .description }}</td>
-          <td>{{ with .links.audio }}<a href="{{ . }}" target="_blank">▶</a>{{ end }}</td>
+          <td>{{ with .links.audio }}<a href="{{ . }}" target="_blank"><img src="/images/listen.png" alt="audio"></a>{{ end }}</td>
           {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
           {{ $icons := dict "roman" "pdf-icon.png" "kannada" "pdf_kannada.png" "bengali" "pdf_bengali.png" "malayalam" "pdf_malayalam.png" "devanagari" "pdf_sanskrit.png" "telugu" "pdf_telugu.png" "tamil" "pdf_tamil.png" "grantha" "pdf_grantha.png" }}
           {{ $link := index $update.links . }}

@@ -1,6 +1,9 @@
 {{ define "main" }}
 {{ $slug := .Params.slug }}
 {{ $stotras := index site.Data.categories $slug }}
+<div style="font-size:0.85rem;margin-bottom:0.5rem" class="container">
+  <a href="/">Home</a> &rsaquo; <a href="/stotras/by-category/">All Categories</a> &rsaquo; {{ .Title }}
+</div>
 <div class="white-wrapper container mb-4">
   <h3 style="color:#ff6e0d;font-size:1.1rem;margin-bottom:1rem">{{ .Title }}</h3>
   {{ if $stotras }}

@@ -55,8 +55,10 @@ img { max-width: 100%; height: auto; }
   flex: 0 0 auto;
   width: 12%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
 }
 
 .side-video {
@@ -77,6 +79,21 @@ img { max-width: 100%; height: auto; }
   height: auto;
   display: block;
   margin: 0 auto 0.5rem;
+}
+
+.mantra-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.acharya-img {
+  height: 80px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.5));
 }
 
 .header-mantra {
