@@ -1,5 +1,37 @@
 const ALLOWED_ORIGINS = ["https://beta.prapatti.com", "https://prapatti.com", "http://localhost:1313", "https://prapatti-prototype.pages.dev"];
 
+const SPAM_PATTERNS = [
+  /https?:\/\//i,           // any URL in message
+  /\bviagra\b/i,
+  /\bcasino\b/i,
+  /\bpoker\b/i,
+  /\bloan\b/i,
+  /\bseo\b/i,
+  /\bclick here\b/i,
+  /\bbuy now\b/i,
+  /\bfree money\b/i,
+  /\bbitcoin\b/i,
+  /\bcrypto\b/i,
+  /\bonline pharmacy\b/i,
+  /\bweight loss\b/i,
+];
+
+async function verifyTurnstile(token, env, ip) {
+  if (!token) return false;
+  const res = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ secret: env.TURNSTILE_SECRET, response: token, remoteip: ip }),
+  });
+  const data = await res.json();
+  return data.success === true;
+}
+
+function isSpam({ message, author }) {
+  const text = `${author} ${message}`;
+  return SPAM_PATTERNS.some(p => p.test(text));
+}
+
 function corsOrigin(request) {
   const origin = request.headers.get("Origin") || "";
   if (ALLOWED_ORIGINS.includes(origin) || /^http:\/\/localhost(:\d+)?$/.test(origin)) return origin;
@@ -47,13 +79,19 @@ export default {
       let body;
       try { body = await request.json(); } catch { return json({ error: "Invalid JSON" }, 400, request); }
 
-      const { author, email, location, message, honeypot } = body;
-      if (honeypot) return json({ ok: true }, 200, request); // spam trap
+      const { author, email, location, message, honeypot, turnstileToken } = body;
+      if (honeypot) return json({ ok: true }, 200, request); // bot trap
+
+      const ip = request.headers.get("CF-Connecting-IP") || "";
+      const turnstileOk = await verifyTurnstile(turnstileToken, env, ip);
+      if (!turnstileOk) return json({ error: "Human verification failed. Please try again." }, 400, request);
+
       if (!author?.trim() || !message?.trim()) return json({ error: "Name and message required" }, 400, request);
+      if (isSpam({ message, author })) return json({ ok: true }, 200, request); // silently drop
 
       const timestamp = new Date().toUTCString();
       await env.DB.prepare(
-        "INSERT INTO entries (author, email, location, message, timestamp, approved) VALUES (?, ?, ?, ?, ?, 0)"
+        "INSERT INTO entries (author, email, location, message, timestamp, approved) VALUES (?, ?, ?, ?, ?, 1)"
       ).bind(author.trim(), email?.trim() || "", location?.trim() || "", message.trim(), timestamp).run();
 
       return json({ ok: true }, 200, request);
