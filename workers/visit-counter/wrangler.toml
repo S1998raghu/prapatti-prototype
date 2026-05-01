@@ -1,0 +1,7 @@
+name = "prapatti-visit-counter"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "COUNTER"
+id = "94fa88c55ca44254a5e449ed969f979f"

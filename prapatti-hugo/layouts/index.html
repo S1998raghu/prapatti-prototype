@@ -18,11 +18,14 @@
   <div class="wel-txt">
     <h3>Welcome to Prapatti Online!</h3>
     <p>Prapatti Online is a humble initiative to present stotra malas adorned with pearls of bhakti, brought to the surface of the ocean of Sri Vaishnavism, by our āzhvārs and āchāryas.</p>
+    <p style="font-size:0.85rem;color:#888;margin-top:0.25rem">
+      Visitors: <span id="visit-count">…</span>
+    </p>
   </div>
 
   <!-- Search -->
   <div style="margin-top:1.25rem;margin-bottom:1.25rem">
-    <input type="text" id="home-search-input" placeholder="Search stotras…" autocomplete="off"
+    <input type="text" id="home-search-input" placeholder="Search …" autocomplete="on"
       style="width:100%;max-width:420px;border:1px solid #c8a060;border-radius:4px;padding:0.45rem 0.85rem;font-size:0.95rem;display:block">
     <div id="home-search-results" style="margin-top:0.5rem;font-size:0.88rem"></div>
   </div>
@@ -125,28 +128,20 @@ function toggleYear(y) {
   const results = document.getElementById('home-search-results');
   if (!input) return;
 
-  const stotras = JSON.parse(document.getElementById('stotras-data').textContent);
+  let stotras = JSON.parse(document.getElementById('stotras-data').textContent);
+  if (typeof stotras === 'string') stotras = JSON.parse(stotras);
 
   function norm(s) {
-    return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
-  }
-  function fuzzy(token, hay) {
-    if (hay.includes(token)) return true;
-    if (token.length < 4) return hay.includes(token);
-    let hits = 0;
-    for (let i = 0; i < token.length - 2; i++) {
-      if (hay.includes(token.slice(i, i+3))) hits++;
-    }
-    return hits / (token.length - 2) >= 0.55;
+    return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')
+      .replace(/aa/g,'a').replace(/ii/g,'i').replace(/uu/g,'u');
   }
 
   input.addEventListener('input', function() {
-    const q = input.value.trim();
+    const q = norm(input.value.trim());
     if (!q) { results.innerHTML = ''; return; }
-    const tokens = q.split(/\s+/).map(norm).filter(Boolean);
     const matches = stotras.filter(s => {
-      const hay = norm(s.name) + norm(s.tags||'');
-      return tokens.every(t => fuzzy(t, hay));
+      const hay = norm(s.name) + ' ' + norm(s.tags||'') + ' ' + norm(s.author||'');
+      return hay.includes(q);
     }).slice(0, 8);
 
     if (!matches.length) { results.innerHTML = '<span style="color:#888">No results</span>'; return; }
@@ -155,6 +150,13 @@ function toggleYear(y) {
     ).join('');
   });
 })();
+</script>
+
+<script>
+fetch("https://prapatti-visit-counter.sumedharaghu.workers.dev/")
+  .then(r => r.json())
+  .then(d => { document.getElementById("visit-count").textContent = d.visits.toLocaleString(); })
+  .catch(() => { document.getElementById("visit-count").textContent = ""; });
 </script>
 
 {{ end }}
