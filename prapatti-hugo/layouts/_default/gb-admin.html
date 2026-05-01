@@ -10,9 +10,9 @@
 
   <div id="admin-wrap" style="display:none">
     <div style="display:flex;gap:1rem;margin-bottom:1.5rem;flex-wrap:wrap">
-      <button class="btn btn-outline" onclick="filterEntries('pending')">Pending</button>
-      <button class="btn btn-outline" onclick="filterEntries('approved')">Approved</button>
-      <button class="btn btn-outline" onclick="filterEntries('all')">All</button>
+      <button id="tab-pending" class="btn btn-gold" onclick="filterEntries('pending')">Pending</button>
+      <button id="tab-approved" class="btn btn-outline" onclick="filterEntries('approved')">Approved</button>
+      <button id="tab-all" class="btn btn-outline" onclick="filterEntries('all')">All</button>
     </div>
     <div id="admin-list"></div>
   </div>
@@ -47,6 +47,10 @@ async function loadAdmin() {
 
 function filterEntries(filter) {
   currentFilter = filter;
+  ['pending','approved','all'].forEach(f => {
+    const btn = document.getElementById('tab-' + f);
+    btn.className = f === filter ? 'btn btn-gold' : 'btn btn-outline';
+  });
   const filtered = filter === 'all' ? allEntries
     : filter === 'pending' ? allEntries.filter(e => !e.approved)
     : allEntries.filter(e => e.approved);
