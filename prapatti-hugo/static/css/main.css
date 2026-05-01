@@ -53,17 +53,17 @@ img { max-width: 100%; height: auto; }
 
 .header-side {
   flex: 0 0 auto;
-  width: 12%;
+  width: 18%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 
 .side-video {
-  width: 100%;
-  max-width: 140px;
+  width: 200px;
+  flex-shrink: 0;
 }
 
 .header-center {
@@ -75,7 +75,7 @@ img { max-width: 100%; height: auto; }
 .header-txt { color: #fde65a; }
 
 .thiruvadis-img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto 0.5rem;
@@ -90,7 +90,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .acharya-img {
-  height: 80px;
+  height: 150px;
   width: auto;
   display: block;
   filter: drop-shadow(0 0 4px rgba(0,0,0,0.5));
