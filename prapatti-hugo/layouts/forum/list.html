@@ -5,16 +5,7 @@
   <!-- Existing entries -->
   <div style="margin-bottom:2rem">
     <h2 class="section-title" style="margin-bottom:1rem">Recent Entries</h2>
-    {{ range site.Data.guestbook }}
-    <div class="gb-entry">
-      <div class="gb-entry-meta"><strong>{{ .author }}</strong>{{ with .location }} &middot; <i>{{ . }}</i>{{ end }} &middot; <span>{{ .timestamp }}</span></div>
-      {{ $parts := split .message "\n\n\n" }}
-      <div class="gb-entry-msg">{{ index $parts 0 | htmlEscape | safeHTML | replaceRE "\n" "<br>" | safeHTML }}</div>
-      {{ if gt (len $parts) 1 }}
-      <div class="gb-reply"><div class="gb-reply-label">Reply from Prapatti:</div>{{ index $parts 1 | htmlEscape | safeHTML | replaceRE "\n" "<br>" | safeHTML }}</div>
-      {{ end }}
-    </div>
-    {{ end }}
+    <div id="gb-entries"><p style="color:#7a6a50;font-size:0.9rem">Loading entries…</p></div>
   </div>
 
   <div class="gb-form-wrap">
@@ -75,6 +66,29 @@ const API = "https://prapatti-guestbook.sumedharaghu.workers.dev";
 function escHtml(s) {
   return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
+
+function formatDate(ts) {
+  if (!ts) return '';
+  const d = new Date(ts);
+  return isNaN(d) ? ts : d.toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
+}
+
+function renderEntries(entries) {
+  const container = document.getElementById('gb-entries');
+  if (!entries.length) { container.innerHTML = '<p style="color:#7a6a50;font-size:0.9rem">No entries yet.</p>'; return; }
+  container.innerHTML = entries.map(e => `
+    <div class="gb-entry">
+      <div class="gb-entry-meta"><strong>${escHtml(e.author)}</strong>${e.location ? ' &middot; <i>' + escHtml(e.location) + '</i>' : ''} &middot; <span>${formatDate(e.timestamp)}</span></div>
+      <div class="gb-entry-msg">${escHtml(e.message).replace(/\n/g,'<br>')}</div>
+      ${e.reply ? `<div class="gb-reply"><div class="gb-reply-label">Reply from Prapatti:</div>${escHtml(e.reply).replace(/\n/g,'<br>')}</div>` : ''}
+    </div>
+  `).join('');
+}
+
+fetch(`${API}/entries`)
+  .then(r => r.json())
+  .then(d => renderEntries(d.entries || []))
+  .catch(() => { document.getElementById('gb-entries').innerHTML = '<p style="color:#8B1914;font-size:0.9rem">Could not load entries.</p>'; });
 
 document.getElementById('gb-form').addEventListener('submit', async function(e) {
   e.preventDefault();
