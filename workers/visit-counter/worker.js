@@ -14,7 +14,15 @@ export default {
       return new Response(null, { headers: corsHeaders });
     }
 
+    const url = new URL(request.url);
     const current = parseInt(await env.COUNTER.get("visits") || "0");
+
+    if (url.pathname === "/count") {
+      return new Response(JSON.stringify({ visits: current }), {
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
     const updated = current + 1;
     await env.COUNTER.put("visits", String(updated));
 

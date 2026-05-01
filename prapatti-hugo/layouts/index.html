@@ -19,7 +19,7 @@
     <h3>Welcome to Prapatti Online!</h3>
     <p>Prapatti Online is a humble initiative to present stotra malas adorned with pearls of bhakti, brought to the surface of the ocean of Sri Vaishnavism, by our āzhvārs and āchāryas.</p>
     <p style="font-size:0.85rem;color:#888;margin-top:0.25rem">
-      Visitors: <span id="visit-count">…</span>
+      <span id="visit-count">…</span> Visitors in the last 24 hours 
     </p>
   </div>
 
@@ -153,10 +153,26 @@ function toggleYear(y) {
 </script>
 
 <script>
-fetch("https://prapatti-visit-counter.sumedharaghu.workers.dev/")
-  .then(r => r.json())
-  .then(d => { document.getElementById("visit-count").textContent = d.visits.toLocaleString(); })
-  .catch(() => { document.getElementById("visit-count").textContent = ""; });
+(function() {
+  const key = 'prapatti_visited';
+  const now = Date.now();
+  const last = parseInt(localStorage.getItem(key) || '0');
+  const oneDday = 24 * 60 * 60 * 1000;
+  const counted = now - last < oneDday;
+
+  if (!counted) {
+    localStorage.setItem(key, String(now));
+    fetch("https://prapatti-visit-counter.sumedharaghu.workers.dev/")
+      .then(r => r.json())
+      .then(d => { document.getElementById("visit-count").textContent = d.visits.toLocaleString(); })
+      .catch(() => {});
+  } else {
+    fetch("https://prapatti-visit-counter.sumedharaghu.workers.dev/count")
+      .then(r => r.json())
+      .then(d => { document.getElementById("visit-count").textContent = d.visits.toLocaleString(); })
+      .catch(() => {});
+  }
+})();
 </script>
 
 {{ end }}
