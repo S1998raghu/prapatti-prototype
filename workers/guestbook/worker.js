@@ -89,7 +89,7 @@ export default {
       if (!author?.trim() || !message?.trim()) return json({ error: "Name and message required" }, 400, request);
       if (isSpam({ message, author })) return json({ ok: true }, 200, request); // silently drop
 
-      const timestamp = new Date().toUTCString();
+      const timestamp = new Date().toISOString();
       await env.DB.prepare(
         "INSERT INTO entries (author, email, location, message, timestamp, approved) VALUES (?, ?, ?, ?, ?, 1)"
       ).bind(author.trim(), email?.trim() || "", location?.trim() || "", message.trim(), timestamp).run();

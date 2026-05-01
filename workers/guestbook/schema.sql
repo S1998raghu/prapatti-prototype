@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS entries (
   email TEXT,
   location TEXT,
   message TEXT NOT NULL,
-  timestamp TEXT NOT NULL,
+  timestamp DATETIME NOT NULL,
   approved INTEGER DEFAULT 0,
   reply TEXT
 );
