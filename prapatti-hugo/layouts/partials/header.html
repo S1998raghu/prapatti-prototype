@@ -50,19 +50,18 @@
   </div>
 
   <div class="nav-bar menu-bg">
-    <div></div>
+    <div class="font-toggle">
+      <button onclick="setFont(0)" class="font-btn" id="fb0">A</button>
+      <button onclick="setFont(1)" class="font-btn" id="fb1">A+</button>
+      <button onclick="setFont(2)" class="font-btn" id="fb2">A++</button>
+    </div>
     <nav class="nav-links">
       <a href="/" class="nav-link{{ if .IsHome }} active{{ end }}">Home</a>
       <a href="/stotras/" class="nav-link{{ if eq .Section "stotras" }} active{{ end }}">Stotras</a>
       <a href="/resources/" class="nav-link{{ if eq .Section "resources" }} active{{ end }}">Resources</a>
-      <a href="/forum/" class="nav-link{{ if eq .Section "forum" }} active{{ end }}">Forum</a>
+      <a href="/forum/" class="nav-link{{ if eq .Section "forum" }} active{{ end }}">Guestbook</a>
     </nav>
     <div class="nav-right">
-      <div class="font-toggle">
-        <button onclick="setFont(0)" class="font-btn" id="fb0">A</button>
-        <button onclick="setFont(1)" class="font-btn" id="fb1">A+</button>
-        <button onclick="setFont(2)" class="font-btn" id="fb2">A++</button>
-      </div>
       <div class="nav-search">
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
           <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"/>
