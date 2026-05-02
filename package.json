@@ -1,0 +1,13 @@
+{
+  "name": "prapatti-prototype",
+  "private": true,
+  "scripts": {
+    "deploy": "npm run deploy:counter && npm run deploy:guestbook && npm run deploy:pdf",
+    "deploy:counter": "cd workers/visit-counter && wrangler deploy",
+    "deploy:guestbook": "cd workers/guestbook && wrangler deploy",
+    "deploy:pdf": "cd workers/pdf-proxy && wrangler deploy",
+    "dev:counter": "cd workers/visit-counter && wrangler dev",
+    "dev:guestbook": "cd workers/guestbook && wrangler dev",
+    "dev:pdf": "cd workers/pdf-proxy && wrangler dev"
+  }
+}

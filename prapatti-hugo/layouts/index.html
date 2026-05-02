@@ -153,26 +153,10 @@ function toggleYear(y) {
 </script>
 
 <script>
-(function() {
-  const key = 'prapatti_visited';
-  const now = Date.now();
-  const last = parseInt(localStorage.getItem(key) || '0');
-  const oneDday = 24 * 60 * 60 * 1000;
-  const counted = now - last < oneDday;
-
-  if (!counted) {
-    localStorage.setItem(key, String(now));
-    fetch("https://prapatti-visit-counter.sumedharaghu.workers.dev/")
-      .then(r => r.json())
-      .then(d => { document.getElementById("visit-count").textContent = d.visits.toLocaleString(); })
-      .catch(() => {});
-  } else {
-    fetch("https://prapatti-visit-counter.sumedharaghu.workers.dev/count")
-      .then(r => r.json())
-      .then(d => { document.getElementById("visit-count").textContent = d.visits.toLocaleString(); })
-      .catch(() => {});
-  }
-})();
+fetch("https://prapatti-visit-counter.sumedharaghu.workers.dev/")
+  .then(r => r.json())
+  .then(d => { document.getElementById("visit-count").textContent = d.visits.toLocaleString(); })
+  .catch(() => {});
 </script>
 
 {{ end }}
