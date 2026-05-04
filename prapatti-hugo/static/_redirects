@@ -1,0 +1,3 @@
+# Cloudflare Pages: serve Hugo-generated HTML for all paths that have no file match
+# This ensures /forum/admin/ and other sub-paths load correctly on first visit (not just refresh)
+/forum/admin /forum/admin/ 301
