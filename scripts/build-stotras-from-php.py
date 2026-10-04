@@ -2,10 +2,12 @@
 """Build stotras_index.json directly from stotras.php — more complete than category JSONs."""
 
 import json
+import os
 import re
 from pathlib import Path
 
-PHP_FILE = Path("/Users/sumedharaghu/Desktop/prapatti-backup/stotras.php")
+SRC_DIR = Path(os.environ.get("PRAPATTI_SRC", "/Users/sumedharaghu/Desktop/prapatti-backup"))
+PHP_FILE = SRC_DIR / "stotras.php"
 OUT_FILE = Path("/Users/sumedharaghu/prapatti-prototype/prapatti-hugo/data/stotras_index.json")
 PROXY = "https://prapatti-pdf-proxy.sumedharaghu.workers.dev"
 
@@ -92,11 +94,24 @@ for row in rows:
 existing_path = OUT_FILE
 if existing_path.exists():
     existing = json.loads(existing_path.read_text())
-    existing_map = {e["name"].lower(): e.get("category", "general") for e in existing}
+    # Match by name+author (names repeat across authors), then by PDF URL (stotras
+    # get renamed), then by name alone
+    existing_exact = {(e["name"].lower(), e.get("author", "").lower()): e for e in existing}
+    existing_by_url = {u: e for e in existing for u in e.get("links", {}).values() if u.endswith(".pdf")}
+    existing_map = {e["name"].lower(): e for e in existing}
     for s in stotras:
-        cat = existing_map.get(s["name"].lower())
-        if cat:
-            s["category"] = cat
+        prev = (existing_exact.get((s["name"].lower(), s["author"].lower()))
+                or next((existing_by_url[u] for u in s["links"].values() if u in existing_by_url), None)
+                or existing_map.get(s["name"].lower()))
+        if prev:
+            # Keep links added outside stotras.php (e.g. audio)
+            for script, url in prev.get("links", {}).items():
+                s["links"].setdefault(script, url)
+            s["category"] = prev.get("category", "general")
+            # Keep previously enriched tags, adding any new words from the PHP source
+            old_tags = prev.get("tags", "")
+            extra = [w for w in s["tags"].split() if w not in old_tags.split()]
+            s["tags"] = " ".join([old_tags] + extra).strip()
 
 stotras.sort(key=lambda x: x["name"].lower())
 OUT_FILE.write_text(json.dumps(stotras, ensure_ascii=False, indent=2))

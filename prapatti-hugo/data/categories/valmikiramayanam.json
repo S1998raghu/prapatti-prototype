@@ -24,5 +24,103 @@
       "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/sk_mangalaslokaa.pdf",
       "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/sk_mangalaslokaa.pdf"
     }
+  },
+  {
+    "name": "1. Baala kaandam (Comprising 77 Sargas)",
+    "author": "Vaalmiiki",
+    "links": {
+      "roman": "/categories/baalakaandam/",
+      "kannada": "/categories/baalakaandam/",
+      "bengali": "/categories/baalakaandam/",
+      "malayalam": "/categories/baalakaandam/",
+      "devanagari": "/categories/baalakaandam/",
+      "telugu": "/categories/baalakaandam/",
+      "tamil": "/categories/baalakaandam/",
+      "grantha": "/categories/baalakaandam/"
+    }
+  },
+  {
+    "name": "2. Ayodhyaa Kaandam (Comprising 119 Sargas)",
+    "author": "Vaalmiiki",
+    "links": {
+      "roman": "/categories/ayodhyaakaandam/",
+      "kannada": "/categories/ayodhyaakaandam/",
+      "bengali": "/categories/ayodhyaakaandam/",
+      "malayalam": "/categories/ayodhyaakaandam/",
+      "devanagari": "/categories/ayodhyaakaandam/",
+      "telugu": "/categories/ayodhyaakaandam/",
+      "tamil": "/categories/ayodhyaakaandam/",
+      "grantha": "/categories/ayodhyaakaandam/"
+    }
+  },
+  {
+    "name": "3. Aranya kaandam (Comprising 76 Sargas)",
+    "author": "Vaalmiiki",
+    "links": {
+      "roman": "/categories/aranyakaandam/",
+      "kannada": "/categories/aranyakaandam/",
+      "bengali": "/categories/aranyakaandam/",
+      "malayalam": "/categories/aranyakaandam/",
+      "devanagari": "/categories/aranyakaandam/",
+      "telugu": "/categories/aranyakaandam/",
+      "tamil": "/categories/aranyakaandam/",
+      "grantha": "/categories/aranyakaandam/"
+    }
+  },
+  {
+    "name": "4. Kishkindha kaandam (Comprising 67 Sargas)",
+    "author": "Vaalmiiki",
+    "links": {
+      "roman": "/categories/kishkindhaakaandam/",
+      "kannada": "/categories/kishkindhaakaandam/",
+      "bengali": "/categories/kishkindhaakaandam/",
+      "malayalam": "/categories/kishkindhaakaandam/",
+      "devanagari": "/categories/kishkindhaakaandam/",
+      "telugu": "/categories/kishkindhaakaandam/",
+      "tamil": "/categories/kishkindhaakaandam/",
+      "grantha": "/categories/kishkindhaakaandam/"
+    }
+  },
+  {
+    "name": "5. Sundara kaandam (Comprising 68 Sargas)",
+    "author": "Vaalmiiki",
+    "links": {
+      "roman": "/categories/sundarakaandam/",
+      "kannada": "/categories/sundarakaandam/",
+      "bengali": "/categories/sundarakaandam/",
+      "malayalam": "/categories/sundarakaandam/",
+      "devanagari": "/categories/sundarakaandam/",
+      "telugu": "/categories/sundarakaandam/",
+      "tamil": "/categories/sundarakaandam/",
+      "grantha": "/categories/sundarakaandam/"
+    }
+  },
+  {
+    "name": "6. Yuddha kaandam (Comprising 128 Sargas)",
+    "author": "Vaalmiiki",
+    "links": {
+      "roman": "/categories/yuddhakaandam/",
+      "kannada": "/categories/yuddhakaandam/",
+      "bengali": "/categories/yuddhakaandam/",
+      "malayalam": "/categories/yuddhakaandam/",
+      "devanagari": "/categories/yuddhakaandam/",
+      "telugu": "/categories/yuddhakaandam/",
+      "tamil": "/categories/yuddhakaandam/",
+      "grantha": "/categories/yuddhakaandam/"
+    }
+  },
+  {
+    "name": "7. Uttara kaandam (Comprising 113 Sargas)",
+    "author": "Vaalmiiki",
+    "links": {
+      "roman": "/categories/uttarakaandam/",
+      "kannada": "/categories/uttarakaandam/",
+      "bengali": "/categories/uttarakaandam/",
+      "malayalam": "/categories/uttarakaandam/",
+      "devanagari": "/categories/uttarakaandam/",
+      "telugu": "/categories/uttarakaandam/",
+      "tamil": "/categories/uttarakaandam/",
+      "grantha": "/categories/uttarakaandam/"
+    }
   }
 ]

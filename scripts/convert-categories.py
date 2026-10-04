@@ -4,7 +4,8 @@
 import os, re, json
 from pathlib import Path
 
-BACKUP_CATS = Path("/Users/sumedharaghu/Desktop/prapatti-backup/categories")
+SRC_DIR = Path(os.environ.get("PRAPATTI_SRC", "/Users/sumedharaghu/Desktop/prapatti-backup"))
+BACKUP_CATS = SRC_DIR / "categories"
 HUGO_DIR = Path("/Users/sumedharaghu/prapatti-prototype/prapatti-hugo")
 DATA_DIR = HUGO_DIR / "data" / "categories"
 CONTENT_DIR = HUGO_DIR / "content" / "categories"
@@ -20,6 +21,8 @@ SCRIPT_MAP = {
     "pdf_tamil.png": "tamil",
     "pdf_grantha.png": "grantha",
 }
+
+COLUMN_SCRIPTS = ["roman", "kannada", "bengali", "malayalam", "devanagari", "telugu", "tamil", "grantha"]
 
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 CONTENT_DIR.mkdir(parents=True, exist_ok=True)
@@ -57,14 +60,22 @@ for php_file in sorted(php_files):
             link_start = 2
 
         links = {}
-        for td in tds[link_start:]:
+        for i, td in enumerate(tds[link_start:], start=link_start):
             href = re.search(r'href=["\']([^"\']+\.pdf)["\']', td, re.IGNORECASE)
+            # Hub pages (e.g. bhaagavatam.php) link to sub-category pages instead of PDFs
+            cat_href = re.search(r'href=["\'][^"\']*/categories/([^"\'/]+)\.php["\']', td, re.IGNORECASE)
             img = re.search(r'src=["\'][^"\']*?([^/]+\.png)["\']', td, re.IGNORECASE)
-            if href and img:
+            if (href or cat_href) and img:
                 script = SCRIPT_MAP.get(img.group(1).lower())
-                if script:
+                # Generic collection icon: script comes from column position
+                # (name, author, audio, then the 8 script columns)
+                if img.group(1).lower() == "filecollection.png" and 3 <= i < 3 + len(COLUMN_SCRIPTS):
+                    script = COLUMN_SCRIPTS[i - 3]
+                if script and href:
                     path = href.group(1)
                     links[script] = R2_BASE + path if path.startswith("/") else path
+                elif script:
+                    links[script] = f"/categories/{cat_href.group(1)}/"
 
         if links:
             stotra = {"name": name_raw}

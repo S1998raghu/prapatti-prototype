@@ -271,7 +271,7 @@
     "name": "Aakaashanagariisha (Oppiliappan) Suprabhaatam",
     "author": "Sriiraama Desikachar",
     "category": "general",
-    "tags": "akasha nagarisha nagareesha uppiliappan suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "akasha nagarisha nagareesha uppiliappan suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/aakaashanagariishasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/aakaashanagariishasuprabhaatam.pdf",
@@ -1083,19 +1083,19 @@
     }
   },
   {
-    "name": "Aranya kaandam",
+    "name": "Aranya Kaandam",
     "author": "Vaalmiiki",
     "category": "general",
-    "tags": "aranya kaandam kandam valmiki ramayanam aranyakanda ramayan itihasa epos",
+    "tags": "aranya kaandam kandam valmiki ramayanam aranyakanda ramayan itihasa epos aaranya raamayan raamaayan ramayana raamayana raamaayana",
     "links": {
-      "roman": "/categories/aranyakaandam/",
-      "kannada": "/categories/aranyakaandam/",
-      "bengali": "/categories/aranyakaandam/",
-      "malayalam": "/categories/aranyakaandam/",
-      "devanagari": "/categories/aranyakaandam/",
-      "telugu": "/categories/aranyakaandam/",
-      "tamil": "/categories/aranyakaandam/",
-      "grantha": "/categories/aranyakaandam/"
+      "roman": "/categories/valmikiramayanam/",
+      "kannada": "/categories/valmikiramayanam/",
+      "bengali": "/categories/valmikiramayanam/",
+      "malayalam": "/categories/valmikiramayanam/",
+      "devanagari": "/categories/valmikiramayanam/",
+      "telugu": "/categories/valmikiramayanam/",
+      "tamil": "/categories/valmikiramayanam/",
+      "grantha": "/categories/valmikiramayanam/"
     }
   },
   {
@@ -1283,10 +1283,10 @@
     }
   },
   {
-    "name": "Ayodhyaa kaandam",
+    "name": "Ayodhyaa Kaandam",
     "author": "Vaalmiiki",
     "category": "general",
-    "tags": "ayodhyaa ayodhya ayodya kaandam kandam valmiki ramayanam",
+    "tags": "ayodhyaa ayodhya ayodya kaandam kandam valmiki ramayanam ramayan raamayan raamaayan ramayana raamayana raamaayana",
     "links": {
       "roman": "/categories/ayodhyaakaandam/",
       "kannada": "/categories/ayodhyaakaandam/",
@@ -1316,19 +1316,19 @@
     }
   },
   {
-    "name": "Baala kaandam",
+    "name": "Baala Kaandam",
     "author": "Vaalmiiki",
     "category": "general",
-    "tags": "baala bala kaandam kandam valmiki ramayanam",
+    "tags": "baala bala kaandam kandam valmiki ramayanam ramayan raamayan raamaayan ramayana raamayana raamaayana",
     "links": {
-      "roman": "/categories/baalakaandam/",
-      "kannada": "/categories/baalakaandam/",
-      "bengali": "/categories/baalakaandam/",
-      "malayalam": "/categories/baalakaandam/",
-      "devanagari": "/categories/baalakaandam/",
-      "telugu": "/categories/baalakaandam/",
-      "tamil": "/categories/baalakaandam/",
-      "grantha": "/categories/baalakaandam/"
+      "roman": "/categories/valmikiramayanam/",
+      "kannada": "/categories/valmikiramayanam/",
+      "bengali": "/categories/valmikiramayanam/",
+      "malayalam": "/categories/valmikiramayanam/",
+      "devanagari": "/categories/valmikiramayanam/",
+      "telugu": "/categories/valmikiramayanam/",
+      "tamil": "/categories/valmikiramayanam/",
+      "grantha": "/categories/valmikiramayanam/"
     }
   },
   {
@@ -1400,7 +1400,7 @@
     "name": "Bhaagavata Puranam",
     "author": "Veda Vyasa",
     "category": "general",
-    "tags": "srimadbhagavatam srimadh bhagavatam bagavatam puranam purana",
+    "tags": "srimadbhagavatam srimadh bhagavatam bagavatam puranam purana sriimad sreemad sreemadh puraanam",
     "links": {
       "roman": "/categories/bhaagavatam/",
       "kannada": "/categories/bhaagavatam/",
@@ -1474,6 +1474,22 @@
       "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/bhaashyakaarastutislokaa.pdf",
       "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/bhaashyakaarastutislokaa.pdf",
       "audio": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/mp3/bhaashyakaarastutislokaa.mp3"
+    }
+  },
+  {
+    "name": "Bhadraachala Panchaashat (A Stotram on Lord Bhadraachala Sri Sita Ramachandra)",
+    "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
+    "category": "general",
+    "tags": "bhadrachala badrachala badracala rama sita seetha panchashat pancashat pancasat panchasat\nnadadur srinidi srinidhi",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/bhadraachalapanchaashat.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/bhadraachalapanchaashat.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/bhadraachalapanchaashat.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/bhadraachalapanchaashat.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/bhadraachalapanchaashat.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/bhadraachalapanchaashat.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/bhadraachalapanchaashat.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/bhadraachalapanchaashat.pdf"
     }
   },
   {
@@ -1714,6 +1730,22 @@
       "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/bindiganavilegarudaashtakastuti.pdf",
       "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/bindiganavilegarudaashtakastuti.pdf",
       "audio": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/mp3/bindiganavilegarudaashtakastuti.mp3"
+    }
+  },
+  {
+    "name": "Brahma Suutram",
+    "author": "Baadaraayana",
+    "category": "general",
+    "tags": "brahma bramha suutram sutram badarayana baadaraayana baadarayana sutra suutra bramma bramha",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/brahmasuutraani.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/brahmasuutraani.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/brahmasuutraani.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/brahmasuutraani.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/brahmasuutraani.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/brahmasuutraani.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/brahmasuutraani.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/brahmasuutraani.pdf"
     }
   },
   {
@@ -2244,10 +2276,26 @@
     }
   },
   {
+    "name": "Desika Sahasra Naamaavali",
+    "author": "Sahasra Naamaavali(Gopalaraya Mahadesikan)",
+    "category": "general",
+    "tags": "deshika desiga sahasra namavali naamaavali naamavali desika",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/desikadivyasahasranaamaavali.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/desikadivyasahasranaamaavali.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/desikadivyasahasranaamaavali.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/desikadivyasahasranaamaavali.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/desikadivyasahasranaamaavali.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/desikadivyasahasranaamaavali.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/desikadivyasahasranaamaavali.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/desikadivyasahasranaamaavali.pdf"
+    }
+  },
+  {
     "name": "Desika Sahasranaama Stotram",
     "author": "Sahasranaamam(Gopalaraya Mahadesikan)",
     "category": "general",
-    "tags": "deshika desiga sahasranama gopalaraya mahadesikan sahasranamam thousand names stotram",
+    "tags": "deshika desiga sahasranama gopalaraya mahadesikan sahasranamam thousand names stotram desika",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/desikasahasranaamam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/desikasahasranaamam.pdf",
@@ -4233,7 +4281,7 @@
     "name": "Gaayatrii Raamaayana",
     "author": "Vaalmiiki",
     "category": "general",
-    "tags": "gayatri gayathri ramayana valmiki mantra prayer",
+    "tags": "gayatri gayathri ramayana valmiki mantra prayer ramayan raamayan raamaayan raamayana raamaayana",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/gaayatriiraamaayanam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/gaayatriiraamaayanam.pdf",
@@ -4298,7 +4346,7 @@
     "name": "Gangaashtakam",
     "author": "Vaalmiiki",
     "category": "general",
-    "tags": "gangaa ashtakam ganga valmiki river goddess holy river",
+    "tags": "gangaa ashtakam ganga valmiki river goddess holy river vaalmiki vaalmiiki",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/gangaashtakam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/gangaashtakam.pdf",
@@ -4883,7 +4931,7 @@
     "name": "Govindaraaja Suprabhaatam",
     "author": "",
     "category": "general",
-    "tags": "govindaraja suprabhatam suprabhatham suprabatham suprabatam govindaraaja suprabhaatam mangala auspicious morning prayer",
+    "tags": "govindaraja suprabhatam suprabhatham suprabatham suprabatam govindaraaja suprabhaatam mangala auspicious morning prayer suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/govindaraajasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/govindaraajasuprabhaatam.pdf",
@@ -5716,7 +5764,7 @@
     "name": "Hayagriivaabhigamanam",
     "author": "Uttamuur Viiraraaghavaachariar",
     "category": "general",
-    "tags": "hayagreeva hayagriiva hayagriva hayagriivaabhigamanam abhigamanam uttamur viraghavachariar",
+    "tags": "hayagreeva hayagriiva hayagriva hayagriivaabhigamanam abhigamanam uttamur viraghavachariar hayavadana haya abhi abigamanam abhigamana",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/hayagriivaabhigamanam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/hayagriivaabhigamanam.pdf",
@@ -5775,22 +5823,6 @@
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/hayavadanakalaakalanamaalikaa.pdf",
       "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/hayavadanakalaakalanamaalikaa.pdf",
       "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/hayavadanakalaakalanamaalikaa.pdf"
-    }
-  },
-  {
-    "name": "Hayavadana Panchaashat",
-    "author": "Srii Seva Swami",
-    "category": "general",
-    "tags": "hayagriiva hayagriva hayageeva panchashat pancasat panchasat panchaashat pancaasat",
-    "links": {
-      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/hayavadanapanchaashat.pdf",
-      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/hayavadanapanchaashat.pdf",
-      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/hayavadanapanchaashat.pdf",
-      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/hayavadanapanchaashat.pdf",
-      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/hayavadanapanchaashat.pdf",
-      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/hayavadanapanchaashat.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/hayavadanapanchaashat.pdf",
-      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/hayavadanapanchaashat.pdf"
     }
   },
   {
@@ -6302,7 +6334,7 @@
     "name": "Kingruhesha Suprabhaatam (Srii Viiraraaghava Suprabhaatam)",
     "author": "",
     "category": "general",
-    "tags": "kim veeraraghava gruham kingruhesa kimgruhesa kimgrihesha kingrihesa kingrihesha evvul suprabhatam",
+    "tags": "kim veeraraghava gruham kingruhesa kimgruhesa kimgrihesha kingrihesa kingrihesha evvul suprabhatam suprabhaatam suprabaatam suprabhatham suprabatham suprabatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/kingruheshasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/kingruheshasuprabhaatam.pdf",
@@ -6315,19 +6347,19 @@
     }
   },
   {
-    "name": "Kishkindhaa kaandam",
+    "name": "Kishkindhaa Kaandam",
     "author": "Vaalmiiki",
     "category": "general",
-    "tags": "kiskinda kishkindha kiskindha kaandam kandam valmiki ramayanam",
+    "tags": "kiskinda kishkindha kiskindha kaandam kandam valmiki ramayanam ramayan raamayan raamaayan ramayana raamayana raamaayana",
     "links": {
-      "roman": "/categories/kishkindhaakaandam/",
-      "kannada": "/categories/kishkindhaakaandam/",
-      "bengali": "/categories/kishkindhaakaandam/",
-      "malayalam": "/categories/kishkindhaakaandam/",
-      "devanagari": "/categories/kishkindhaakaandam/",
-      "telugu": "/categories/kishkindhaakaandam/",
-      "tamil": "/categories/kishkindhaakaandam/",
-      "grantha": "/categories/kishkindhaakaandam/"
+      "roman": "/categories/valmikiramayanam/",
+      "kannada": "/categories/valmikiramayanam/",
+      "bengali": "/categories/valmikiramayanam/",
+      "malayalam": "/categories/valmikiramayanam/",
+      "devanagari": "/categories/valmikiramayanam/",
+      "telugu": "/categories/valmikiramayanam/",
+      "tamil": "/categories/valmikiramayanam/",
+      "grantha": "/categories/valmikiramayanam/"
     }
   },
   {
@@ -6350,7 +6382,7 @@
     "name": "Kodandapani Suprabhaatam",
     "author": "U. Ve. Villuur Venkatasheshaarya Mahadesikan",
     "category": "general",
-    "tags": "kodandapaani  suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "kodandapaani  suprabhatam suprabhatham suprabatham suprabatam kodandapani suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/kodandapaanisuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/kodandapaanisuprabhaatam.pdf",
@@ -6382,7 +6414,7 @@
     "name": "Kodandaraama Suprabhaata Slokaa (Vaduvuur Ramar Suprabhaatam)",
     "author": "Tanjai Tatachariyar",
     "category": "general",
-    "tags": "kodandarama sloka vaduvur vaduvoor  suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "kodandarama sloka vaduvur vaduvoor  suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/kodandaraamasuprabhaataslokaa.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/kodandaraamasuprabhaataslokaa.pdf",
@@ -6987,6 +7019,22 @@
     }
   },
   {
+    "name": "Lakshmii Hayagriiva Suprabhaatam",
+    "author": "Srii Krishnabrahmatantra Parakaala Mahaadesikan",
+    "category": "general",
+    "tags": "laxmi hayagreeva hayagriiva hayagriva suprabhaatam suprabaatam suprabhatam suprabhatham suprabatham suprabatam",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/lakshmiihayagriivasuprabhaatam.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/lakshmiihayagriivasuprabhaatam.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/lakshmiihayagriivasuprabhaatam.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/lakshmiihayagriivasuprabhaatam.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/lakshmiihayagriivasuprabhaatam.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/lakshmiihayagriivasuprabhaatam.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/lakshmiihayagriivasuprabhaatam.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/lakshmiihayagriivasuprabhaatam.pdf"
+    }
+  },
+  {
     "name": "Lakshmii Hayavadana Mangalam",
     "author": "Srii Seva Swami",
     "category": "general",
@@ -7017,6 +7065,22 @@
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/lakshmiihayavadanamantramaalikaastuti.pdf",
       "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/lakshmiihayavadanamantramaalikaastuti.pdf",
       "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/lakshmiihayavadanamantramaalikaastuti.pdf"
+    }
+  },
+  {
+    "name": "Lakshmii Hayavadana Panchaashat",
+    "author": "Srii Seva Swami",
+    "category": "general",
+    "tags": "lakshmi hayavadana haya hayagriiva hayagriva hayageeva panchashat pancasat panchasat panchaashat pancaasat",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/lakshmiihayavadanapanchaashat.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/lakshmiihayavadanapanchaashat.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/lakshmiihayavadanapanchaashat.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/lakshmiihayavadanapanchaashat.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/lakshmiihayavadanapanchaashat.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/lakshmiihayavadanapanchaashat.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/lakshmiihayavadanapanchaashat.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/lakshmiihayavadanapanchaashat.pdf"
     }
   },
   {
@@ -7073,7 +7137,7 @@
     "name": "Lakshmii Hayavadana Suprabhaatam",
     "author": "Srii Seva Swami",
     "category": "general",
-    "tags": "hayagriiva hayagreeva hayagriva laxmi  suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "hayagriiva hayagreeva hayagriva laxmi  suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/lakshmiihayavadanasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/lakshmiihayavadanasuprabhaatam.pdf",
@@ -7090,7 +7154,7 @@
     "name": "Lakshmii Hrudayam",
     "author": "Bhargava Muni",
     "category": "general",
-    "tags": "laxmi hridayam lakshmi hrudayam stotram bhargava muni devi heart",
+    "tags": "laxmi hridayam lakshmi hrudayam stotram bhargava muni devi heart laksmi narayana naaraayana naarayana naraayana",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/lakshmiihrudayam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/lakshmiihrudayam.pdf",
@@ -7106,7 +7170,7 @@
     "name": "Lakshmii Naaraayana Hrudayam (Comprises of Lakshmii Hrudayam and Naaraayana Hrudayam)",
     "author": "Bhargava Muni",
     "category": "general",
-    "tags": "laxmi hridayam narayana hrudayam bhargava muni stotra",
+    "tags": "laxmi hridayam narayana hrudayam bhargava muni stotra lakshmi laksmi naaraayana naarayana naraayana",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/lakshmiinaaraayanahrudayam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/lakshmiinaaraayanahrudayam.pdf",
@@ -7116,6 +7180,38 @@
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/lakshmiinaaraayanahrudayam.pdf",
       "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/lakshmiinaaraayanahrudayam.pdf",
       "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/lakshmiinaaraayanahrudayam.pdf"
+    }
+  },
+  {
+    "name": "Lakshmii Narasimha Panchaashat",
+    "author": "Srii Seva Swami",
+    "category": "general",
+    "tags": "laksmi laxmi narasimha nrisimha narasinga nrusimha narahari nrsimha nrsingha nrsinha nrisinha panchashat pancasat panchasat panchaashat pancaasat lakshmi",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/lakshmiinarasimhapanchaashat.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/lakshmiinarasimhapanchaashat.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/lakshmiinarasimhapanchaashat.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/lakshmiinarasimhapanchaashat.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/lakshmiinarasimhapanchaashat.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/lakshmiinarasimhapanchaashat.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/lakshmiinarasimhapanchaashat.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/lakshmiinarasimhapanchaashat.pdf"
+    }
+  },
+  {
+    "name": "Lakshmii Panchaashat",
+    "author": "Srii Seva Swami",
+    "category": "general",
+    "tags": "lakshmi laxmi lakshmii panchashat pancasat panchasat panchaashat pancaasat",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/lakshmiipanchaashat.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/lakshmiipanchaashat.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/lakshmiipanchaashat.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/lakshmiipanchaashat.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/lakshmiipanchaashat.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/lakshmiipanchaashat.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/lakshmiipanchaashat.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/lakshmiipanchaashat.pdf"
     }
   },
   {
@@ -7215,7 +7311,23 @@
     }
   },
   {
-    "name": "Lakshmiinaaraayan Stotram",
+    "name": "Lakshmii Venkateshvara Bhujanga Stotram",
+    "author": "Srii Jagguru Singarayyangara",
+    "category": "general",
+    "tags": "venkateshvara venkatesha srinivasa sreenivasa sriinivasa venkateshwara bhujanga",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/lakshmiivenkateshvarabhujangastotram.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/lakshmiivenkateshvarabhujangastotram.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/lakshmiivenkateshvarabhujangastotram.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/lakshmiivenkateshvarabhujangastotram.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/lakshmiivenkateshvarabhujangastotram.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/lakshmiivenkateshvarabhujangastotram.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/lakshmiivenkateshvarabhujangastotram.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/lakshmiivenkateshvarabhujangastotram.pdf"
+    }
+  },
+  {
+    "name": "Lakshmiinaaraayana Stotram",
     "author": "Srii Seva Swami",
     "category": "general",
     "tags": "laxmi narayan lakshminaarayan sri seva swami stotra",
@@ -7462,7 +7574,7 @@
     "name": "Lakshmiinrusimhaadi Suprabhaatam",
     "author": "Sriivanshatakopa Sriisriinivaasanigamaantayatiindra Mahaadeshikan (Ahobila Matham)",
     "category": "ahobilamuttrecitationlist",
-    "tags": "laksmi laxmi narasimha nrisimha narasinga nrusimha narahari nrsimha nrsingha nrsinha nrisinha  suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "laksmi laxmi narasimha nrisimha narasinga nrusimha narahari nrsimha nrsingha nrsinha nrisinha  suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/lakshmiinrusimhaadisuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/lakshmiinrusimhaadisuprabhaatam.pdf",
@@ -7868,7 +7980,7 @@
     "name": "Mahaalakshmii Suprabhaata Stuti",
     "author": "Saralakavi Raghavachariar",
     "category": "general",
-    "tags": "mahalakshmi laxmi  suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "mahalakshmi laxmi  suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/mahaalakshmiisuprabhaatastuti.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/mahaalakshmiisuprabhaatastuti.pdf",
@@ -7884,7 +7996,7 @@
     "name": "Mahaalakshmii Suprabhaatam",
     "author": "Saralakavi Raghavachariar",
     "category": "general",
-    "tags": "mahalakshmi laxmi  suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "mahalakshmi laxmi  suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/mahaalakshmiisuprabhaatam_all.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/mahaalakshmiisuprabhaatam_all.pdf",
@@ -8108,7 +8220,7 @@
     "name": "Mayuurapura (Mylapore) Venkatesha Suprabhaatam",
     "author": "Srii Sriinivaasaacharaya",
     "category": "general",
-    "tags": "mayurapura mylapore mylapur venkatesa srinivasa  suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "mayurapura mylapore mylapur venkatesa srinivasa  suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/mayuurapuravenkateshasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/mayuurapuravenkateshasuprabhaatam.pdf",
@@ -8121,21 +8233,7 @@
     }
   },
   {
-    "name": "Meyviradamaanmiyam (Hastigiri (Attigiri) Maahaatmayam)",
-    "author": "Vedaanta Desikan (Desika Prabandham)",
-    "category": "general",
-    "tags": "meivirathamanmiyam meyvirathamanmiyam athigiri hasthigiri attigiri atti hasti atthigiri hathigiri mahathmiyam mahatmiyam",
-    "links": {
-      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/desika-prabandham/meyviradamaanmiyam.pdf",
-      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/desika-prabandham/meyviradamaanmiyam.pdf",
-      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/desika-prabandham/meyviradamaanmiyam.pdf",
-      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/desika-prabandham/meyviradamaanmiyam.pdf",
-      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/desika-prabandham/meyviradamaanmiyam.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/desika-prabandham/meyviradamaanmiyam.pdf"
-    }
-  },
-  {
-    "name": "Meyviradamaanmiyam (Hastigiri (Attigiri) Maahaatmayam) in Sanskrit)",
+    "name": "Meyviradamaanmiyam (Hastigiri (Attigiri) Maahaatayam) in Sanskrit)",
     "author": "H.H. Srii Sriinivaasa Raamaanuja Mahaadesikan  (Mysore Andavan)",
     "category": "general",
     "tags": "meivirathamanmiyam meyvirathamanmiyam athigiri hasthigiri attigiri atti hasti atthigiri hathigiri mahathmiyam mahatmiyam",
@@ -8151,10 +8249,24 @@
     }
   },
   {
+    "name": "Meyviradamaanmiyam (Hastigiri (Attigiri) Maahaatmyam)",
+    "author": "Vedaanta Desikan (Desika Prabandham)",
+    "category": "general",
+    "tags": "meivirathamanmiyam meyvirathamanmiyam athigiri hasthigiri attigiri atti hasti atthigiri hathigiri mahathmiyam mahatmiyam",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/desika-prabandham/meyviradamaanmiyam.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/desika-prabandham/meyviradamaanmiyam.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/desika-prabandham/meyviradamaanmiyam.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/desika-prabandham/meyviradamaanmiyam.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/desika-prabandham/meyviradamaanmiyam.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/desika-prabandham/meyviradamaanmiyam.pdf"
+    }
+  },
+  {
     "name": "Mohanakshetranaatha Suprabhaatam",
     "author": "",
     "category": "general",
-    "tags": "mohana kshetra  suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "mohana kshetra  suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/mohanakshetranaathasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/mohanakshetranaathasuprabhaatam.pdf",
@@ -8427,7 +8539,7 @@
     "name": "Naaraayana Hrudayam",
     "author": "Bhargava Muni",
     "category": "general",
-    "tags": "narayana hridayam hrudhayam hdridyam hrudyam bhargava muni krishna heart meditation",
+    "tags": "narayana hridayam hrudhayam hdridyam hrudyam bhargava muni krishna heart meditation laxmi hrudayam lakshmi laksmi naaraayana naarayana naraayana",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/naaraayanahrudayam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/naaraayanahrudayam.pdf",
@@ -8744,7 +8856,7 @@
     "name": "Nangainalluur Hayagriiva Suprabhaatam",
     "author": "U. Ve. Villuur Nadaadur Karunakarachar",
     "category": "general",
-    "tags": "nanganallur nangannallur hayagreeva hayagriiva hayagriva suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "nanganallur nangannallur hayagreeva hayagriiva hayagriva suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/nangainalluurhayagriivasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/nangainalluurhayagriivasuprabhaatam.pdf",
@@ -8908,7 +9020,7 @@
     "name": "Navanaarasimha Mangalaashaasanam",
     "author": "Sriivanshatakopa Sriisriinivaasayatiindra Mahaadeshikan (Ahobila Matham)",
     "category": "general",
-    "tags": "narasimha nrisimha narasinga nrusimha narahari nrsimha nrsingha nrsinha nrisinha suprabhatam suprabatham",
+    "tags": "narasimha nrisimha narasinga nrusimha narahari nrsimha nrsingha nrsinha nrisinha suprabhatam suprabatham suprabhaatam suprabaatam suprabhatham suprabatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/navanaarasimhamangalaashaasanam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/navanaarasimhamangalaashaasanam.pdf",
@@ -9151,6 +9263,22 @@
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/nrisimhabhujangaprayaatastotram.pdf",
       "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/nrisimhabhujangaprayaatastotram.pdf",
       "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/nrisimhabhujangaprayaatastotram.pdf"
+    }
+  },
+  {
+    "name": "Nrisimha Dvaadasha Naama Stotram",
+    "author": "Brahma Puranam",
+    "category": "general",
+    "tags": "narasimha nrisimha narasinga nrusimha narahari nrsimha nrsingha nrsinha nrisinha dwadasha dvadasha dwaadasha dvaadasha stotram sthotram",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/nrisimhadvaadashanaamastotram.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/nrisimhadvaadashanaamastotram.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/nrisimhadvaadashanaamastotram.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/nrisimhadvaadashanaamastotram.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/nrisimhadvaadashanaamastotram.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/nrisimhadvaadashanaamastotram.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/nrisimhadvaadashanaamastotram.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/nrisimhadvaadashanaamastotram.pdf"
     }
   },
   {
@@ -9498,7 +9626,7 @@
     "name": "Oppiliappan Suprabhaatam",
     "author": "Sriiraama Desikachar",
     "category": "general",
-    "tags": "uppiliappan suprabhatam suprabhatham suprabatham suprabatam oppiliappan oppiliapan opiliappan srirama desikachar morning prayer dawn",
+    "tags": "uppiliappan suprabhatam suprabhatham suprabatham suprabatam oppiliappan oppiliapan opiliappan srirama desikachar morning prayer dawn suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/aakaashanagariishasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/aakaashanagariishasuprabhaatam.pdf",
@@ -9594,7 +9722,7 @@
     "name": "Paarthasaarathi Suprabhaatam",
     "author": "",
     "category": "general",
-    "tags": "partha sarathi sarathy parthasarathi parthasarati partasarati parta suprabhatam suprabhaatam supra",
+    "tags": "partha sarathi sarathy parthasarathi parthasarati partasarati parta suprabhatam suprabhaatam supra suprabaatam suprabhatham suprabatham suprabatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/paarthasaarathisuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/paarthasaarathisuprabhaatam.pdf",
@@ -10133,6 +10261,7 @@
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/paundariikapuramtaniyan.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/paundariikapuramtaniyan.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/paundariikapuramtaniyan.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/paundariikapuramtaniyan.pdf",
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/paundariikapuramtaniyan.pdf",
       "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/paundariikapuramtaniyan.pdf",
@@ -10771,7 +10900,7 @@
     "name": "Raama Kavacham",
     "author": "Vaalmiiki",
     "category": "general",
-    "tags": "rama kavacham armor protection mantra valmiki",
+    "tags": "rama kavacham armor protection mantra valmiki kavacam raama",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/raamakavacham.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/raamakavacham.pdf",
@@ -10899,7 +11028,7 @@
     "name": "Raamaanuja Suprabhaatam",
     "author": "Prativaadi Bhayankaram Annan",
     "category": "general",
-    "tags": "ramanuja  suprabhatam suprabhatham suprabatham suprabatam morning prayer stotram srivaishnava acharya",
+    "tags": "ramanuja  suprabhatam suprabhatham suprabatham suprabatam morning prayer stotram srivaishnava acharya raamaanuja raamanuja yatiraja yathiraja bhashyakara suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/raamaanujasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/raamaanujasuprabhaatam.pdf",
@@ -11029,7 +11158,7 @@
     "name": "Raamodantam (An abridged version of Vaalmiiki Raamaayana)",
     "author": "Unknown",
     "category": "general",
-    "tags": "ramodantam raamodantam valmiki vaalmiki ramayana raamaayana",
+    "tags": "ramodantam raamodantam valmiki vaalmiki ramayana raamaayana ramayan raamayan raamaayan raamayana",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/raamodantam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/raamodantam.pdf",
@@ -11078,7 +11207,7 @@
     "name": "Raghuviira Suprabhaatam",
     "author": "",
     "category": "general",
-    "tags": "raghuveera raghuvira raama rama sriirama srirama sreerama sreeraama shreeraama shreerama shreeram suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "raghuveera raghuvira raama rama sriirama srirama sreerama sreeraama shreeraama shreerama shreeram suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/raghuviirasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/raghuviirasuprabhaatam.pdf",
@@ -11240,7 +11369,7 @@
     "name": "Ranganaatha Suprabhaatam",
     "author": "",
     "category": "general",
-    "tags": "ranganatha  suprabhatam suprabhatham suprabatham suprabatam mangalam stotram morning prayer",
+    "tags": "ranganatha  suprabhatam suprabhatham suprabatham suprabatam mangalam stotram morning prayer suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/ranganaathasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/ranganaathasuprabhaatam.pdf",
@@ -11306,7 +11435,7 @@
     "name": "Rangaraaja Suprabhaatam",
     "author": "",
     "category": "general",
-    "tags": "rangaraja  suprabhatam suprabhatham suprabatham suprabatam mangalam morning prayer stavam",
+    "tags": "rangaraja  suprabhatam suprabhatham suprabatham suprabatam mangalam morning prayer stavam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/rangaraajasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/rangaraajasuprabhaatam.pdf",
@@ -11526,7 +11655,7 @@
     "name": "Sankshepa Raamaayana",
     "author": "Vaalmiiki",
     "category": "general",
-    "tags": "ramayana sankshepa valmiki abridged",
+    "tags": "ramayana sankshepa valmiki abridged ramayan raamayan raamaayan raamayana raamaayana",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/sanksheparaamaayanam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/sanksheparaamaayanam.pdf",
@@ -11542,7 +11671,7 @@
     "name": "Sankshepa Sundarakaandam",
     "author": "Vaalmiiki",
     "category": "general",
-    "tags": "sundarakandam sankshepa valmiki abridged",
+    "tags": "sundarakandam sankshepa valmiki abridged ramayan raamayan raamaayan ramayana raamayana raamaayana",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/sankshepasundarakaandam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/sankshepasundarakaandam.pdf",
@@ -11657,7 +11786,7 @@
     "name": "Saubhaagyalakshmii Suprabhaatam",
     "author": "Srii Seva Swami",
     "category": "general",
-    "tags": "suprabhatam suprabhatham suprabatham suprabatam saubhagyalakshmi sowbhagyalakshmi",
+    "tags": "suprabhatam suprabhatham suprabatham suprabatam saubhagyalakshmi sowbhagyalakshmi suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/saubhaagyalakshmiisuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/saubhaagyalakshmiisuprabhaatam.pdf",
@@ -11707,7 +11836,7 @@
     "name": "Shaariiraka Suprabhaatam",
     "author": "Sriivanshatakopa Sriiviiraraaghavashatakopayatiindra Mahaadeshikan (Ahobila Matham)",
     "category": "general",
-    "tags": "shariraka sariraka  suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "shariraka sariraka  suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/shaariirakasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/shaariirakasuprabhaatam.pdf",
@@ -11783,10 +11912,24 @@
     }
   },
   {
+    "name": "Shatakopar Andadi",
+    "author": "Kambar",
+    "category": "general",
+    "tags": "andadi andaadi andhadi anthadi antaadi andhadhi anthadhi nammazvaar shatakopar sadagopar satagopar satakopar",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/shatakoparandaadi.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/shatakoparandaadi.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/shatakoparandaadi.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/shatakoparandaadi.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/shatakoparandaadi.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/shatakoparandaadi.pdf"
+    }
+  },
+  {
     "name": "Shatpadiistotram",
     "author": "Shankaraacharya",
     "category": "general",
-    "tags": "satpadi satpadhi shatpadhi audio shatpadi stotra shankaracharya bhaja govindam",
+    "tags": "satpadi satpadhi shatpadhi audio shatpadi stotra shankaracharya bhaja govindam shadpadi sadpadi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/shatpadiistotram.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/shatpadiistotram.pdf",
@@ -11948,7 +12091,7 @@
     "name": "Siitaa Kalyaanam",
     "author": "Vaalmiiki",
     "category": "general",
-    "tags": "sita seeta seetha kalyaanam kalayanam",
+    "tags": "sita seeta seetha kalyaanam kalayanam setha sitha ramayan raamayan raamaayan ramayana raamayana raamaayana",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/siitaakalyaanam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/siitaakalyaanam.pdf",
@@ -12042,23 +12185,6 @@
     }
   },
   {
-    "name": "Srii Vaatapuranaathaashtakam (A Stotram on  Guruvaayuurappan)",
-    "author": "Brahmasrii Ganapatii Shastrii",
-    "category": "general",
-    "tags": "Vatapuranaatha ashtakam Guruvayurapan guruvayur\nGanapati Shastri audio",
-    "links": {
-      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/vaatapuranaathaashtakam.pdf",
-      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/vaatapuranaathaashtakam.pdf",
-      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/vaatapuranaathaashtakam.pdf",
-      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/vaatapuranaathaashtakam.pdf",
-      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/vaatapuranaathaashtakam.pdf",
-      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/vaatapuranaathaashtakam.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/vaatapuranaathaashtakam.pdf",
-      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/vaatapuranaathaashtakam.pdf",
-      "audio": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/mp3/vaatapuranaathaashtakam.mp3"
-    }
-  },
-  {
     "name": "Sriimad Andavan Ashrama Stotras",
     "author": "Aacharyas/Shishyas (Andavan Ashramam)",
     "category": "general",
@@ -12092,7 +12218,7 @@
     "name": "Sriimad Vaalmiikiiya Raamaayana",
     "author": "Vaalmiiki",
     "category": "general",
-    "tags": "ramayanam raamaayana raamayana",
+    "tags": "ramayanam raamaayana raamayana ramayan raamayan raamaayan ramayana",
     "links": {
       "roman": "/categories/valmikiramayanam/",
       "kannada": "/categories/valmikiramayanam/",
@@ -12266,7 +12392,7 @@
     "name": "Sriinivaasa Suprabhaatam",
     "author": "Kalyaanapuram Parthasarathi",
     "category": "general",
-    "tags": "srinivasa  suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "srinivasa  suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/sriinivaasasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/sriinivaasasuprabhaatam.pdf",
@@ -12473,7 +12599,7 @@
     "name": "Sriiraama Hrudayam",
     "author": "Adhyaatma Raamaayana",
     "category": "general",
-    "tags": "srirama hridayam hridhayam hrudhayam adhyatma ramayana hrudayam heart",
+    "tags": "srirama hridayam hridhayam hrudhayam adhyatma ramayana hrudayam heart rama raama sriiraama",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/sriiraamahrudayam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/sriiraamahrudayam.pdf",
@@ -12606,7 +12732,7 @@
     "name": "Sriiraama Suprabhaatam",
     "author": "",
     "category": "general",
-    "tags": "srirama  suprabhatam suprabhatham suprabatham suprabatam suprabhadam morning prayer stotram",
+    "tags": "srirama  suprabhatam suprabhatham suprabatham suprabatam suprabhadam morning prayer stotram suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/sriiraamasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/sriiraamasuprabhaatam.pdf",
@@ -12737,7 +12863,7 @@
     "name": "Sriiraghuviir Suprabhaatam",
     "author": "Krishna Kavi",
     "category": "general",
-    "tags": "sriraghuveeraa sriraghuvira  suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "sriraghuveeraa sriraghuvira  suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/sriiraghuviirasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/sriiraghuviirasuprabhaatam.pdf",
@@ -13220,19 +13346,19 @@
     }
   },
   {
-    "name": "Sundara kaandam",
+    "name": "Sundara Kaandam",
     "author": "Vaalmiiki",
     "category": "general",
-    "tags": "sundara kaandam kandam valmiki ramayanam ramayana hanuman kanda chapter",
+    "tags": "sundara kaandam kandam valmiki ramayanam ramayana hanuman kanda chapter ramayan raamayan raamaayan raamayana raamaayana",
     "links": {
-      "roman": "/categories/sundarakaandam/",
-      "kannada": "/categories/sundarakaandam/",
-      "bengali": "/categories/sundarakaandam/",
-      "malayalam": "/categories/sundarakaandam/",
-      "devanagari": "/categories/sundarakaandam/",
-      "telugu": "/categories/sundarakaandam/",
-      "tamil": "/categories/sundarakaandam/",
-      "grantha": "/categories/sundarakaandam/"
+      "roman": "/categories/valmikiramayanam/",
+      "kannada": "/categories/valmikiramayanam/",
+      "bengali": "/categories/valmikiramayanam/",
+      "malayalam": "/categories/valmikiramayanam/",
+      "devanagari": "/categories/valmikiramayanam/",
+      "telugu": "/categories/valmikiramayanam/",
+      "tamil": "/categories/valmikiramayanam/",
+      "grantha": "/categories/valmikiramayanam/"
     }
   },
   {
@@ -13272,7 +13398,7 @@
     "name": "Sundarakaanda Shodashii",
     "author": "Vaalmiiki",
     "category": "general",
-    "tags": "sundarakanda valmiki sundara kanda shodashi sixteen",
+    "tags": "sundarakanda valmiki sundara kanda shodashi sixteen ramayan raamayan raamaayan ramayana raamayana raamaayana",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/sundarakaandashodashii.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/sundarakaandashodashii.pdf",
@@ -13687,7 +13813,7 @@
     "name": "Taittiriiyopanishad\n(Shiikshaavalli, Brahmaanandavalli, Bhruguvallii)",
     "author": "Vedas",
     "category": "general",
-    "tags": "taittriya taitiriya taitriya taitriya upanishat upanishad",
+    "tags": "taittriya taitiriya taitriya taitriya upanishat upanishad taittiri taittari",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/taittiriiyopanishat.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/taittiriiyopanishat.pdf",
@@ -14175,6 +14301,22 @@
     }
   },
   {
+    "name": "Uttara Kaandam",
+    "author": "Vaalmiiki",
+    "category": "general",
+    "tags": "uttara kaandam kandam valmiki ramayan raamayan raamaayan ramayana raamayana raamaayana",
+    "links": {
+      "roman": "/categories/valmikiramayanam/",
+      "kannada": "/categories/valmikiramayanam/",
+      "bengali": "/categories/valmikiramayanam/",
+      "malayalam": "/categories/valmikiramayanam/",
+      "devanagari": "/categories/valmikiramayanam/",
+      "telugu": "/categories/valmikiramayanam/",
+      "tamil": "/categories/valmikiramayanam/",
+      "grantha": "/categories/valmikiramayanam/"
+    }
+  },
+  {
     "name": "Uurdhvapundradhyaanaslokaa",
     "author": "",
     "category": "general",
@@ -14240,10 +14382,27 @@
     }
   },
   {
+    "name": "Vaatapuranaathaashtakam (A Stotram on  Guruvaayuurappan)",
+    "author": "Brahmasrii Ganapatii Shastrii",
+    "category": "general",
+    "tags": "Vatapuranaatha ashtakam Guruvayurapan guruvayur\nGanapati Shastri audio",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/vaatapuranaathaashtakam.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/vaatapuranaathaashtakam.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/vaatapuranaathaashtakam.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/vaatapuranaathaashtakam.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/vaatapuranaathaashtakam.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/vaatapuranaathaashtakam.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/vaatapuranaathaashtakam.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/vaatapuranaathaashtakam.pdf",
+      "audio": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/mp3/vaatapuranaathaashtakam.mp3"
+    }
+  },
+  {
     "name": "Vaatsyavaradadesika Suprabhaatam (Nadadur Ammal Suprabhaatam)",
     "author": "Ghatikaashata Vaatsyavarada Mahaadeshikan",
     "category": "general",
-    "tags": "nadadur nadaadur nadaaduur suprabhaatam suprabhatam suprabatam vatsya varada desika deshika",
+    "tags": "nadadur nadaadur nadaaduur suprabhaatam suprabhatam suprabatam vatsya varada desika deshika suprabaatam suprabhatham suprabatham",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/vaatsyavaradadesikasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/vaatsyavaradadesikasuprabhaatam.pdf",
@@ -14591,6 +14750,22 @@
     }
   },
   {
+    "name": "Vasanta Vallabha Ashtottarashata Naamaavali",
+    "author": "Ashtottarashata Naamaavali",
+    "category": "general",
+    "tags": "vasanta vasantha vallabha vallaba bangalore bengaluru",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/vasantavallabhaashtottarashatanaamaavali.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/vasantavallabhaashtottarashatanaamaavali.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/vasantavallabhaashtottarashatanaamaavali.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/vasantavallabhaashtottarashatanaamaavali.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/vasantavallabhaashtottarashatanaamaavali.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/vasantavallabhaashtottarashatanaamaavali.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/vasantavallabhaashtottarashatanaamaavali.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/vasantavallabhaashtottarashatanaamaavali.pdf"
+    }
+  },
+  {
     "name": "Vasumatii Shatakam (A shatakam on Srii Bhuumi Devi of Oppiliappan Koyil)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
@@ -14724,7 +14899,7 @@
     "name": "Vedaanta Desika Suprabhaatam (A Stotram on Swami Desikan)",
     "author": "",
     "category": "general",
-    "tags": "suprabhatham suprabhatam suprabhatham suprabatham suprabatam morning prayer stotra desikan",
+    "tags": "suprabhatham suprabhatam suprabhatham suprabatham suprabatam morning prayer stotra desikan suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/vedaantadeshikasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/vedaantadeshikasuprabhaatam.pdf",
@@ -14741,7 +14916,7 @@
     "name": "Vedaanta Desika Suprabhaatam (A Stotram on Swami Desikan) (Another Version)",
     "author": "",
     "category": "general",
-    "tags": "suprabhatham suprabhatam suprabhatham suprabatham suprabatam morning prayer stotra desikan alternative version",
+    "tags": "suprabhatham suprabhatam suprabhatham suprabatham suprabatam morning prayer stotra desikan alternative version desika deshika vedanta vedaanta decika",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/vedaantadeshikasuprabhaatam1.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/vedaantadeshikasuprabhaatam1.pdf",
@@ -14836,14 +15011,14 @@
     "category": "general",
     "tags": "vedanta desika vaibava prakashika vaibhavaprakashika glory splendor stotra desikan",
     "links": {
-      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/vedaantadeshikavaibhavaprakaashika.pdf",
-      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/vedaantadeshikavaibhavaprakaashika.pdf",
-      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/vedaantadeshikavaibhavaprakaashika.pdf",
-      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/vedaantadeshikavaibhavaprakaashika.pdf",
-      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/vedaantadeshikavaibhavaprakaashika.pdf",
-      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/vedaantadeshikavaibhavaprakaashika.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/vedaantadeshikavaibhavaprakaashika.pdf",
-      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/vedaantadeshikavaibhavaprakaashika.pdf"
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/vedaantadeshikavaibhavaprakaashikaa.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/vedaantadeshikavaibhavaprakaashikaa.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/vedaantadeshikavaibhavaprakaashikaa.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/vedaantadeshikavaibhavaprakaashikaa.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/vedaantadeshikavaibhavaprakaashikaa.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/vedaantadeshikavaibhavaprakaashikaa.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/vedaantadeshikavaibhavaprakaashikaa.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/vedaantadeshikavaibhavaprakaashikaa.pdf"
     }
   },
   {
@@ -14860,6 +15035,22 @@
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/deshikamangalaashaasanakrama.pdf",
       "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/deshikamangalaashaasanakrama.pdf",
       "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/deshikamangalaashaasanakrama.pdf"
+    }
+  },
+  {
+    "name": "Vedanta Desika Sahasra Naamaavali",
+    "author": "Sahasra Naamaavali(Gopalaraya Mahadesikan)",
+    "category": "general",
+    "tags": "deshika desiga sahasra namavali naamaavali naamavali desika",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/desikadivyasahasranaamaavali.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/desikadivyasahasranaamaavali.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/desikadivyasahasranaamaavali.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/desikadivyasahasranaamaavali.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/desikadivyasahasranaamaavali.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/desikadivyasahasranaamaavali.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/desikadivyasahasranaamaavali.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/desikadivyasahasranaamaavali.pdf"
     }
   },
   {
@@ -15154,7 +15345,7 @@
     "name": "Venkatesha Suprabhaatam",
     "author": "Prativaadi Bhayankaram Annan",
     "category": "general",
-    "tags": "venkatesa srinivasa  suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "venkatesa srinivasa  suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/venkateshasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/venkateshasuprabhaatam.pdf",
@@ -15170,7 +15361,7 @@
     "name": "Venkatesha Suprabhaatam (Comprises of Venkatesha Suprabhaatam, Venkatesha Stotram, Venkatesh Prapatti and Venkatesha Mangalaashaasanam)",
     "author": "Prativaadi Bhayankaram Annan",
     "category": "general",
-    "tags": "venkatesa srinivasa  suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "venkatesa srinivasa  suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/venkateshasuprabhaatam_all.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/venkateshasuprabhaatam_all.pdf",
@@ -15269,7 +15460,7 @@
     "name": "Viiraachala Sriiramachandra Suprabhaatam",
     "author": "Sriirangaraamaanuja Mahaadeshikan (Andavan Ashramam)",
     "category": "general",
-    "tags": "virachala veerachala  suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "virachala veerachala  suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/viiraachalasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/viiraachalasuprabhaatam.pdf",
@@ -15333,7 +15524,7 @@
     "name": "Viiraraaghava Suprabhaatam (Srii Kingruhesha Suprabhaatam)",
     "author": "",
     "category": "general",
-    "tags": "kim veeraraghava gruham kingruhesa kimgruhesa kimgrihesha kingrihesa kingrihesha evvul suprabhatam",
+    "tags": "kim veeraraghava gruham kingruhesa kimgruhesa kimgrihesha kingrihesa kingrihesha evvul suprabhatam suprabhaatam suprabaatam suprabhatham suprabatham suprabatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/kingruheshasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/kingruheshasuprabhaatam.pdf",
@@ -15702,7 +15893,7 @@
     "name": "Yadugiriisha Suprabhaatam",
     "author": "",
     "category": "general",
-    "tags": "yadugisa yadhugirisha yadhugirisa suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "yadugisa yadhugirisha yadhugirisa suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/yadugiriishasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/yadugiriishasuprabhaatam.pdf",
@@ -15719,7 +15910,7 @@
     "name": "Yadugirinaayikaa Suprabhaatam",
     "author": "",
     "category": "general",
-    "tags": "yadugirinayika yadhugirinayika suprabhatam suprabhatham suprabatham suprabatam",
+    "tags": "yadugirinayika yadhugirinayika suprabhatam suprabhatham suprabatham suprabatam suprabhaatam suprabaatam",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/yadugirinaayikaasuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/yadugirinaayikaasuprabhaatam.pdf",
@@ -15956,19 +16147,19 @@
     }
   },
   {
-    "name": "Yuddha kaandam",
+    "name": "Yuddha Kaandam",
     "author": "Vaalmiiki",
     "category": "general",
-    "tags": "kiskinda yuddha kaandam kandam valmiki ramayanam",
+    "tags": "kiskinda yuddha kaandam kandam valmiki ramayanam ramayan raamayan raamaayan ramayana raamayana raamaayana",
     "links": {
-      "roman": "/categories/yuddhakaandam/",
-      "kannada": "/categories/yuddhakaandam/",
-      "bengali": "/categories/yuddhakaandam/",
-      "malayalam": "/categories/yuddhakaandam/",
-      "devanagari": "/categories/yuddhakaandam/",
-      "telugu": "/categories/yuddhakaandam/",
-      "tamil": "/categories/yuddhakaandam/",
-      "grantha": "/categories/yuddhakaandam/"
+      "roman": "/categories/valmikiramayanam/",
+      "kannada": "/categories/valmikiramayanam/",
+      "bengali": "/categories/valmikiramayanam/",
+      "malayalam": "/categories/valmikiramayanam/",
+      "devanagari": "/categories/valmikiramayanam/",
+      "telugu": "/categories/valmikiramayanam/",
+      "tamil": "/categories/valmikiramayanam/",
+      "grantha": "/categories/valmikiramayanam/"
     }
   }
 ]

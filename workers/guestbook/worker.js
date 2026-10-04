@@ -1,4 +1,4 @@
-const ALLOWED_ORIGINS = ["https://beta.prapatti.com", "https://prapatti.com", "https://dev.prapatti.com", "http://localhost:1313", "https://prapatti-prototype.pages.dev"];
+const ALLOWED_ORIGINS = ["https://www.prapatti.com", "https://prapatti.com", "https://beta.prapatti.com", "https://dev.prapatti.com", "http://localhost:1313", "https://prapatti-prototype.pages.dev"];
 
 const SPAM_PATTERNS = [
   /https?:\/\//i,

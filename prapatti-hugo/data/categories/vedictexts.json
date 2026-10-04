@@ -24,7 +24,7 @@
     }
   },
   {
-    "name": "Taittiriiya Aaranyakam First Prashna (Aruna Prashna)",
+    "name": "Taittiriiya Aaranyakam 1 (Aruna Prashna)",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/aaranyakam_01.pdf",
@@ -36,7 +36,7 @@
     }
   },
   {
-    "name": "Taittiriiya Aaranyakam Second Prashna",
+    "name": "Taittiriiya Aaranyakam 2",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/aaranyakam_02.pdf",
@@ -48,7 +48,7 @@
     }
   },
   {
-    "name": "Taittiriiya Aaranyakam Third Prashna",
+    "name": "Taittiriiya Aaranyakam 3",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/aaranyakam_03.pdf",
@@ -60,7 +60,7 @@
     }
   },
   {
-    "name": "Taittiriiya Aaranyakam Fourth Prashna",
+    "name": "Taittiriiya Aaranyakam 4",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/aaranyakam_04.pdf",
@@ -72,7 +72,7 @@
     }
   },
   {
-    "name": "Taittiriiya Aaranyakam Fifth Prashna",
+    "name": "Taittiriiya Aaranyakam 5",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/aaranyakam_05.pdf",
@@ -84,7 +84,7 @@
     }
   },
   {
-    "name": "Yajurveda Ekagnikaandam First Prashna",
+    "name": "Yajurveda Ekagnikaandam 1",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/ekaagnikaandam_01.pdf",
@@ -96,7 +96,7 @@
     }
   },
   {
-    "name": "Yajurveda Ekagnikaandam Second Prashna",
+    "name": "Yajurveda Ekagnikaandam 2",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/ekaagnikaandam_02.pdf",
@@ -132,7 +132,7 @@
     }
   },
   {
-    "name": "Taittiriiya Brahmana First Ashtaka First Prashna",
+    "name": "Taittiriiya Brahmana 1-01",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_1_01.pdf",
@@ -144,7 +144,7 @@
     }
   },
   {
-    "name": "Taittiriiya Brahmana First Ashtaka Second Prashna",
+    "name": "Taittiriiya Brahmana 1-02",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_1_02.pdf",
@@ -156,31 +156,7 @@
     }
   },
   {
-    "name": "Taittiriiya Brahmana Second Ashtaka First Prashna",
-    "author": "Vedas",
-    "links": {
-      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_2_01.pdf",
-      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/braahmanam_2_01.pdf",
-      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/braahmanam_2_01.pdf",
-      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/braahmanam_2_01.pdf",
-      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/braahmanam_2_01.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/braahmanam_2_01.pdf"
-    }
-  },
-  {
-    "name": "Taittiriiya Brahmana Second Ashtaka Second Prashna",
-    "author": "Vedas",
-    "links": {
-      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_2_02.pdf",
-      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/braahmanam_2_02.pdf",
-      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/braahmanam_2_02.pdf",
-      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/braahmanam_2_02.pdf",
-      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/braahmanam_2_02.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/braahmanam_2_02.pdf"
-    }
-  },
-  {
-    "name": "Taittiriiya Brahmana First Ashtaka Third Prashna",
+    "name": "Taittiriiya Brahmana 1-03",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_1_03.pdf",
@@ -192,7 +168,7 @@
     }
   },
   {
-    "name": "Taittiriiya Brahmana First Ashtaka Fourth Prashna",
+    "name": "Taittiriiya Brahmana 1-04",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_1_04.pdf",
@@ -204,7 +180,7 @@
     }
   },
   {
-    "name": "Taittiriiya Brahmana First Ashtaka Fifth Prashna",
+    "name": "Taittiriiya Brahmana 1-05",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_1_05.pdf",
@@ -216,7 +192,7 @@
     }
   },
   {
-    "name": "Taittiriiya Brahmana First Ashtaka Sixth Prashna",
+    "name": "Taittiriiya Brahmana 1-06",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_1_06.pdf",
@@ -228,7 +204,7 @@
     }
   },
   {
-    "name": "Taittiriiya Brahmana First Ashtaka Seventh Prashna",
+    "name": "Taittiriiya Brahmana 1-07",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_1_07.pdf",
@@ -240,7 +216,7 @@
     }
   },
   {
-    "name": "Taittiriiya Brahmana First Ashtaka Eighth Prashna",
+    "name": "Taittiriiya Brahmana 1-08",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_1_08.pdf",
@@ -252,7 +228,55 @@
     }
   },
   {
-    "name": "Taittiriiya Brahmana Third Ashtaka Seventh Prashna (a.k.a. Acchidram)",
+    "name": "Taittiriiya Brahmana 2-01",
+    "author": "Vedas",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_2_01.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/braahmanam_2_01.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/braahmanam_2_01.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/braahmanam_2_01.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/braahmanam_2_01.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/braahmanam_2_01.pdf"
+    }
+  },
+  {
+    "name": "Taittiriiya Brahmana 2-02",
+    "author": "Vedas",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_2_02.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/braahmanam_2_02.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/braahmanam_2_02.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/braahmanam_2_02.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/braahmanam_2_02.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/braahmanam_2_02.pdf"
+    }
+  },
+  {
+    "name": "Taittiriiya Brahmana 2-03",
+    "author": "Vedas",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_2_03.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/braahmanam_2_03.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/braahmanam_2_03.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/braahmanam_2_03.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/braahmanam_2_03.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/braahmanam_2_03.pdf"
+    }
+  },
+  {
+    "name": "Taittiriiya Brahmana 2-04",
+    "author": "Vedas",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_2_04.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/braahmanam_2_04.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/braahmanam_2_04.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/braahmanam_2_04.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/braahmanam_2_04.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/braahmanam_2_04.pdf"
+    }
+  },
+  {
+    "name": "Taittiriiya Brahmana 3-07(a.k.a. Acchidram)",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_3_07.pdf",
@@ -276,7 +300,7 @@
     }
   },
   {
-    "name": "Taittiriiya Brahmana Third Ashtaka Eighth Prashna (a.k.a. Ashvamedham - 1)",
+    "name": "Taittiriiya Brahmana 3-08 (a.k.a. Ashvamedham - 1)",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_3_08.pdf",
@@ -288,7 +312,7 @@
     }
   },
   {
-    "name": "Taittiriiya Brahmana Third Ashtaka Ninth Prashna (a.k.a. Ashvamedham - 2)",
+    "name": "Taittiriiya Brahmana 3-09 (a.k.a. Ashvamedham - 2)",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_3_09.pdf",
@@ -300,7 +324,7 @@
     }
   },
   {
-    "name": "Taittiriiya Brahmana Third Ashtaka Tenth Prashna (a.k.a. Kaathakam - 1)",
+    "name": "Taittiriiya Brahmana 3-10 (a.k.a. Kaathakam - 1)",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_3_10.pdf",
@@ -312,7 +336,7 @@
     }
   },
   {
-    "name": "Taittiriiya Brahmana Third Ashtaka Eleventh Prashna (a.k.a. Kaathakam - 1)",
+    "name": "Taittiriiya Brahmana 3-11 (a.k.a. Kaathakam - 2)",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_3_11.pdf",
@@ -324,7 +348,7 @@
     }
   },
   {
-    "name": "Taittiriiya Brahmana Third Ashtaka Twelfth Prashna (a.k.a. Kaathakam - 1)",
+    "name": "Taittiriiya Brahmana 3-12 (a.k.a. Kaathakam - 3)",
     "author": "Vedas",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/braahmanam_3_12.pdf",
@@ -591,7 +615,7 @@
     "name": "Taittiriiyopanishad",
     "author": "Vedas",
     "links": {
-      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/taittiriiyopanishad.pdf",
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/taittiriiyopanishat.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/taittiriiyopanishat.pdf",
       "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/taittiriiyopanishat.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/taittiriiyopanishat.pdf",

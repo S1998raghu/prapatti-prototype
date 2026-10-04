@@ -32,7 +32,7 @@
           <td>{{ .author }}</td>
           {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
           {{ $link := index $stotra.links . }}
-          <td>{{ if $link }}<a href="{{ $link }}" target="_blank"><img src="/images/{{ index $icons . }}" alt="{{ . }}"></a>{{ end }}</td>
+          <td>{{ if $link }}<a href="{{ $link }}"{{ if not (hasPrefix $link "/categories/") }} target="_blank"{{ end }}><img src="/images/{{ index $icons . }}" alt="{{ . }}"></a>{{ end }}</td>
           {{ end }}
         </tr>
         {{ end }}

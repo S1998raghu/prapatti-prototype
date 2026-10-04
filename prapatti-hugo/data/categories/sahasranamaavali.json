@@ -70,8 +70,8 @@
     }
   },
   {
-    "name": "Vishnu                          Sahasra Naamaavali",
-    "author": "Sahasra\n                           Naamaavali",
+    "name": "Vishnu Sahasra Naamaavali",
+    "author": "Sahasra Naamaavali",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/vishnusahasranaamaavali.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/vishnusahasranaamaavali.pdf",
@@ -81,6 +81,20 @@
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/vishnusahasranaamaavali.pdf",
       "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/vishnusahasranaamaavali.pdf",
       "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/vishnusahasranaamaavali.pdf"
+    }
+  },
+  {
+    "name": "Desika Sahasra Naamaavali",
+    "author": "Sahasra Naamaavali",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/desikadivyasahasranaamaavali.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/desikadivyasahasranaamaavali.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/desikadivyasahasranaamaavali.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/desikadivyasahasranaamaavali.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/desikadivyasahasranaamaavali.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/desikadivyasahasranaamaavali.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/desikadivyasahasranaamaavali.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/desikadivyasahasranaamaavali.pdf"
     }
   }
 ]
