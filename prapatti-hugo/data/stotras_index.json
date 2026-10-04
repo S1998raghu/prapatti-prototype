@@ -216,8 +216,7 @@
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/adivanshatavairigadyam.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/adivanshatavairigadyam.pdf",
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/adivanshatavairigadyam.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/adivanshatavairigadyam.pdf",
-      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/adivanshatavairigadyam.pdf"
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/adivanshatavairigadyam.pdf"
     }
   },
   {
@@ -1482,14 +1481,7 @@
     "category": "general",
     "tags": "bhadrachala badrachala badracala rama sita seetha panchashat pancashat pancasat panchasat\nnadadur srinidi srinidhi",
     "links": {
-      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/bhadraachalapanchaashat.pdf",
-      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/bhadraachalapanchaashat.pdf",
-      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/bhadraachalapanchaashat.pdf",
-      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/bhadraachalapanchaashat.pdf",
-      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/bhadraachalapanchaashat.pdf",
-      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/bhadraachalapanchaashat.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/bhadraachalapanchaashat.pdf",
-      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/bhadraachalapanchaashat.pdf"
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/bhadraachalapanchaashat.pdf"
     }
   },
   {
@@ -1904,7 +1896,6 @@
       "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/chilukuurustuti.pdf",
       "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/chilukuurustuti.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/chilukuurustuti.pdf",
-      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/bachilukuurustuti.pdf",
       "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/chilukuurustuti.pdf",
       "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/chilukuurustuti.pdf"
     }
@@ -1981,14 +1972,13 @@
     "category": "general",
     "tags": "vaiyavur vaiyaavuur vaiyavor dakshina seshachala srinivasa venkatesha prasanna mangalam",
     "links": {
-      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/sriinivaasamangalam.pdf",
-      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/sriinivaasamangalam.pdf",
-      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/sriinivaasamangalam.pdf",
-      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/sriinivaasamangalam.pdf",
-      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/sriinivaasamangalam.pdf",
-      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/sriinivaasamangalam.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tam_ds/sriinivaasamangalam.pdf",
-      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/sriinivaasamangalam.pdf"
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/sriinivaasamangalam_ds.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/sriinivaasamangalam_ds.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/sriinivaasamangalam_ds.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/sriinivaasamangalam_ds.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/sriinivaasamangalam_ds.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/sriinivaasamangalam_ds.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/sriinivaasamangalam_ds.pdf"
     }
   },
   {
@@ -2003,7 +1993,6 @@
       "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/sriinivaasaprapatti_ds.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/sriinivaasaprapatti_ds.pdf",
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/sriinivaasaprapatti_ds.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tam_ds/sriinivaasaprapatti_ds.pdf",
       "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/sriinivaasaprapatti_ds.pdf"
     }
   },
@@ -2019,7 +2008,6 @@
       "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/sriinivaasastotram_ds.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/sriinivaasastotram_ds.pdf",
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/sriinivaasastotram_ds.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tam_ds/sriinivaasastotram_ds.pdf",
       "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/sriinivaasastotram_ds.pdf"
     }
   },
@@ -2035,7 +2023,6 @@
       "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/sriinivaasasuprabhaatam_ds.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/sriinivaasasuprabhaatam_ds.pdf",
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/sriinivaasasuprabhaatam_ds.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tam_ds/sriinivaasasuprabhaatam_ds.pdf",
       "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/sriinivaasasuprabhaatam_ds.pdf"
     }
   },
@@ -2061,14 +2048,14 @@
     "category": "vedantadesikasstotramaala",
     "tags": "dashavatara dasavatara vadiraj saint ten avatars vishnu",
     "links": {
-      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/desika-stotramaala/dashaavataarastotram1.pdf",
-      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/desika-stotramaala/dashaavataarastotram1.pdf",
-      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/desika-stotramaala/dashaavataarastotram1.pdf",
-      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/desika-stotramaala/dashaavataarastotram1.pdf",
-      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/desika-stotramaala/dashaavataarastotram1.pdf",
-      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/desika-stotramaala/dashaavataarastotram1.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/desika-stotramaala/dashaavataarastotram1.pdf",
-      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/desika-stotramaala/dashaavataarastotram1.pdf"
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/dashaavataarastotram1.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/dashaavataarastotram1.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/dashaavataarastotram1.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/dashaavataarastotram1.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/dashaavataarastotram1.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/dashaavataarastotram1.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/dashaavataarastotram1.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/dashaavataarastotram1.pdf"
     }
   },
   {
@@ -6526,7 +6513,6 @@
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/krishnaashtottarashatanaamaavali.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/krishnaashtottarashatanaamaavali.pdf",
       "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/krishnaashtottarashatanaamaavali.pdf",
-      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/krishnaashtottashatanaamaavali.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/krishnaashtottarashatanaamaavali.pdf",
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/krishnaashtottarashatanaamaavali.pdf",
       "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/krishnaashtottarashatanaamaavali.pdf",
@@ -6949,8 +6935,7 @@
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/lakshmiidandakam.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/lakshmiidandakam.pdf",
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/lakshmiidandakam.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/lakshmiidandakam.pdf",
-      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/lakshmiidandakam.pdf"
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/lakshmiidandakam.pdf"
     }
   },
   {
@@ -7776,8 +7761,7 @@
       "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/madanamohanaashtakam.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/madanamohanaashtakam.pdf",
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/madanamohanaashtakam.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/madanamohanaashtakam.pdf",
-      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/madanamohanaashtakam.pdf"
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/madanamohanaashtakam.pdf"
     }
   },
   {
@@ -10138,8 +10122,7 @@
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/parakaalamathamtaniyan.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/parakaalamathamtaniyan.pdf",
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/parakaalamathamtaniyan.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/parakaalamathamtaniyan.pdf",
-      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/parakaalamathamtaniyan.pdf"
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/parakaalamathamtaniyan.pdf"
     }
   },
   {
@@ -10264,8 +10247,7 @@
       "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/paundariikapuramtaniyan.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/paundariikapuramtaniyan.pdf",
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/paundariikapuramtaniyan.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/paundariikapuramtaniyan.pdf",
-      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/paundariikapuramtaniyan.pdf"
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/paundariikapuramtaniyan.pdf"
     }
   },
   {
@@ -13093,7 +13075,6 @@
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/desika-prabandham/sriivaishnavadinashari.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/desika-prabandham/sriivaishnavadinashari.pdf",
-      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/desika-prabandham/sriivaishnavadinashari.pdf",
       "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/desika-prabandham/sriivaishnavadinashari.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/desika-prabandham/sriivaishnavadinashari.pdf",
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/desika-prabandham/sriivaishnavadinashari.pdf",
@@ -15225,7 +15206,6 @@
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/venkateshamangalaashtakam.pdf",
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/venkateshamangalaashtakam.pdf",
       "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/venkateshamangalaashtakam.pdf",
-      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/venkateshamangalaashtakam.pdf",
       "audio": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/mp3/venkateshamangalaashtakam.mp3"
     }
   },
