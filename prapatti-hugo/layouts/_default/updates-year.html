@@ -33,7 +33,7 @@
           {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
           {{ $icons := dict "roman" "pdf-icon.png" "kannada" "pdf_kannada.png" "bengali" "pdf_bengali.png" "malayalam" "pdf_malayalam.png" "devanagari" "pdf_sanskrit.png" "telugu" "pdf_telugu.png" "tamil" "pdf_tamil.png" "grantha" "pdf_grantha.png" }}
           {{ $link := index $update.links . }}
-          <td>{{ if $link }}<a href="{{ $link }}" target="_blank"><img src="/images/{{ index $icons . }}" alt="{{ . }}"></a>{{ end }}</td>
+          <td>{{ if $link }}{{ if hasPrefix $link "/categories/" }}<a href="{{ $link }}"><img src="/images/filecollection.png" alt="{{ . }}"></a>{{ else }}<a href="{{ $link }}" target="_blank"><img src="/images/{{ index $icons . }}" alt="{{ . }}"></a>{{ end }}{{ end }}</td>
           {{ end }}
         </tr>
         {{ end }}

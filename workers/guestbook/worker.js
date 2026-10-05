@@ -91,8 +91,9 @@ export default {
       if (isSpam({ message, author })) return json({ ok: true }, 200, request); // silently drop
 
       const timestamp = new Date().toISOString();
+      // New entries wait for the owner's approval in /forum/admin
       await env.DB.prepare(
-        "INSERT INTO entries (author, email, location, message, timestamp, approved) VALUES (?, ?, ?, ?, ?, 1)"
+        "INSERT INTO entries (author, email, location, message, timestamp, approved) VALUES (?, ?, ?, ?, ?, 0)"
       ).bind(author.trim(), email?.trim() || "", location?.trim() || "", message.trim(), timestamp).run();
 
       return json({ ok: true }, 200, request);
@@ -100,19 +101,31 @@ export default {
 
     // GET /entries — public approved entries
     if (request.method === "GET" && path === "/entries") {
-      const page = parseInt(url.searchParams.get("page") || "1");
+      const page = Math.max(1, parseInt(url.searchParams.get("page") || "1") || 1);
       const limit = 20;
       const offset = (page - 1) * limit;
+      // Optional ?year=2007 filter; timestamps are ISO 8601 so the year is the first 4 chars
+      const year = /^\d{4}$/.test(url.searchParams.get("year") || "") ? url.searchParams.get("year") : null;
+      const where = year ? "approved=1 AND substr(timestamp, 1, 4) = ?" : "approved=1";
+      const params = year ? [year] : [];
 
       const { results } = await env.DB.prepare(
-        "SELECT id, author, location, message, timestamp, reply FROM entries WHERE approved=1 ORDER BY id DESC LIMIT ? OFFSET ?"
-      ).bind(limit, offset).all();
+        `SELECT id, author, location, message, timestamp, reply FROM entries WHERE ${where} ORDER BY timestamp DESC, id DESC LIMIT ? OFFSET ?`
+      ).bind(...params, limit, offset).all();
 
       const { results: countResult } = await env.DB.prepare(
-        "SELECT COUNT(*) as total FROM entries WHERE approved=1"
-      ).all();
+        `SELECT COUNT(*) as total FROM entries WHERE ${where}`
+      ).bind(...params).all();
 
       return json({ entries: results, total: countResult[0].total, page, limit }, 200, request);
+    }
+
+    // GET /years — years that have approved entries, newest first
+    if (request.method === "GET" && path === "/years") {
+      const { results } = await env.DB.prepare(
+        "SELECT substr(timestamp, 1, 4) AS year, COUNT(*) AS count FROM entries WHERE approved=1 GROUP BY year ORDER BY year DESC"
+      ).all();
+      return json({ years: results }, 200, request);
     }
 
     // Admin routes — require password
@@ -120,7 +133,7 @@ export default {
     if (request.method === "GET" && path === "/admin/entries") {
       if (!isAdmin(request, env)) return unauthorized(request);
       const { results } = await env.DB.prepare(
-        "SELECT * FROM entries ORDER BY approved ASC, id DESC"
+        "SELECT * FROM entries ORDER BY approved ASC, timestamp DESC LIMIT 300"
       ).all();
       return json(results, 200, request);
     }

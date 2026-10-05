@@ -36,7 +36,7 @@
           <td>{{ with $s.links.audio }}<a href="{{ . }}" target="_blank"><img src="/images/listen.png" alt="audio"></a>{{ end }}</td>
           {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
           {{ $link := index $s.links . }}
-          <td>{{ if $link }}<a href="{{ $link }}" target="_blank"><img src="/images/{{ index $icons . }}" alt="{{ . }}"></a>{{ end }}</td>
+          <td>{{ if $link }}{{ if hasPrefix $link "/categories/" }}<a href="{{ $link }}"><img src="/images/filecollection.png" alt="{{ . }}"></a>{{ else }}<a href="{{ $link }}" target="_blank"><img src="/images/{{ index $icons . }}" alt="{{ . }}"></a>{{ end }}{{ end }}</td>
           {{ end }}
         </tr>
         {{ end }}

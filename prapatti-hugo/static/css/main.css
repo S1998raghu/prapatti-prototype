@@ -24,7 +24,7 @@ a:hover { color: #cc4400; text-decoration: underline; }
 img { max-width: 100%; height: auto; }
 
 .container {
-  max-width: 1100px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 1.25rem;
 }
@@ -348,6 +348,9 @@ img { max-width: 100%; height: auto; }
 }
 .table-striped tbody tr:nth-child(odd) { background: #fff8ee; }
 .table-striped tbody tr:nth-child(even) { background: #fff; }
+/* Latest Updates: rows show the panel's peach through, as on prapatti.com */
+#indexpagetable tbody tr { background: transparent; }
+#indexpagetable tbody tr:nth-child(odd) { background: rgba(0, 0, 0, 0.05); }
 .table-bordered { border: 1px solid #dee2e6; }
 .table img { width: 24px; height: auto; display: block; margin: 0 auto; }
 .table thead img { width: 36px; }
@@ -369,15 +372,15 @@ img { max-width: 100%; height: auto; }
 
 .works-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
 }
 
 .work-card {
   background: #FFCC80;
   border: 1px solid #CCE0FF;
   border-radius: 3px;
-  padding: 0.6rem 0.5rem;
+  padding: 0.4rem 0.35rem;
   text-align: center;
   color: #333;
   display: block;
@@ -398,15 +401,15 @@ img { max-width: 100%; height: auto; }
 
 .work-name {
   font-family: 'Crimson Pro', serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  margin-bottom: 0.25rem;
+  line-height: 1.2;
 }
 
 .work-author {
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   color: #7a6a50;
-  margin-bottom: 0.5rem;
+  margin-top: 0.15rem;
 }
 
 .work-scripts {
@@ -813,7 +816,7 @@ img { max-width: 100%; height: auto; }
 
 /* ── Responsive ───────────────────────────────────────── */
 @media (max-width: 900px) {
-  .works-grid { grid-template-columns: repeat(2, 1fr); }
+  .works-grid { grid-template-columns: repeat(4, 1fr); }
   .categories-grid { grid-template-columns: repeat(2, 1fr); }
   .nav-search input { width: 130px; }
   .navbar, .nav-bar { grid-template-columns: 1fr auto 1fr; gap: 0.5rem; }

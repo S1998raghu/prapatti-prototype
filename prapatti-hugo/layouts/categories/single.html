@@ -2,7 +2,7 @@
 {{ $slug := .Params.slug }}
 {{ $stotras := index site.Data.categories $slug }}
 <div style="font-size:0.85rem;margin-bottom:0.5rem" class="container">
-  <a href="/">Home</a> &rsaquo; <a href="/stotras/by-category/">All Categories</a> &rsaquo; {{ .Title }}
+  <a href="/">Home</a> &rsaquo; {{ .Title }}
 </div>
 <div class="white-wrapper container mb-4">
   <h3 style="color:#ff6e0d;font-size:1.1rem;margin-bottom:1rem">{{ .Title }}</h3>
@@ -32,7 +32,7 @@
           <td>{{ .author }}</td>
           {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
           {{ $link := index $stotra.links . }}
-          <td>{{ if $link }}<a href="{{ $link }}"{{ if not (hasPrefix $link "/categories/") }} target="_blank"{{ end }}><img src="/images/{{ index $icons . }}" alt="{{ . }}"></a>{{ end }}</td>
+          <td>{{ if $link }}{{ if hasPrefix $link "/categories/" }}<a href="{{ $link }}"><img src="/images/filecollection.png" alt="{{ . }}"></a>{{ else }}<a href="{{ $link }}" target="_blank"><img src="/images/{{ index $icons . }}" alt="{{ . }}"></a>{{ end }}{{ end }}</td>
           {{ end }}
         </tr>
         {{ end }}

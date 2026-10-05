@@ -31,31 +31,26 @@
   </div>
 
   <!-- Major Works -->
-  <div style="display:flex;align-items:center;justify-content:space-between;margin-top:0;margin-bottom:0.75rem">
-    <h3 style="color:#ff6e0d;font-size:1.1rem;margin:0">Major Works</h3>
-    <a href="/stotras/by-category/" style="font-size:0.9rem;font-weight:600;color:#ff6e0d">All Major Works →</a>
-  </div>
+  <h3 style="color:#ff6e0d;font-size:1.1rem;margin-bottom:1rem">Major Works:</h3>
   <div class="works-grid">
     {{ range site.Data.major_works }}
     {{ $work := . }}
     <a href="{{ .url }}" class="work-card">
       <div class="work-name">{{ .name }}</div>
-      <div class="work-author">{{ .author }}</div>
+      {{ with .author }}<div class="work-author">{{ . }}</div>{{ end }}
     </a>
     {{ end }}
   </div>
-</div>
 
-<!-- Latest Updates -->
-<div class="white-wrapper container-wide mb-4">
-  <h3 style="color:#ff6e0d;font-size:1.1rem;margin-bottom:1rem">Latest Updates:</h3>
+  <!-- Latest Updates -->
+  <h3 style="color:#ff6e0d;font-size:1.1rem;margin:2rem 0 1rem">Latest Updates:</h3>
 
   <div class="table-responsive">
-    <table class="table table-bordered table-striped text-center" style="width:100%;font-size:0.82rem" id="indexpagetable">
+    <table class="table table-bordered table-striped text-center" style="width:100%;font-size:0.75rem" id="indexpagetable">
       <thead>
         <tr>
           <th>Date</th>
-          <th style="min-width:420px">Latest News &amp; Updates</th>
+          <th>Latest News &amp; Updates</th>
           <th>Audio</th>
           <th>Roman</th>
           <th>Kannada</th>
@@ -80,7 +75,7 @@
           <td>{{ with .links.audio }}<a href="{{ . }}" target="_blank"><img src="/images/listen.png" alt="audio"></a>{{ end }}</td>
           {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
           {{ $link := index $update.links . }}
-          <td>{{ if $link }}<a href="{{ $link }}" target="_blank"><img src="/images/{{ index $icons . }}" alt="{{ . }}"></a>{{ end }}</td>
+          <td>{{ if $link }}{{ if hasPrefix $link "/categories/" }}<a href="{{ $link }}"><img src="/images/filecollection.png" alt="{{ . }}"></a>{{ else }}<a href="{{ $link }}" target="_blank"><img src="/images/{{ index $icons . }}" alt="{{ . }}"></a>{{ end }}{{ end }}</td>
           {{ end }}
         </tr>
         {{ end }}
