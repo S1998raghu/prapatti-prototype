@@ -214,9 +214,12 @@
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/adivanshatavairigadyam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/adivanshatavairigadyam.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/adivanshatavairigadyam.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/adivanshatavairigadyam.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/adivanshatavairigadyam.pdf",
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/adivanshatavairigadyam.pdf",
-      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/adivanshatavairigadyam.pdf"
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/adivanshatavairigadyam.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/adivanshatavairigadyam.pdf"
     }
   },
   {
@@ -1035,7 +1038,7 @@
     "name": "Aparyaaptaamrutavimshati (A Stotram on Lord Sarangapani of Kumbhaghonam)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "sarangapani aravamuthar aprayapta kumbakonam\nnadadur srinidi srinidhi",
+    "tags": "sarangapani aravamuthar aprayapta kumbakonam\nnadadur srinidi srinidhi sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/aparyaaptaamrutavimshati.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/aparyaaptaamrutavimshati.pdf",
@@ -1268,7 +1271,7 @@
     "name": "Avataaragiitam ( A Stotram on Dashaavataram of Lord Vishu)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "avataragitam avatara audio\nnadadur srinidi srinidhi",
+    "tags": "avataragitam avatara audio\nnadadur srinidi srinidhi sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/avataaragiitam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/avataaragiitam.pdf",
@@ -1383,7 +1386,7 @@
     "name": "Balaji Vimshati",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "srinidhi sreenidhi balaji vimshati vimsati villur nadadur swami",
+    "tags": "srinidhi sreenidhi balaji vimshati vimsati villur nadadur swami sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/balajivimshati.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/balajivimshati.pdf",
@@ -1479,9 +1482,16 @@
     "name": "Bhadraachala Panchaashat (A Stotram on Lord Bhadraachala Sri Sita Ramachandra)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "bhadrachala badrachala badracala rama sita seetha panchashat pancashat pancasat panchasat\nnadadur srinidi srinidhi",
+    "tags": "bhadrachala badrachala badracala rama sita seetha panchashat pancashat pancasat panchasat\nnadadur srinidi srinidhi sriinidhi",
     "links": {
-      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/bhadraachalapanchaashat.pdf"
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/bhadraachalapanchaashat.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/bhadraachalapanchaashat.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/bhadraachalapanchaashat.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/bhadraachalapanchaashat.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/bhadraachalapanchaashat.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/bhadraachalapanchaashat.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/bhadraachalapanchaashat.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/bhadraachalapanchaashat.pdf"
     }
   },
   {
@@ -1896,6 +1906,7 @@
       "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/chilukuurustuti.pdf",
       "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/chilukuurustuti.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/chilukuurustuti.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/chilukuurustuti.pdf",
       "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/chilukuurustuti.pdf",
       "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/chilukuurustuti.pdf"
     }
@@ -4786,7 +4797,7 @@
     "name": "Gopaalatrimshat ( A Stotram on Lord Rajagopaala of Mannaargudi)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "Rajagopala gopala manargudi\nnadadur srinidi srinidhi",
+    "tags": "Rajagopala gopala manargudi\nnadadur srinidi srinidhi sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/gopaalatrimshat.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/gopaalatrimshat.pdf",
@@ -6288,7 +6299,7 @@
     "name": "Kaveri Dashakam",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "kaveri dashakam dasakam\nnadadur srinidi srinidhi",
+    "tags": "kaveri dashakam dasakam\nnadadur srinidi srinidhi sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/kaaveriidashakam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/kaaveriidashakam.pdf",
@@ -6450,7 +6461,7 @@
     "name": "Komalavallii Suprabhaatam (A Stotram on Komalavallii Thaayaar of Kumbhaghonam)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "komalavali kumbakonam thayar suprabhatam suprabhatham suprabatham suprabatam\nnadadur srinidi srinidhi",
+    "tags": "komalavali kumbakonam thayar suprabhatam suprabhatham suprabatham suprabatam\nnadadur srinidi srinidhi sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/komalavalliisuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/komalavalliisuprabhaatam.pdf",
@@ -6513,6 +6524,7 @@
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/krishnaashtottarashatanaamaavali.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/krishnaashtottarashatanaamaavali.pdf",
       "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/krishnaashtottarashatanaamaavali.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/krishnaashtottarashatanaamaavali.pdf",
       "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/krishnaashtottarashatanaamaavali.pdf",
       "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/krishnaashtottarashatanaamaavali.pdf",
       "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/krishnaashtottarashatanaamaavali.pdf",
@@ -6833,7 +6845,7 @@
     "name": "Kuurmaraajastava (A Stotram on Kuurma Avataram of Lord Vishnu)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "Kurma avataram audio\nnadadur srinidi srinidhi",
+    "tags": "Kurma avataram audio\nnadadur srinidi srinidhi sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/kuurmaraajastava.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/kuurmaraajastava.pdf",
@@ -8044,7 +8056,7 @@
     "name": "Mandasmita Ramayanam (Seven spandas and 318 stanzas)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "ramayana raamaayana raamaayanam ramayanam mandasmita manda\nnadadur srinidi srinidhi",
+    "tags": "ramayana raamaayana raamaayanam ramayanam mandasmita manda\nnadadur srinidi srinidhi sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/mandasmitaraamaayanam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/mandasmitaraamaayanam.pdf",
@@ -8092,7 +8104,7 @@
     "name": "Manju Ramayanam (Four sargas and 243 stanzas)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "ramayana raamaayana raamaayanam ramayanam manju\nnadadur srinidi srinidhi",
+    "tags": "ramayana raamaayana raamaayanam ramayanam manju\nnadadur srinidi srinidhi sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/manjuraamaayana.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/manjuraamaayana.pdf",
@@ -8663,7 +8675,7 @@
     "name": "Naavalpaakamanimaalaa",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "navalpakam audio\nnadadur srinidi srinidhi navaalpakam manimala villur nadur swami prabandham",
+    "tags": "navalpakam audio\nnadadur srinidi srinidhi navaalpakam manimala villur nadur swami prabandham sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/naavalpaakamanimaalaa.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/naavalpaakamanimaalaa.pdf",
@@ -10622,7 +10634,7 @@
     "name": "Purushottamashodashii(A Stotram on Lord Jagannaatha of Puri)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "puri jaganath\nnadadur srinidi srinidhi jagannatha odisha sholas sixteen stotram villur",
+    "tags": "puri jaganath\nnadadur srinidi srinidhi jagannatha odisha sholas sixteen stotram villur sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/purushottamashodashii.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/purushottamashodashii.pdf",
@@ -10720,7 +10732,7 @@
     "name": "Raajagopaalasvaami Mangalam (a stotram on Lord Raajagopaala Krishnasvaami Perumal of Villuur)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "Rajagopala mangalam\nnadadur srinidi srinidhi rajagopala krishna perumal stotram villur divine",
+    "tags": "Rajagopala mangalam\nnadadur srinidi srinidhi rajagopala krishna perumal stotram villur divine sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/raajagopaalasvaamimangalam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/raajagopaalasvaamimangalam.pdf",
@@ -10736,7 +10748,7 @@
     "name": "Raajagopaalasvaami Prapatti (A Stotram on Lord Raajagopaala Krishnasvaami Perumal of Villuur)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "Rajagopala prapati prapatti\nnadadur srinidi srinidhi",
+    "tags": "Rajagopala prapati prapatti\nnadadur srinidi srinidhi sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/raajagopaalasvaamiprapatti.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/raajagopaalasvaamiprapatti.pdf",
@@ -10752,7 +10764,7 @@
     "name": "Raajagopaalasvaami Suprabhaatam ( A Stotram on Lord Raajagopaala Krishnasvaami Perumal of Villuur)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "Rajagopala  suprabhatam suprabhatham suprabatham suprabatam\nnadadur srinidi srinidhi",
+    "tags": "Rajagopala  suprabhatam suprabhatham suprabatham suprabatam\nnadadur srinidi srinidhi sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/raajagopaalasvaamisuprabhaatam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/raajagopaalasvaamisuprabhaatam.pdf",
@@ -10768,7 +10780,7 @@
     "name": "Raajagopaalavimshati (A Stotram of Srii Rajagopaalaswami Perumal of Villuur)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "Rajagopala\nnadadur srinidi srinidhi rajagopala vimsati twenty verses krishna stotram villur",
+    "tags": "Rajagopala\nnadadur srinidi srinidhi rajagopala vimsati twenty verses krishna stotram villur sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/raajagopaalavimshati.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/raajagopaalavimshati.pdf",
@@ -12120,6 +12132,22 @@
     }
   },
   {
+    "name": "Simhachala Panchaashat (A Stotram on Lord Varaha Lakshmi Narasimha of Simhachalam)",
+    "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
+    "category": "general",
+    "tags": "simhaachala simhacala simhachala varaha narasimha nrisimha nrusimha simmacala simmachala panchashat pancashat pancasat panchasat\nnadadur srinidi sriinidhi sriinidhi srinidhi",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/simhaachalapanchaashat.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/simhaachalapanchaashat.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/simhaachalapanchaashat.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/simhaachalapanchaashat.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/simhaachalapanchaashat.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/simhaachalapanchaashat.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/simhaachalapanchaashat.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/simhaachalapanchaashat.pdf"
+    }
+  },
+  {
     "name": "Slokadvayam Slokatrayam ca",
     "author": "Vaatsavaradaacharya (Nadaadur Ammaal)",
     "category": "general",
@@ -13346,7 +13374,7 @@
     "name": "Sundarabaahudashakam (A Stotram on the perumal of Azhagar Koyil in Madurai)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "sundarabahu azagar madurai\nnadadur srinidi srinidhi audio",
+    "tags": "sundarabahu azagar madurai\nnadadur srinidi srinidhi audio sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/sundarabaahudashakam.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/sundarabaahudashakam.pdf",
@@ -13443,7 +13471,7 @@
     "name": "Sundararaajastotram",
     "author": "td>",
     "category": "general",
-    "tags": "sundararaja sundara sundar\nnadadur srinidi srinidhi audio",
+    "tags": "sundararaja sundara sundar\nnadadur srinidi srinidhi audio sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/sundararaajastotram.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/sundararaajastotram.pdf",
@@ -14399,7 +14427,7 @@
     "name": "Vaduvuurvimshati (A Stotram on Lord Rama of Vaduvuur)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "rama vaduvur\nnadadur srinidi srinidhi vimshati stotra villoor swami",
+    "tags": "rama vaduvur\nnadadur srinidi srinidhi vimshati stotra villoor swami sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/vaduvuurvimshati.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/vaduvuurvimshati.pdf",
@@ -14574,7 +14602,7 @@
     "name": "Varadabhavastava (A Stotram on Lord Varadarajan of Kanchiipuram)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "varadar kanchi\nnadadur srinidi srinidhi varadabhavastava varadaraja villoor stotram",
+    "tags": "varadar kanchi\nnadadur srinidi srinidhi varadabhavastava varadaraja villoor stotram sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/varadabhavastava.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/varadabhavastava.pdf",
@@ -15792,7 +15820,7 @@
     "name": "Vyomapuriinaatha Stotram (A Stotram on Lord Oppiliappan)",
     "author": "U. Ve. Villuur Nadadur Sri Srinidhi Swami",
     "category": "general",
-    "tags": "opliappan uppliliappan oppillaappan kumbakonam\nnadadur srinidi srinidhi",
+    "tags": "opliappan uppliliappan oppillaappan kumbakonam\nnadadur srinidi srinidhi sriinidhi",
     "links": {
       "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/vyomapuriinaathastuti.pdf",
       "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/vyomapuriinaathastuti.pdf",

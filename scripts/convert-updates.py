@@ -23,6 +23,14 @@ SCRIPT_MAP = {
     "pdf_grantha.png": "grantha",
 }
 COLUMN_SCRIPTS = ["roman", "kannada", "bengali", "malayalam", "devanagari", "telugu", "tamil", "grantha"]
+# /slokas/<folder>/ names the script reliably; icons are sometimes copy-pasted wrongly
+FOLDER_SCRIPTS = {"english": "roman", "kannada": "kannada", "bengali": "bengali", "malayalam": "malayalam",
+                  "sanskrit": "devanagari", "telugu": "telugu", "tamil": "tamil", "grantha": "grantha"}
+
+
+def script_from_folder(href):
+    m = re.search(r"/slokas/([^/]+)/", href)
+    return FOLDER_SCRIPTS.get(m.group(1).lower()) if m else None
 
 
 def clean(html):
@@ -62,7 +70,7 @@ for row in re.findall(r"<tr[^>]*>(.*?)</tr>", table, re.DOTALL | re.IGNORECASE):
         if href.group(1).endswith(".mp3"):
             script = "audio"
         else:
-            script = SCRIPT_MAP.get(img.group(1).lower()) if img else None
+            script = script_from_folder(href.group(1)) or (SCRIPT_MAP.get(img.group(1).lower()) if img else None)
             # Generic icons (e.g. filecollection.png): script comes from column position
             if not script and 1 <= i <= len(COLUMN_SCRIPTS):
                 script = COLUMN_SCRIPTS[i - 1]
@@ -81,7 +89,14 @@ def same_update(p, e):
     return p["date"] == e["date"] and (a.startswith(b) or a[:40] == b[:40])
 
 
-new = [p for p in parsed if not any(same_update(p, e) for e in existing)]
+new = []
+for p in parsed:
+    match = next((e for e in existing if same_update(p, e)), None)
+    if match:
+        # index.php is the source of truth for links (e.g. PDFs uploaded after the entry was added)
+        match["links"] = p["links"]
+    else:
+        new.append(p)
 
 merged = sorted(new + existing, key=lambda e: datetime.strptime(e["date"], "%b %d %Y"), reverse=True)
 OUT_FILE.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n")

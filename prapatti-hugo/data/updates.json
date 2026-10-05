@@ -1,9 +1,30 @@
 [
   {
+    "date": "Oct 04 2026",
+    "description": "Srii Simhachala Panchaashat, a stotram on Lord Sri Varaha Lakshmi Narasimha of Simhachalam, by U. Ve. Villuur Nadadur Sri Srinidhi Swami, available in Devanaagarii, Tamil, Grantha, Kannada, Roman, Malayalam, Bengali and Telugu.",
+    "links": {
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/simhaachalapanchaashat.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/simhaachalapanchaashat.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/simhaachalapanchaashat.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/simhaachalapanchaashat.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/simhaachalapanchaashat.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/simhaachalapanchaashat.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/simhaachalapanchaashat.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/simhaachalapanchaashat.pdf"
+    }
+  },
+  {
     "date": "Oct 03 2026",
     "description": "Srii Bhadraachala Panchaashat, a stotram on Lord Bhadraachala Srii Sita Ramachandra, by U. Ve. Villuur Nadadur Sri Srinidhi Swami, available in Devanaagarii, Tamil, Grantha, Kannada, Roman, Malayalam, Bengali and Telugu.",
     "links": {
-      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/bhadraachalapanchaashat.pdf"
+      "roman": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/english/bhadraachalapanchaashat.pdf",
+      "kannada": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/kannada/bhadraachalapanchaashat.pdf",
+      "bengali": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/bengali/bhadraachalapanchaashat.pdf",
+      "malayalam": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/malayalam/bhadraachalapanchaashat.pdf",
+      "devanagari": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/sanskrit/bhadraachalapanchaashat.pdf",
+      "telugu": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/telugu/bhadraachalapanchaashat.pdf",
+      "tamil": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/tamil/bhadraachalapanchaashat.pdf",
+      "grantha": "https://prapatti-pdf-proxy.sumedharaghu.workers.dev/slokas/grantha/bhadraachalapanchaashat.pdf"
     }
   },
   {

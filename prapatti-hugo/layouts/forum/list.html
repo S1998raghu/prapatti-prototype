@@ -4,7 +4,6 @@
 
   <!-- Existing entries -->
   <div style="margin-bottom:2rem">
-    <h2 class="section-title" style="margin-bottom:1rem" id="gb-heading">Recent Entries</h2>
     <div id="gb-years" style="margin-bottom:1rem;font-size:0.88rem"></div>
     <div id="gb-entries"><p style="color:#7a6a50;font-size:0.9rem">Loading entries…</p></div>
     <button type="button" id="gb-more" class="gb-year-btn" style="display:none;margin-top:0.5rem">Load more</button>
@@ -101,8 +100,6 @@ function loadEntries(append) {
     .then(d => {
       renderEntries(d.entries || [], append);
       moreBtn.style.display = d.page * d.limit < d.total ? '' : 'none';
-      document.getElementById('gb-heading').textContent =
-        (gbYear ? `Entries from ${gbYear}` : 'Recent Entries') + ` (${d.total.toLocaleString()})`;
     })
     .catch(() => { document.getElementById('gb-entries').innerHTML = '<p style="color:#8B1914;font-size:0.9rem">Could not load entries.</p>'; });
 }

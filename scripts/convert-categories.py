@@ -23,6 +23,9 @@ SCRIPT_MAP = {
 }
 
 COLUMN_SCRIPTS = ["roman", "kannada", "bengali", "malayalam", "devanagari", "telugu", "tamil", "grantha"]
+# /slokas/<folder>/ names the script reliably; icons are sometimes copy-pasted wrongly
+FOLDER_SCRIPTS = {"english": "roman", "kannada": "kannada", "bengali": "bengali", "malayalam": "malayalam",
+                  "sanskrit": "devanagari", "telugu": "telugu", "tamil": "tamil", "grantha": "grantha"}
 
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 CONTENT_DIR.mkdir(parents=True, exist_ok=True)
@@ -66,7 +69,8 @@ for php_file in sorted(php_files):
             cat_href = re.search(r'href=["\'][^"\']*/categories/([^"\'/]+)\.php["\']', td, re.IGNORECASE)
             img = re.search(r'src=["\'][^"\']*?([^/]+\.png)["\']', td, re.IGNORECASE)
             if (href or cat_href) and img:
-                script = SCRIPT_MAP.get(img.group(1).lower())
+                folder = re.search(r"/slokas/([^/]+)/", href.group(1)) if href else None
+                script = (FOLDER_SCRIPTS.get(folder.group(1).lower()) if folder else None) or SCRIPT_MAP.get(img.group(1).lower())
                 # Generic collection icon: script comes from column position
                 # (name, author, audio, then the 8 script columns)
                 if img.group(1).lower() == "filecollection.png" and 3 <= i < 3 + len(COLUMN_SCRIPTS):
