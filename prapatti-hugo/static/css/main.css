@@ -404,6 +404,7 @@ img { max-width: 100%; height: auto; }
   font-size: 0.9rem;
   font-weight: 600;
   line-height: 1.2;
+  color: #007bff; /* link blue, as on prapatti.com */
 }
 
 .work-author {
