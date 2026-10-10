@@ -45,33 +45,29 @@
   </div>
 </div>
 
+<script src="/js/stotra-search.js"></script>
 <script>
 (function () {
   const nameInput = document.getElementById('search-name');
-  const rows = Array.from(document.querySelectorAll('#stotra-tbody tr'));
+  const tbody = document.getElementById('stotra-tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
   const count = document.getElementById('result-count');
+  const search = stotraSearch.makeSearch(rows.map(r => ({
+    row: r, name: r.dataset.name, author: r.dataset.author, tags: r.dataset.tags,
+  })));
 
-  function norm(s) {
-    return String(s || '')
-      .toLowerCase()
-      .normalize('NFD').replace(/[̀-ͯ]/g, '')   // strip diacritics
-      .replace(/aa/g, 'a').replace(/ii/g, 'i').replace(/uu/g, 'u'); // long vowels
-  }
-
-  // Pre-normalise once so filtering is fast
-  const haystack = rows.map(r =>
-    norm(r.dataset.name) + ' ' + norm(r.dataset.tags) + ' ' + norm(r.dataset.author)
-  );
-
+  // Matches are shown best first; an empty box restores the A–Z list
   function filter() {
-    const q = norm(nameInput.value.trim());
-    let visible = 0;
-    rows.forEach((r, i) => {
-      const show = !q || haystack[i].includes(q);
-      r.style.display = show ? '' : 'none';
-      if (show) visible++;
-    });
-    count.textContent = `${visible} of ${rows.length} stotras`;
+    const q = nameInput.value.trim();
+    if (!q) {
+      rows.forEach(r => { r.style.display = ''; tbody.appendChild(r); });
+      count.textContent = `${rows.length} stotras`;
+      return;
+    }
+    const found = search(q).map(m => m.item.row);
+    rows.forEach(r => { r.style.display = 'none'; });
+    found.forEach(r => { r.style.display = ''; tbody.appendChild(r); });
+    count.textContent = `${found.length} of ${rows.length} stotras`;
   }
 
   nameInput.addEventListener('input', filter);
@@ -81,7 +77,7 @@
   if (urlQ) {
     nameInput.value = urlQ;
     filter();
-    const first = rows.find(r => r.style.display !== 'none');
+    const first = Array.from(tbody.children).find(r => r.style.display !== 'none');
     if (first) {
       first.classList.add('search-highlight-row');
       first.scrollIntoView({ behavior: 'smooth', block: 'center' });

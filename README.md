@@ -27,7 +27,7 @@ workers/
   guestbook/        Cloudflare Worker + D1 (SQLite) for the guestbook form
   pdf-proxy/        Cloudflare Worker proxying PDFs from R2 storage
   visit-counter/    Cloudflare Worker + KV for homepage visitor count
-scripts/            Data migration and build utility scripts
+scripts/            add-stotra.py (add a new stotra) + the A2 sync scripts
 ```
 
 ## Architecture

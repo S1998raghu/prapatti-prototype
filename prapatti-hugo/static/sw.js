@@ -1,13 +1,13 @@
-const CACHE = 'prapatti-v1';
+const CACHE = 'prapatti-v3';
 const SHELL = [
   '/',
   '/stotras/',
   '/resources/',
   '/forum/',
   '/css/main.css',
-  '/js/search.js',
-  '/index.json',
-  '/images/Thiruvadis.png',
+  '/js/font-size.js',
+  '/js/stotra-search.js',
+  '/images/Thiruvadis_bg.png',
   '/images/ramanujar.png',
   '/images/SwamiDesikar.png',
 ];
@@ -30,13 +30,12 @@ self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
   if (url.origin !== location.origin) return;
 
+  // Network first, so new stotras and updates show on the first visit;
+  // the saved copy is only used when offline
   e.respondWith(
-    caches.match(e.request).then(cached => {
-      const network = fetch(e.request).then(res => {
-        if (res.ok) { const copy = res.clone(); caches.open(CACHE).then(c => c.put(e.request, copy)); }
-        return res;
-      });
-      return cached || network;
-    })
+    fetch(e.request).then(res => {
+      if (res.ok) { const copy = res.clone(); caches.open(CACHE).then(c => c.put(e.request, copy)); }
+      return res;
+    }).catch(() => caches.match(e.request))
   );
 });

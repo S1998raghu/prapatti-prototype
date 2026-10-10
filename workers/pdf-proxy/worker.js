@@ -8,7 +8,8 @@ export default {
       return new Response("Not found", { status: 404 });
     }
 
-    const object = await env.PRAPATTI_FILES.get(key);
+    // onlyIf: a browser re-checking its copy (If-None-Match) gets the object without a body when unchanged
+    const object = await env.PRAPATTI_FILES.get(key, { onlyIf: request.headers });
 
     if (!object) {
       return new Response("Not found", { status: 404 });
@@ -18,11 +19,16 @@ export default {
       : key.endsWith('.wav') ? 'audio/wav'
       : 'application/pdf';
 
-    return new Response(object.body, {
-      headers: {
-        "Content-Type": contentType,
-        "Cache-Control": "public, max-age=31536000, immutable",
-      },
-    });
+    // Files can be replaced under the same name, so browsers keep a copy for an hour
+    // and then re-check it by ETag (a cheap 304 when nothing changed)
+    const headers = {
+      "Content-Type": contentType,
+      "Cache-Control": "public, max-age=3600",
+      "ETag": object.httpEtag,
+    };
+    if (!("body" in object)) {
+      return new Response(null, { status: 304, headers });
+    }
+    return new Response(object.body, { headers });
   },
 };

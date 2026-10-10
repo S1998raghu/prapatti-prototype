@@ -1,6 +1,5 @@
 prapatti-hugo/public/
 prapatti-hugo/static/slokas/
-prapatti-hugo/data/guestbook.json
 .DS_Store
 .wrangler/
-scripts/guestbook-import.sql
+prapatti-hugo/.hugo_build.lock

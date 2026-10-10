@@ -117,6 +117,7 @@ function toggleYear(y) {
 </script>
 
 <script id="stotras-data" type="application/json">{{ site.Data.stotras_index | jsonify }}</script>
+<script src="/js/stotra-search.js"></script>
 <script>
 (function() {
   const input = document.getElementById('home-search-input');
@@ -125,24 +126,18 @@ function toggleYear(y) {
 
   let stotras = JSON.parse(document.getElementById('stotras-data').textContent);
   if (typeof stotras === 'string') stotras = JSON.parse(stotras);
-
-  function norm(s) {
-    return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')
-      .replace(/aa/g,'a').replace(/ii/g,'i').replace(/uu/g,'u');
-  }
+  const search = stotraSearch.makeSearch(stotras);
 
   input.addEventListener('input', function() {
-    const q = norm(input.value.trim());
+    const q = input.value.trim();
     if (!q) { results.innerHTML = ''; return; }
-    const matches = stotras.filter(s => {
-      const hay = norm(s.name) + ' ' + norm(s.tags||'') + ' ' + norm(s.author||'');
-      return hay.includes(q);
-    }).slice(0, 8);
-
-    if (!matches.length) { results.innerHTML = '<span style="color:#888">No results</span>'; return; }
-    results.innerHTML = matches.map(s =>
+    const found = search(q);
+    if (!found.length) { results.innerHTML = '<span style="color:#888">No results</span>'; return; }
+    results.innerHTML = found.slice(0, 8).map(({ item: s }) =>
       `<div style="padding:0.2rem 0"><a href="/stotras/?q=${encodeURIComponent(s.name)}" style="color:#ff6e0d">${s.name}</a>${s.author ? ' <span style="color:#888;font-size:0.82rem">— '+s.author+'</span>' : ''}</div>`
-    ).join('');
+    ).join('') + (found.length > 8
+      ? `<div style="padding:0.3rem 0"><a href="/stotras/?q=${encodeURIComponent(q)}" style="color:#8B6914;font-weight:600">See all ${found.length} results →</a></div>`
+      : '');
   });
 })();
 </script>
