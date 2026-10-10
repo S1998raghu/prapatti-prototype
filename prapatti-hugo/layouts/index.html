@@ -50,7 +50,7 @@
       <thead>
         <tr>
           <th>Date</th>
-          <th>Latest News &amp; Updates</th>
+          <th class="upd-desc">Latest News &amp; Updates</th>
           <th>Audio</th>
           <th>Roman</th>
           <th>Kannada</th>
@@ -71,7 +71,7 @@
         {{ $entryYear := index $parts (sub (len $parts) 1) }}
         <tr data-year="{{ $entryYear }}"{{ if ne $entryYear $currentYear }} style="display:none"{{ end }}>
           <td nowrap>{{ .date }}</td>
-          <td style="text-align:left">{{ .description }}</td>
+          <td class="upd-desc" style="text-align:left">{{ .description }}</td>
           <td>{{ with .links.audio }}<a href="{{ . }}" target="_blank"><img src="/images/listen.png" alt="audio"></a>{{ end }}</td>
           {{ range slice "roman" "kannada" "bengali" "malayalam" "devanagari" "telugu" "tamil" "grantha" }}
           {{ $link := index $update.links . }}

@@ -355,6 +355,14 @@ img { max-width: 100%; height: auto; }
 .table img { width: 24px; height: auto; display: block; margin: 0 auto; }
 .table thead img { width: 36px; }
 .table-responsive { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+/* Latest Updates: wide description column so rows stay short; full-size (32px) PDF icons */
+#indexpagetable th, #indexpagetable td { padding: 0.4rem 0.3rem; }
+#indexpagetable th.upd-desc { width: 55%; }
+#indexpagetable td.upd-desc { padding: 0.4rem 0.6rem; }
+#indexpagetable img { width: 32px; }
+/* All Stotras: very long one-word names/authors must wrap to keep the table inside the panel */
+#stotra-table th, #stotra-table td { padding: 0.4rem 0.35rem; }
+#stotra-table td:nth-child(-n+2) { overflow-wrap: anywhere; padding: 0.4rem 0.5rem; }
 
 /* Alert */
 .alert { padding: 0.75rem 1.25rem; border-radius: 4px; margin-bottom: 1rem; }
@@ -436,7 +444,6 @@ img { max-width: 100%; height: auto; }
   border-bottom: 1px solid #e8e0cc;
 }
 
-.table-responsive { overflow-x: visible; }
 
 .updates-table, .stotra-table {
   width: 100%;
